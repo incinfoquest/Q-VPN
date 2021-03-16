@@ -8,12 +8,3 @@ no compromise in the protection of your data and privacy.
 * THE AS-ONS AND MALICIOUS SITES ARE AUTOMATICSLLY BLOCKED.
 * IT PROTECTS USERS FROM NETWORK LEVEL HI-JACKING
 * THE CONNECTIONIS MUCH STABLE AND FASTER
-  _______             _______  _       
-(  ___  )  |\     /|(  ____ )( (    /|
-| (   ) |  | )   ( || (    )||  \  ( |
-| |   | |  | |   | || (____)||   \ | |
-| |   | |  ( (   ) )|  _____)| (\ \) |
-| | /\| |   \ \_/ / | (      | | \   |
-| (_\ \ |    \   /  | )      | )  \  |
-(____\/_)     \_/   |/       |/    )_)
-                                      
