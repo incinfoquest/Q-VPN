@@ -1,5 +1,18 @@
-####infoquestinc#####
 
+# AUTHORS : ANANDAN , OMAR , SREERAG
+# LICENSE : INFOQUEST INC
+
+#########################################
+
+ #####     #     # ######  #     #
+#     #    #     # #     # ##    #
+#     #    #     # #     # # #   #
+#     #    #     # ######  #  #  #
+#   # #     #   #  #       #   # #
+#    #       # #   #       #    ##
+ #### #       #    #       #     #
+
+##########################################
 import sys
 import platform
 from PySide2 import QtCore, QtGui, QtWidgets
@@ -16,6 +29,9 @@ from ui_splash_screen import Ui_splashscreen
 
 from ui_main import Ui_MainWindow
 
+##IMPORT FUNCTIONS
+from ui_functions import *
+
 ## GLOBALS
 counter = 0
 
@@ -25,7 +41,10 @@ class MainWIndow(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-#####BUTTON IN MAIN WINDOW###########
+
+##TOGGLE / BURGER MENU
+
+        self.ui.Btn_Toggle.clicked.connect(lambda: UIFunctions.toggleMenu(self, 250, True))
 
 
 # SPLASH SCREEN
