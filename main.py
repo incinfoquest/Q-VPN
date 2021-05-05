@@ -3,15 +3,17 @@
 import sys
 import platform
 from PyQt5.QtCore import *
-from PyQt5.QtWebEngineWidgets import *
+#from PyQt5.QtWebEngineWidgets import *
 from PyQt5.QtWidgets import QApplication
 from PySide6 import QtCore, QtGui, QtWidgets
 from PySide6.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent)
 from PySide6.QtGui import(QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide6.QtWidgets import *
+from subprocess import *
 import threading
 import os
 import requests
+import speedtest
 
 
 
@@ -159,8 +161,28 @@ class MainWindow(QMainWindow):
             # SET TITLE BAR
             self.ui.top_bar.mouseMoveEvent = moveWindow
 
+        def on_click(self):
+            # To disable the button
+            self.ui.connect_Btn.setEnabled(False)
+            self.ui.off_btn.show()
+            self.ui.off_btn.setEnabled(True)
+            # threading
+            self.connectThread =threading.Thread(target=self.wgConnect)
+            self.connectThread.start()
+
+
+            # Wg UP
+        def wgConnect(self):
+            process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/installtunnelservice', "C:\Program Files\WireGuard\Data\Configurations\wg1.conf.dpapi"],stdout=PIPE, encoding='utf-8')
+            print("Connected")
+            # to display the ip after wg connected
+            self.on_ip()
+            self.ui.connect_Btn.hide()
+
+            # Wg Down
         def wgDown(self):
             self.ui.off_btn.setEnabled(False)
+            process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE, encoding='utf-8')
             print("Session Ended")
             self.ui.off_btn.hide()
             self.ui.connect_Btn.setEnabled(True)
@@ -190,46 +212,35 @@ class MainWindow(QMainWindow):
 
 
 
-
-
-
         def on_Tor(self):
             self.tor_Thread = threading.Thread(target=self.torConnect)
             self.tor_Thread.start()
 
-        def on_click(self):
-            # To disable the button
-            self.ui.connect_Btn.setEnabled(False)
-            self.ui.off_btn.show()
-            self.ui.off_btn.setEnabled(True)
-            # threading
-            self.connectThread =threading.Thread(target=self.wgConnect)
-            self.connectThread.start()
+        def torConnect(self):
+            buffer = 1
+            process = Popen(['sc', 'start', 'tor'])
+            print("tor successfully connected")
+            self.on_ip()
+
 
         def check_speed(self):
             self.speedThread = threading.Thread(target=self.get_speedTest)
             self.speedThread.start()
 
-        def torConnect(self):
-            buffer = 1
-            print("tor successfully connected")
+
+        def get_speedTest(self):
+            try:
 
 
-        def wgConnect(self):
-            print("Connected")
-            # to display the ip after wg connected
-            self.on_ip()
-            self.ui.connect_Btn.hide()
+                speed = speedtest.Speedtest()
+                print("processing..........")
+               #self.process.terminate()
+               #print("processing..........")
+                sp = speed.download() / 1024 / 1024
+                print(sp)
+            except:
 
-
-
-        def check_speed(self):
-           try:
-            os.system('cmd /k "speedtest-cli"')
-
-           except:
-               print('check your internet connection')
-
+                print('check your internet connection for speed test')
         ## APP EVENTS
 
         def mousePressEvent(self, event):
@@ -239,4 +250,3 @@ if __name__=="__main__":
     app = QApplication(sys.argv)
     window = splashscreen()
     sys.exit(app.exec_())
-
