@@ -1,12 +1,13 @@
-# -*- coding: utf-8 -*-
+# ______________________________________________________________
+# PRODUCT : Q VPN
 
-################################################################################
-## Form generated from reading UI file 'splash_screenNlNRjp.ui'
-##
-## Created by: Qt User Interface Compiler version 5.15.2
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
+# NAME    : ui_splash_screen.py [SPLASH SCREEN UI]
+
+# AUTHORS : ANANDAN , OMAR , SREERAG
+
+# CHANGES IN THIS FILE ARE PROHIBITED
+# _______________________________________________________________
+
 
 from PySide6.QtCore import *
 from PySide6.QtGui import *

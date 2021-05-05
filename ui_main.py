@@ -1,12 +1,12 @@
-# -*- coding: utf-8 -*-
+# ______________________________________________________________
+# PRODUCT : Q VPN
 
-################################################################################
-## Form generated from reading UI file 'mainuJuFyy.ui'
-##
-## Created by: Qt User Interface Compiler version 5.15.2
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
+# NAME    : ui_main.py [MAIN SCREEN UI]
+
+# AUTHORS : ANANDAN , OMAR , SREERAG
+
+# CHANGES IN THIS FILE ARE PROHIBITED
+# _______________________________________________________________
 
 from PySide6.QtCore import *
 from PySide6.QtGui import *
