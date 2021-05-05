@@ -1,6 +1,6 @@
 # Q VPN
 
-Q VPN is a vpn that uses wireguard protocol.
+Q VPN is a vpn that uses WireGuard protocol.
 It is intended to generate user friendly VPN without interrupting your browsing with
 no compromise in the protection of your data and privacy.
 
@@ -10,4 +10,4 @@ Some of the main features are,
   * THE AD-ONS AND MALICIOUS SITES ARE AUTOMATICALLY BLOCKED.
   * IT PROTECTS USERS FROM NETWORK LEVEL HI-JACKING.
   * THE CONNECTIONS ARE MUCH STABLE AND FASTER.
-  * PROVIDES TOR FACILITY TO BROWSE MORE ANONYMOUS. 
+  * PROVIDES TOR FACILITY TO BROWSE MORE ANONYMOUS.
