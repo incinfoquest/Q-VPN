@@ -545,4 +545,3 @@ class Ui_MainWindow(object):
         self.label_3.setText("")
         self.label_2.setText("")
     # retranslateUi
-

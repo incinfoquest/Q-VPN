@@ -105,4 +105,3 @@ class Ui_splashscreen(object):
         self.label_loading.setText(QCoreApplication.translate("splashscreen", u"loading...", None))
         self.label_credits.setText(QCoreApplication.translate("splashscreen", u"<strong>Infoquest</strong> inc", None))
     # retranslateUi
-
