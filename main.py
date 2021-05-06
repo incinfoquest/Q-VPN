@@ -10,9 +10,9 @@
 
 import sys
 import platform
-from PyQt5.QtCore import *
+# from PyQt5.QtCore import *
 # from PyQt5.QtWebEngineWidgets import *
-from PyQt5.QtWidgets import QApplication
+# from PyQt5.QtWidgets import QApplication
 from PySide6 import QtCore, QtGui, QtWidgets
 from PySide6.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect,
                             QSize, QTime, QUrl, Qt, QEvent)
@@ -159,8 +159,7 @@ class MainWindow(QMainWindow):
         # Wg UP
 
     def wgConnect(self):
-        process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/installtunnelservice',
-                         "C:\Program Files\WireGuard\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
+        process = Popen(['wg-quick', 'up', 'wg1'], stdout=PIPE,
                         encoding='utf-8')
         print("CONNECTED")
 
@@ -171,7 +170,7 @@ class MainWindow(QMainWindow):
     # WG DOWN
     def wgDown(self):
         self.ui.off_btn.setEnabled(False)
-        process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
+        process = Popen(['wg-quick', 'down', 'wg1'], stdout=PIPE,
                         encoding='utf-8')
         print("SESSION ENDED")
         self.ui.off_btn.hide()
@@ -209,7 +208,7 @@ class MainWindow(QMainWindow):
     # TOR CONNECTION
     def torConnect(self):
         buffer = 1
-        process = Popen(['sc', 'start', 'tor'])
+        process = Popen(['sudo', 'service', 'start',  'tor'])
         print("tor successfully connected")
         self.on_ip()
 
