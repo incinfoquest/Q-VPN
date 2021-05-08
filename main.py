@@ -101,9 +101,9 @@ class splashscreen(QMainWindow):
 class MainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
-        buffer = 0
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.ui.Tor_Btn.setCheckable(True)
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
@@ -203,16 +203,21 @@ class MainWindow(QMainWindow):
 
     # TOR THREAD
     def on_Tor(self):
-        self.tor_Thread = threading.Thread(target=self.torConnect)
-        self.tor_Thread.start()
-
+        if self.ui.Tor_Btn.isChecked():
+            self.tor_Thread = threading.Thread(target=self.torConnect)
+            self.tor_Thread.start()
+        else:
+            self.tor_Thread = threading.Thread(target=self.torDisconnect)
+            self.tor_Thread.start()
     # TOR CONNECTION
     def torConnect(self):
-        buffer = 1
         process = Popen(['sc', 'start', 'tor'])
         print("tor successfully connected")
         self.on_ip()
 
+    def torDisconnect(self):
+        process = Popen(['sc', 'stop', 'tor'])
+        self.on_ip()
     # SPEED_TEST THREAD
     def check_speed(self):
         self.speedThread = threading.Thread(target=self.get_speedTest)
