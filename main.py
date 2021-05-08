@@ -24,6 +24,7 @@ import threading
 import os
 import requests
 import speedtest
+import time
 
 ## SPLASH SCREEN
 from ui_splash_screen import Ui_splashscreen
@@ -124,7 +125,7 @@ class MainWindow(QMainWindow):
         self.on_ip()
 
         # WG OFF BUTTON
-        self.ui.off_btn.clicked.connect(self.wgDown)
+        self.ui.off_btn.clicked.connect(self.on_click)
 
         # REMOVE TITLE BAR
         self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
@@ -146,14 +147,20 @@ class MainWindow(QMainWindow):
         self.ui.top_bar.mouseMoveEvent = moveWindow
 
     def on_click(self):
-        # To disable the button
-        self.ui.connect_Btn.setEnabled(False)
-        self.ui.off_btn.show()
-        self.ui.off_btn.setEnabled(True)
+        if self.ui.connect_Btn.isChecked(True):
 
-        # THREADING
-        self.connectThread = threading.Thread(target=self.wgConnect)
-        self.connectThread.start()
+            # To disable the button
+            self.ui.connect_Btn.setEnabled(False)
+            self.ui.off_btn.show()
+            self.ui.off_btn.setEnabled(True)
+
+            # THREADING
+            self.connectThread = threading.Thread(target=self.wgConnect)
+            self.connectThread.start()
+        else:
+            self.connectThread = threading.Thread(target=self.wgDown)
+            self.connectThread.start()
+
 
         # Wg UP
     def wgConnect(self):
@@ -175,16 +182,20 @@ class MainWindow(QMainWindow):
         self.ui.off_btn.hide()
         self.ui.connect_Btn.setEnabled(True)
         self.ui.connect_Btn.show()
+        self.on_ip()
 
     # IP THREAD
     def on_ip(self):
         self.ip_Thread = threading.Thread(target=self.run)
+
         # self.ip_thread.out_string.connect(self.printIP)
         self.ip_Thread.start()
 
     # FETCH IP
     def run(self):
+        time.sleep(10)
         self.ui.iptext.clear()
+
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
             print(ipaddress)
@@ -193,7 +204,6 @@ class MainWindow(QMainWindow):
                 # self.ui.iptext.
                 self.ui.iptext.appendPlainText(ipaddress)
                 # Enabling the connect button
-                #
             except:
                 print("Please wait")
         except:
@@ -243,4 +253,3 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = splashscreen()
     sys.exit(app.exec_())
-    
