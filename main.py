@@ -146,7 +146,6 @@ class MainWindow(QMainWindow):
         self.ui.top_bar.mouseMoveEvent = moveWindow
 
     def on_click(self):
-
         # To disable the button
         self.ui.connect_Btn.setEnabled(False)
         self.ui.off_btn.show()
@@ -157,7 +156,6 @@ class MainWindow(QMainWindow):
         self.connectThread.start()
 
         # Wg UP
-
     def wgConnect(self):
         process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/installtunnelservice',
                          "C:\Program Files\WireGuard\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
@@ -237,7 +235,6 @@ class MainWindow(QMainWindow):
             print('check your internet connection for speed test')
 
     # APP EVENTS [DRAG MAIN WINDOW]
-
     def mousePressEvent(self, event):
         self.dragPos = event.globalPos()
 
