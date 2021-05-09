@@ -189,12 +189,12 @@ class MainWindow(QMainWindow):
 
     # FETCH IP
     def run(self):
-        time.sleep(10)
+        #time.sleep(10)
         self.ui.iptext.clear()
 
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
-            print(ipaddress)
+            print(type(ipaddress))
 
             try:
                 # self.ui.iptext.
@@ -235,14 +235,15 @@ class MainWindow(QMainWindow):
     # GET INTERNET SPEED
     def get_speedTest(self):
         try:
+            self.ui.sptext.clear()
             speed = speedtest.Speedtest()
-            print("processing..........")
-            sp = (speed.download() / 1000)
-            print(sp)
+            a = print("processing..........")
+            sp = str(speed.download() / 1000)
+            print(type(sp))
+
             try:
-                # self.ui.iptext.
                 self.ui.sptext.appendPlainText(sp)
-                # Enabling the connect button
+
             except:
                 print("error")
         except:
