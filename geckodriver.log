@@ -1,0 +1,94 @@
+1620566218765	geckodriver	INFO	Listening on 127.0.0.1:62141
+1620566223149	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofileiTlnUU"
+1620566224417	Marionette	INFO	Marionette enabled
+1620566228112	Marionette	INFO	Listening on port 62151
+1620566228661	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+1620566299134	Marionette	INFO	Stopped listening on port 62151
+1620566481347	geckodriver	INFO	Listening on 127.0.0.1:62217
+1620566485762	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofileqeBVaN"
+1620566487025	Marionette	INFO	Marionette enabled
+1620566490024	Marionette	INFO	Listening on port 62229
+1620566490098	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1620566492228	Marionette	INFO	Stopped listening on port 62229
+1620566751791	geckodriver	INFO	Listening on 127.0.0.1:62284
+1620566756136	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofilemnVr3M"
+1620566757359	Marionette	INFO	Marionette enabled
+1620566760478	Marionette	INFO	Listening on port 62294
+1620566760970	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+[Parent 6044, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1620566808236	Marionette	INFO	Stopped listening on port 62294
+1620566977105	geckodriver	INFO	Listening on 127.0.0.1:62355
+1620566981478	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofilefcRlWn"
+1620566982901	Marionette	INFO	Marionette enabled
+1620566985540	Marionette	INFO	Listening on port 62363
+1620566985741	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 8988, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1620567037843	Marionette	INFO	Stopped listening on port 62363
+1620567132034	geckodriver	INFO	Listening on 127.0.0.1:62425
+1620567136419	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofile6bdMVi"
+1620567137643	Marionette	INFO	Marionette enabled
+1620567141195	Marionette	INFO	Listening on port 62436
+1620567141378	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1620567172809	Marionette	INFO	Stopped listening on port 62436
+1620567264254	geckodriver	INFO	Listening on 127.0.0.1:62497
+1620567268673	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofileTHrpJX"
+1620567270227	Marionette	INFO	Marionette enabled
+1620567272901	Marionette	INFO	Listening on port 62507
+1620567273293	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620567304345	Marionette	INFO	Stopped listening on port 62507
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620568213882	geckodriver	INFO	Listening on 127.0.0.1:62566
+1620568218212	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofileDVDvjW"
+1620568219916	Marionette	INFO	Marionette enabled
+1620568222736	Marionette	INFO	Listening on port 62580
+1620568223213	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1620568225155	Marionette	INFO	Stopped listening on port 62580

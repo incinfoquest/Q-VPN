@@ -25,6 +25,8 @@ import os
 import requests
 import speedtest
 import time
+from selenium import webdriver
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 
 ## SPLASH SCREEN
 from ui_splash_screen import Ui_splashscreen
@@ -104,7 +106,7 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.ui.Tor_Btn.setCheckable(True)
+        self.ui.connect_Btn.setCheckable(True)
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
@@ -143,7 +145,7 @@ class MainWindow(QMainWindow):
         self.ui.top_bar.mouseMoveEvent = moveWindow
 
     def on_click(self):
-        if self.ui.connect_Btn.isChecked(True):
+        if self.ui.connect_Btn.isChecked():
 
             # To disable the button
             self.ui.connect_Btn.setEnabled(False)
@@ -183,8 +185,6 @@ class MainWindow(QMainWindow):
     # IP THREAD
     def on_ip(self):
         self.ip_Thread = threading.Thread(target=self.run)
-
-        # self.ip_thread.out_string.connect(self.printIP)
         self.ip_Thread.start()
 
     # FETCH IP
@@ -207,21 +207,26 @@ class MainWindow(QMainWindow):
 
     # TOR THREAD
     def on_Tor(self):
-        if self.ui.Tor_Btn.isChecked():
             self.tor_Thread = threading.Thread(target=self.torConnect)
             self.tor_Thread.start()
-        else:
-            self.tor_Thread = threading.Thread(target=self.torDisconnect)
-            self.tor_Thread.start()
+
     # TOR CONNECTION
     def torConnect(self):
-        process = Popen(['sc', 'start', 'tor'])
-        print("tor successfully connected")
-        self.on_ip()
 
-    def torDisconnect(self):
-        process = Popen(['sc', 'stop', 'tor'])
-        self.on_ip()
+        torexe = os.popen(r'C:\Program Files\Tor Browser\Browser\TorBrowser\Tor\tor.exe')
+        profile = FirefoxProfile(r'C:\Program Files\Tor Browser\Browser\TorBrowser\Data\Browser\profile.default')
+        profile.set_preference('network.proxy.type', 1)
+        profile.set_preference('network.proxy.socks', '127.0.0.1')
+        profile.set_preference('network.proxy.socks_port', 9050)
+        profile.set_preference("network.proxy.socks_remote_dns", False)
+        profile.update_preferences()
+        firefox_options = webdriver.FirefoxOptions()
+        firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
+        driver = webdriver.Firefox(firefox_profile= profile, options = firefox_options, executable_path=r'geckodriver-v0.29.1-win64\geckodriver.exe')
+        self.showMinimized()
+        driver.get("http://duckduckgo.com")
+
+
     # SPEED_TEST THREAD
     def check_speed(self):
         self.speedThread = threading.Thread(target=self.get_speedTest)
@@ -232,8 +237,6 @@ class MainWindow(QMainWindow):
         try:
             speed = speedtest.Speedtest()
             print("processing..........")
-            # self.process.terminate()
-            # print("processing..........")
             sp = speed.download() / 1024 / 1024
             print(sp)
 
