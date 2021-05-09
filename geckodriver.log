@@ -101,3 +101,17 @@ extension-storage: migration complete
 console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
 console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
 1620568932554	Marionette	INFO	Stopped listening on port 62679
+1620574135003	geckodriver	INFO	Listening on 127.0.0.1:63212
+1620574139727	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofilecg291j"
+1620574142838	Marionette	INFO	Marionette enabled
+1620574147892	Marionette	INFO	Listening on port 63220
+1620574148565	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+extension-storage: migration complete
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[Parent 11052, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+1620574153651	Marionette	INFO	Stopped listening on port 63220

@@ -194,12 +194,11 @@ class MainWindow(QMainWindow):
 
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
-            print(type(ipaddress))
+            print(ipaddress)
 
             try:
                 # self.ui.iptext.
                 self.ui.iptext.appendPlainText(ipaddress)
-                # Enabling the connect button
             except:
                 print("Please wait")
         except:
@@ -237,9 +236,9 @@ class MainWindow(QMainWindow):
         try:
             self.ui.sptext.clear()
             speed = speedtest.Speedtest()
-            a = print("processing..........")
-            sp = str(speed.download() / 1000)
-            print(type(sp))
+            print("processing..........")
+            sp = str(speed.download() / 1024)
+            print(sp)
 
             try:
                 self.ui.sptext.appendPlainText(sp)
