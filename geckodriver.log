@@ -92,3 +92,12 @@ extension-storage: migration complete
 console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
 console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
 1620568225155	Marionette	INFO	Stopped listening on port 62580
+1620568893031	geckodriver	INFO	Listening on 127.0.0.1:62669
+1620568897558	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofilefXvXgK"
+1620568899138	Marionette	INFO	Marionette enabled
+1620568901903	Marionette	INFO	Listening on port 62679
+1620568902615	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1620568932554	Marionette	INFO	Stopped listening on port 62679
