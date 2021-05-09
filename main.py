@@ -237,9 +237,14 @@ class MainWindow(QMainWindow):
         try:
             speed = speedtest.Speedtest()
             print("processing..........")
-            sp = speed.download() / 1024 / 1024
+            sp = (speed.download() / 1000)
             print(sp)
-
+            try:
+                # self.ui.iptext.
+                self.ui.sptext.appendPlainText(sp)
+                # Enabling the connect button
+            except:
+                print("error")
         except:
             print('check your internet connection for speed test')
 
