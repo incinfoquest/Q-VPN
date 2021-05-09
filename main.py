@@ -1,4 +1,4 @@
-#  [MAIN FILE]
+# [MAIN FILE]
 # ______________________________________________________________
 # PRODUCT : Q VPN
 
@@ -109,14 +109,10 @@ class MainWindow(QMainWindow):
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
 
-        # PAGE 2
-        self.ui.btn_faq.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_2))
+        # STACK
 
         # PAGE 3
         self.ui.btn_about.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_3))
-
-        # FROM PAGE_2 to PAGE_1
-        self.ui.btn_home_1.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_1))
 
         # FROM PAGE_3 to PAGE_1
         self.ui.btn_home_2.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_1))
@@ -125,7 +121,7 @@ class MainWindow(QMainWindow):
         self.on_ip()
 
         # WG OFF BUTTON
-        self.ui.off_btn.clicked.connect(self.on_click)
+        self.ui.off_btn.clicked.connect(self.wgDown)
 
         # REMOVE TITLE BAR
         self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
