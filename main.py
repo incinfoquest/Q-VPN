@@ -11,11 +11,10 @@
 import sys
 import platform
 from PyQt5.QtCore import *
-# from PyQt5.QtWebEngineWidgets import *
-from PyQt5.QtWidgets import QApplication
 from PySide6 import QtCore, QtGui, QtWidgets
 from PySide6.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect,
                             QSize, QTime, QUrl, Qt, QEvent)
+from PyQt5.QtWidgets import QApplication
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence,
                            QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide6.QtWidgets import *
@@ -242,7 +241,7 @@ class MainWindow(QMainWindow):
 
             except:
                 print("error")'''
-                
+
             sp = "{:.2f}".format(speed.download() / 1024)
             print(sp + " kb/s")
 
