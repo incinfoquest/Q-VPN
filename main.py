@@ -237,7 +237,8 @@ class MainWindow(QMainWindow):
             self.ui.sptext.clear()
             speed = speedtest.Speedtest()
             print("processing..........")
-            sp = str(speed.download() / 1024)
+            sp = "{:.2f}".format(speed.download() / 1024)
+            #printf(f"{ Mb/s")
             print(sp)
 
             try:
