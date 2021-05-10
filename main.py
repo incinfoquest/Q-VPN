@@ -237,12 +237,18 @@ class MainWindow(QMainWindow):
             self.ui.sptext.clear()
             speed = speedtest.Speedtest()
             print("processing..........")
+            '''try:
+                self.ui.sptext.appendPlainText("processing.....")
+
+            except:
+                print("error")'''
+                
             sp = "{:.2f}".format(speed.download() / 1024)
-            #printf(f"{ Mb/s")
-            print(sp)
+            print(sp + " kb/s")
 
             try:
-                self.ui.sptext.appendPlainText(sp)
+                #self.ui.sptext.clear()
+                self.ui.sptext.appendPlainText(sp+" kb/s")
 
             except:
                 print("error")
