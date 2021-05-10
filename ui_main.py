@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainLfkEiO.ui'
+## Form generated from reading UI file 'mainCJXVLn.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -76,6 +76,19 @@ class Ui_MainWindow(object):
 "	background-color: rgb(255, 255, 0);\n"
 "\n"
 "}")
+        self.btn_about = QPushButton(self.top_bar)
+        self.btn_about.setObjectName(u"btn_about")
+        self.btn_about.setGeometry(QRect(760, -1, 41, 41))
+        self.btn_about.setStyleSheet(u"QPushButton{\n"
+"\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+"border-radius: 15px;\n"
+"}\n"
+"")
+        icon = QIcon()
+        icon.addFile(u"resources/icons8-about-48.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_about.setIcon(icon)
+        self.btn_about.setIconSize(QSize(25, 25))
         self.stackedWidget = QStackedWidget(self.centralwidget)
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.stackedWidget.setGeometry(QRect(0, 40, 801, 561))
@@ -102,9 +115,9 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "")
-        icon = QIcon()
-        icon.addFile(u"resources/power.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.connect_Btn.setIcon(icon)
+        icon1 = QIcon()
+        icon1.addFile(u"resources/power.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.connect_Btn.setIcon(icon1)
         self.connect_Btn.setIconSize(QSize(150, 150))
         self.ip_label = QLabel(self.page_1)
         self.ip_label.setObjectName(u"ip_label")
@@ -131,37 +144,22 @@ class Ui_MainWindow(object):
         brush2.setStyle(Qt.NoBrush)
         palette.setBrush(QPalette.Active, QPalette.Base, brush2)
         palette.setBrush(QPalette.Active, QPalette.Window, brush)
-        brush3 = QBrush(QColor(255, 255, 255, 128))
-        brush3.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Active, QPalette.PlaceholderText, brush3)
-#endif
         palette.setBrush(QPalette.Inactive, QPalette.Button, brush)
         palette.setBrush(QPalette.Inactive, QPalette.Text, brush1)
         palette.setBrush(QPalette.Inactive, QPalette.ButtonText, brush1)
-        brush4 = QBrush(QColor(0, 0, 0, 255))
-        brush4.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Inactive, QPalette.Base, brush4)
+        brush3 = QBrush(QColor(0, 0, 0, 255))
+        brush3.setStyle(Qt.NoBrush)
+        palette.setBrush(QPalette.Inactive, QPalette.Base, brush3)
         palette.setBrush(QPalette.Inactive, QPalette.Window, brush)
-        brush5 = QBrush(QColor(255, 255, 255, 128))
-        brush5.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush5)
-#endif
         palette.setBrush(QPalette.Disabled, QPalette.Button, brush)
-        brush6 = QBrush(QColor(120, 120, 120, 255))
-        brush6.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Disabled, QPalette.Text, brush6)
-        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush6)
-        brush7 = QBrush(QColor(0, 0, 0, 255))
-        brush7.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Disabled, QPalette.Base, brush7)
+        brush4 = QBrush(QColor(120, 120, 120, 255))
+        brush4.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Disabled, QPalette.Text, brush4)
+        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
+        brush5 = QBrush(QColor(0, 0, 0, 255))
+        brush5.setStyle(Qt.NoBrush)
+        palette.setBrush(QPalette.Disabled, QPalette.Base, brush5)
         palette.setBrush(QPalette.Disabled, QPalette.Window, brush)
-        brush8 = QBrush(QColor(255, 255, 255, 128))
-        brush8.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush8)
-#endif
         self.iptext.setPalette(palette)
         font2 = QFont()
         font2.setFamily(u"CrashNumberingGothic")
@@ -198,9 +196,9 @@ class Ui_MainWindow(object):
 "\n"
 "	background-color: rgb(255, 255, 255);\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u"resources/emojipng.com-2364600.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.Tor_Btn.setIcon(icon1)
+        icon2 = QIcon()
+        icon2.addFile(u"resources/emojipng.com-2364600.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.Tor_Btn.setIcon(icon2)
         self.Tor_Btn.setIconSize(QSize(35, 35))
         self.speed_label = QLabel(self.page_1)
         self.speed_label.setObjectName(u"speed_label")
@@ -226,9 +224,9 @@ class Ui_MainWindow(object):
 "	\n"
 "	background-color: rgb(255, 255, 255);\n"
 "}")
-        icon2 = QIcon()
-        icon2.addFile(u"resources/PngItem_3774350.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.speed_Test.setIcon(icon2)
+        icon3 = QIcon()
+        icon3.addFile(u"resources/PngItem_3774350.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.speed_Test.setIcon(icon3)
         self.speed_Test.setIconSize(QSize(35, 35))
         self.off_btn = QPushButton(self.page_1)
         self.off_btn.setObjectName(u"off_btn")
@@ -246,31 +244,10 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "")
-        icon3 = QIcon()
-        icon3.addFile(u"resources/powerbutton.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.off_btn.setIcon(icon3)
-        self.off_btn.setIconSize(QSize(150, 150))
-        self.btn_about = QPushButton(self.page_1)
-        self.btn_about.setObjectName(u"btn_about")
-        self.btn_about.setGeometry(QRect(750, 510, 40, 40))
-        self.btn_about.setStyleSheet(u"QPushButton{\n"
-"\n"
-"background-color: rgba(255, 255, 255, 0);\n"
-"border-radius: 20px;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"\n"
-"	\n"
-"	\n"
-"	\n"
-"	\n"
-"	background-color: rgb(255, 255, 255);\n"
-"}")
         icon4 = QIcon()
-        icon4.addFile(u"resources/icons8-about-48.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_about.setIcon(icon4)
-        self.btn_about.setIconSize(QSize(30, 30))
+        icon4.addFile(u"resources/powerbutton.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.off_btn.setIcon(icon4)
+        self.off_btn.setIconSize(QSize(150, 150))
         self.sptext = QPlainTextEdit(self.page_1)
         self.sptext.setObjectName(u"sptext")
         self.sptext.setGeometry(QRect(650, 120, 131, 21))
@@ -278,39 +255,24 @@ class Ui_MainWindow(object):
         palette1.setBrush(QPalette.Active, QPalette.Button, brush)
         palette1.setBrush(QPalette.Active, QPalette.Text, brush1)
         palette1.setBrush(QPalette.Active, QPalette.ButtonText, brush1)
-        brush9 = QBrush(QColor(0, 0, 0, 255))
-        brush9.setStyle(Qt.NoBrush)
-        palette1.setBrush(QPalette.Active, QPalette.Base, brush9)
+        brush6 = QBrush(QColor(0, 0, 0, 255))
+        brush6.setStyle(Qt.NoBrush)
+        palette1.setBrush(QPalette.Active, QPalette.Base, brush6)
         palette1.setBrush(QPalette.Active, QPalette.Window, brush)
-        brush10 = QBrush(QColor(255, 255, 255, 128))
-        brush10.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Active, QPalette.PlaceholderText, brush10)
-#endif
         palette1.setBrush(QPalette.Inactive, QPalette.Button, brush)
         palette1.setBrush(QPalette.Inactive, QPalette.Text, brush1)
         palette1.setBrush(QPalette.Inactive, QPalette.ButtonText, brush1)
-        brush11 = QBrush(QColor(0, 0, 0, 255))
-        brush11.setStyle(Qt.NoBrush)
-        palette1.setBrush(QPalette.Inactive, QPalette.Base, brush11)
+        brush7 = QBrush(QColor(0, 0, 0, 255))
+        brush7.setStyle(Qt.NoBrush)
+        palette1.setBrush(QPalette.Inactive, QPalette.Base, brush7)
         palette1.setBrush(QPalette.Inactive, QPalette.Window, brush)
-        brush12 = QBrush(QColor(255, 255, 255, 128))
-        brush12.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush12)
-#endif
         palette1.setBrush(QPalette.Disabled, QPalette.Button, brush)
-        palette1.setBrush(QPalette.Disabled, QPalette.Text, brush6)
-        palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush6)
-        brush13 = QBrush(QColor(0, 0, 0, 255))
-        brush13.setStyle(Qt.NoBrush)
-        palette1.setBrush(QPalette.Disabled, QPalette.Base, brush13)
+        palette1.setBrush(QPalette.Disabled, QPalette.Text, brush4)
+        palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
+        brush8 = QBrush(QColor(0, 0, 0, 255))
+        brush8.setStyle(Qt.NoBrush)
+        palette1.setBrush(QPalette.Disabled, QPalette.Base, brush8)
         palette1.setBrush(QPalette.Disabled, QPalette.Window, brush)
-        brush14 = QBrush(QColor(255, 255, 255, 128))
-        brush14.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush14)
-#endif
         self.sptext.setPalette(palette1)
         self.sptext.setFont(font2)
         self.sptext.setStyleSheet(u"QPlainTextEdit\n"
@@ -334,7 +296,6 @@ class Ui_MainWindow(object):
         self.speed_Test.raise_()
         self.off_btn.raise_()
         self.connect_Btn.raise_()
-        self.btn_about.raise_()
         self.sptext.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
@@ -544,6 +505,7 @@ class Ui_MainWindow(object):
         self.miniNew.setToolTip(QCoreApplication.translate("MainWindow", u"minimize", None))
 #endif // QT_CONFIG(tooltip)
         self.miniNew.setText("")
+        self.btn_about.setText("")
         self.back_img_1.setText("")
 #if QT_CONFIG(tooltip)
         self.connect_Btn.setToolTip(QCoreApplication.translate("MainWindow", u"CONNECT", None))
@@ -558,7 +520,6 @@ class Ui_MainWindow(object):
         self.off_btn.setToolTip(QCoreApplication.translate("MainWindow", u"DISCONNECT", None))
 #endif // QT_CONFIG(tooltip)
         self.off_btn.setText("")
-        self.btn_about.setText("")
         self.back_img_3.setText("")
         self.btn_home_2.setText("")
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -580,3 +541,4 @@ class Ui_MainWindow(object):
         self.lgpl_3.setText("")
         self.mail.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">incinfoquest@gmail.com</span></p></body></html>", None))
     # retranslateUi
+
