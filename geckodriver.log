@@ -128,3 +128,15 @@ console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resou
 
 [Parent 1644, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
 1620654148195	Marionette	INFO	Stopped listening on port 50189
+1620658910361	geckodriver	INFO	Listening on 127.0.0.1:1658
+1620658913795	mozrunner::runner	INFO	Running command: "C:\\1620658917230	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Use1620658926083	Marionette	INFO	Marionette enabled
+console.error: Region.jsm: "Error fetching region" (new Errconsole.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: SearchSettings: "get: No settings file 1620658952614	Marionette	INFO	Listening on port 1674
+extension-storage: migration complete
+[Parent 5724, IPC I/O Parent] WARNING: file /builds/worker/1620659090802	Marionette	INFO	Stopped listening on port 1684
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+annel closing: too late to send/recv, messages will be lost
+

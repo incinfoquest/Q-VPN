@@ -1,21 +1,24 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainCJXVLn.ui'
+## Form generated from reading UI file 'mainUMMweX.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.15.2
+## Created by: Qt User Interface Compiler version 5.14.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import *
-from PySide6.QtGui import *
+from PySide6.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
+    QRect, QSize, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
+    QFontDatabase, QIcon, QLinearGradient, QPalette, QPainter, QPixmap,
+    QRadialGradient)
 from PySide6.QtWidgets import *
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        if not MainWindow.objectName():
+        if MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(800, 600)
         MainWindow.setStyleSheet(u"background-color: rgb(23, 33, 59);")
@@ -144,22 +147,37 @@ class Ui_MainWindow(object):
         brush2.setStyle(Qt.NoBrush)
         palette.setBrush(QPalette.Active, QPalette.Base, brush2)
         palette.setBrush(QPalette.Active, QPalette.Window, brush)
+        brush3 = QBrush(QColor(255, 255, 255, 128))
+        brush3.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Active, QPalette.PlaceholderText, brush3)
+#endif
         palette.setBrush(QPalette.Inactive, QPalette.Button, brush)
         palette.setBrush(QPalette.Inactive, QPalette.Text, brush1)
         palette.setBrush(QPalette.Inactive, QPalette.ButtonText, brush1)
-        brush3 = QBrush(QColor(0, 0, 0, 255))
-        brush3.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Inactive, QPalette.Base, brush3)
+        brush4 = QBrush(QColor(0, 0, 0, 255))
+        brush4.setStyle(Qt.NoBrush)
+        palette.setBrush(QPalette.Inactive, QPalette.Base, brush4)
         palette.setBrush(QPalette.Inactive, QPalette.Window, brush)
-        palette.setBrush(QPalette.Disabled, QPalette.Button, brush)
-        brush4 = QBrush(QColor(120, 120, 120, 255))
-        brush4.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Disabled, QPalette.Text, brush4)
-        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
-        brush5 = QBrush(QColor(0, 0, 0, 255))
+        brush5 = QBrush(QColor(255, 255, 255, 128))
         brush5.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Disabled, QPalette.Base, brush5)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush5)
+#endif
+        palette.setBrush(QPalette.Disabled, QPalette.Button, brush)
+        brush6 = QBrush(QColor(120, 120, 120, 255))
+        brush6.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Disabled, QPalette.Text, brush6)
+        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush6)
+        brush7 = QBrush(QColor(0, 0, 0, 255))
+        brush7.setStyle(Qt.NoBrush)
+        palette.setBrush(QPalette.Disabled, QPalette.Base, brush7)
         palette.setBrush(QPalette.Disabled, QPalette.Window, brush)
+        brush8 = QBrush(QColor(255, 255, 255, 128))
+        brush8.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush8)
+#endif
         self.iptext.setPalette(palette)
         font2 = QFont()
         font2.setFamily(u"CrashNumberingGothic")
@@ -255,24 +273,39 @@ class Ui_MainWindow(object):
         palette1.setBrush(QPalette.Active, QPalette.Button, brush)
         palette1.setBrush(QPalette.Active, QPalette.Text, brush1)
         palette1.setBrush(QPalette.Active, QPalette.ButtonText, brush1)
-        brush6 = QBrush(QColor(0, 0, 0, 255))
-        brush6.setStyle(Qt.NoBrush)
-        palette1.setBrush(QPalette.Active, QPalette.Base, brush6)
+        brush9 = QBrush(QColor(0, 0, 0, 255))
+        brush9.setStyle(Qt.NoBrush)
+        palette1.setBrush(QPalette.Active, QPalette.Base, brush9)
         palette1.setBrush(QPalette.Active, QPalette.Window, brush)
+        brush10 = QBrush(QColor(255, 255, 255, 128))
+        brush10.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Active, QPalette.PlaceholderText, brush10)
+#endif
         palette1.setBrush(QPalette.Inactive, QPalette.Button, brush)
         palette1.setBrush(QPalette.Inactive, QPalette.Text, brush1)
         palette1.setBrush(QPalette.Inactive, QPalette.ButtonText, brush1)
-        brush7 = QBrush(QColor(0, 0, 0, 255))
-        brush7.setStyle(Qt.NoBrush)
-        palette1.setBrush(QPalette.Inactive, QPalette.Base, brush7)
+        brush11 = QBrush(QColor(0, 0, 0, 255))
+        brush11.setStyle(Qt.NoBrush)
+        palette1.setBrush(QPalette.Inactive, QPalette.Base, brush11)
         palette1.setBrush(QPalette.Inactive, QPalette.Window, brush)
+        brush12 = QBrush(QColor(255, 255, 255, 128))
+        brush12.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush12)
+#endif
         palette1.setBrush(QPalette.Disabled, QPalette.Button, brush)
-        palette1.setBrush(QPalette.Disabled, QPalette.Text, brush4)
-        palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush4)
-        brush8 = QBrush(QColor(0, 0, 0, 255))
-        brush8.setStyle(Qt.NoBrush)
-        palette1.setBrush(QPalette.Disabled, QPalette.Base, brush8)
+        palette1.setBrush(QPalette.Disabled, QPalette.Text, brush6)
+        palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush6)
+        brush13 = QBrush(QColor(0, 0, 0, 255))
+        brush13.setStyle(Qt.NoBrush)
+        palette1.setBrush(QPalette.Disabled, QPalette.Base, brush13)
         palette1.setBrush(QPalette.Disabled, QPalette.Window, brush)
+        brush14 = QBrush(QColor(255, 255, 255, 128))
+        brush14.setStyle(Qt.NoBrush)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush14)
+#endif
         self.sptext.setPalette(palette1)
         self.sptext.setFont(font2)
         self.sptext.setStyleSheet(u"QPlainTextEdit\n"
