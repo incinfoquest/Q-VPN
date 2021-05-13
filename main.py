@@ -105,7 +105,7 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.ui.connect_Btn.setCheckable(True)
+        #self.ui.connect_Btn.setCheckable(True)
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
@@ -122,7 +122,7 @@ class MainWindow(QMainWindow):
         self.on_ip()
 
         # WG OFF BUTTON
-        self.ui.off_btn.clicked.connect(self.wgDown)
+        self.ui.off_btn.clicked.connect(self.on_Down)
 
         # REMOVE TITLE BAR
         self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
@@ -144,19 +144,20 @@ class MainWindow(QMainWindow):
         self.ui.top_bar.mouseMoveEvent = moveWindow
 
     def on_click(self):
-        if self.ui.connect_Btn.isChecked():
 
-            # To disable the button
-            self.ui.connect_Btn.setEnabled(False)
-            self.ui.off_btn.show()
-            self.ui.off_btn.setEnabled(True)
+
+    # To disable the button
+        self.ui.connect_Btn.setEnabled(False)
+        self.ui.off_btn.show()
+        self.ui.off_btn.setEnabled(True)
 
             # THREADING
-            self.connectThread = threading.Thread(target=self.wgConnect)
-            self.connectThread.start()
-        else:
-            self.connectThread = threading.Thread(target=self.wgDown)
-            self.connectThread.start()
+        self.connectThread = threading.Thread(target=self.wgConnect)
+        self.connectThread.start()
+
+    def on_Down(self):
+         self.disconnectThread = threading.Thread(target=self.wgDown)
+         self.disconnectThread.start()
 
 
         # Wg UP
