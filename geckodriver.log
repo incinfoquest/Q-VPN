@@ -128,6 +128,7 @@ console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resou
 
 [Parent 1644, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
 1620654148195	Marionette	INFO	Stopped listening on port 50189
+<<<<<<< Updated upstream
 1620658910361	geckodriver	INFO	Listening on 127.0.0.1:1658
 1620658913795	mozrunner::runner	INFO	Running command: "C:\\1620658917230	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Use1620658926083	Marionette	INFO	Marionette enabled
 console.error: Region.jsm: "Error fetching region" (new Errconsole.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
@@ -140,3 +141,21 @@ extension-storage: migration complete
 
 annel closing: too late to send/recv, messages will be lost
 
+=======
+1620913453237	geckodriver	INFO	Listening on 127.0.0.1:63250
+1620913459211	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofilebB0OXM"
+1620913461215	Marionette	INFO	Marionette enabled
+1620913464275	Marionette	INFO	Listening on port 63259
+1620913464611	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1620913861311	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1620913866188	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1620913879672	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+[Parent 9024, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1620913920660	Marionette	INFO	Stopped listening on port 63259
+>>>>>>> Stashed changes
