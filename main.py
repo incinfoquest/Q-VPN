@@ -132,20 +132,22 @@ class MainWindow(QMainWindow):
         self.ui.miniNew.clicked.connect(lambda: self.showMinimized())
         self.ui.closeNew.clicked.connect(lambda: self.close())
 
-        # MOVE WINDOW
-        def moveWindow(event):
-            # IF LEFT CLICK MOVE WINDOW
-            if event.buttons() == Qt.LeftButton:
-                self.move(self.pos() + event.globalPos() - self.dragPos)
-                self.dragPos = event.globalPos()
-                event.accept()
-
         # SET TITLE BAR
-        self.ui.top_bar.mouseMoveEvent = moveWindow
+        self.ui.top_bar.mouseMoveEvent = self.moveWindow
+
+        # MOVE WINDOW
+    def moveWindow(self, event):
+        # IF LEFT CLICK MOVE WINDOW
+        if event.buttons() == Qt.LeftButton:
+            self.move(self.pos() + event.globalPos() - self.dragPos)
+            self.dragPos = event.globalPos()
+            event.accept()
+
+    # APP EVENTS [DRAG MAIN WINDOW]
+    def mousePressEvent(self, event):
+        self.dragPos = event.globalPos()
 
     def on_click(self):
-
-
     # To disable the button
         self.ui.connect_Btn.setEnabled(False)
         self.ui.off_btn.show()
@@ -255,9 +257,6 @@ class MainWindow(QMainWindow):
         except:
             print('check your internet connection for speed test')
 
-    # APP EVENTS [DRAG MAIN WINDOW]
-    def mousePressEvent(self, event):
-        self.dragPos = event.globalPos()
 
 # EXIT
 if __name__ == "__main__":

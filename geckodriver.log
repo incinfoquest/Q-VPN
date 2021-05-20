@@ -159,3 +159,4 @@ JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
 [Parent 9024, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
 1620913920660	Marionette	INFO	Stopped listening on port 63259
 >>>>>>> Stashed changes
+1620914242850	geckodriver	INFO	Listening on 127.0.0.1:63398
