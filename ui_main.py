@@ -1,24 +1,21 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainUMMweX.ui'
+## Form generated from reading UI file 'mainkrTlSn.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.14.1
+## Created by: Qt User Interface Compiler version 5.15.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
-    QRect, QSize, QUrl, Qt)
-from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
-    QFontDatabase, QIcon, QLinearGradient, QPalette, QPainter, QPixmap,
-    QRadialGradient)
-from PySide6.QtWidgets import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        if MainWindow.objectName():
+        if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(800, 600)
         MainWindow.setStyleSheet(u"background-color: rgb(23, 33, 59);")
@@ -37,7 +34,7 @@ class Ui_MainWindow(object):
         font.setFamily(u"AvenirNext LT Pro Bold")
         font.setPointSize(16)
         font.setBold(True)
-        font.setWeight(QFont.Bold)
+        font.setWeight(75)
         self.Logo.setFont(font)
         self.Logo.setStyleSheet(u"QLabel{\n"
 "\n"
@@ -128,7 +125,7 @@ class Ui_MainWindow(object):
         font1 = QFont()
         font1.setFamily(u"AvenirNext LT Pro Bold")
         font1.setBold(True)
-        font1.setWeight(QFont.Bold)
+        font1.setWeight(75)
         self.ip_label.setFont(font1)
         self.ip_label.setStyleSheet(u"background-color: rgba(0,0,0,0%)")
         self.ip_label.setAlignment(Qt.AlignJustify|Qt.AlignVCenter)
@@ -266,59 +263,20 @@ class Ui_MainWindow(object):
         icon4.addFile(u"resources/powerbutton.png", QSize(), QIcon.Normal, QIcon.Off)
         self.off_btn.setIcon(icon4)
         self.off_btn.setIconSize(QSize(150, 150))
-        self.sptext = QPlainTextEdit(self.page_1)
-        self.sptext.setObjectName(u"sptext")
-        self.sptext.setGeometry(QRect(650, 120, 131, 21))
-        palette1 = QPalette()
-        palette1.setBrush(QPalette.Active, QPalette.Button, brush)
-        palette1.setBrush(QPalette.Active, QPalette.Text, brush1)
-        palette1.setBrush(QPalette.Active, QPalette.ButtonText, brush1)
-        brush9 = QBrush(QColor(0, 0, 0, 255))
-        brush9.setStyle(Qt.NoBrush)
-        palette1.setBrush(QPalette.Active, QPalette.Base, brush9)
-        palette1.setBrush(QPalette.Active, QPalette.Window, brush)
-        brush10 = QBrush(QColor(255, 255, 255, 128))
-        brush10.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Active, QPalette.PlaceholderText, brush10)
-#endif
-        palette1.setBrush(QPalette.Inactive, QPalette.Button, brush)
-        palette1.setBrush(QPalette.Inactive, QPalette.Text, brush1)
-        palette1.setBrush(QPalette.Inactive, QPalette.ButtonText, brush1)
-        brush11 = QBrush(QColor(0, 0, 0, 255))
-        brush11.setStyle(Qt.NoBrush)
-        palette1.setBrush(QPalette.Inactive, QPalette.Base, brush11)
-        palette1.setBrush(QPalette.Inactive, QPalette.Window, brush)
-        brush12 = QBrush(QColor(255, 255, 255, 128))
-        brush12.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush12)
-#endif
-        palette1.setBrush(QPalette.Disabled, QPalette.Button, brush)
-        palette1.setBrush(QPalette.Disabled, QPalette.Text, brush6)
-        palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush6)
-        brush13 = QBrush(QColor(0, 0, 0, 255))
-        brush13.setStyle(Qt.NoBrush)
-        palette1.setBrush(QPalette.Disabled, QPalette.Base, brush13)
-        palette1.setBrush(QPalette.Disabled, QPalette.Window, brush)
-        brush14 = QBrush(QColor(255, 255, 255, 128))
-        brush14.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush14)
-#endif
-        self.sptext.setPalette(palette1)
-        self.sptext.setFont(font2)
-        self.sptext.setStyleSheet(u"QPlainTextEdit\n"
+        self.sp_label = QLabel(self.page_1)
+        self.sp_label.setObjectName(u"sp_label")
+        self.sp_label.setGeometry(QRect(660, 120, 111, 31))
+        self.sp_label.setStyleSheet(u"QLabel\n"
 "{\n"
 "background-color: rgba(0,0,0,0%);\n"
-"border-radius: 0px;\n"
 "}")
-        self.sptext.setLineWidth(0)
-        self.sptext.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.sptext.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.sptext.setSizeAdjustPolicy(QAbstractScrollArea.AdjustIgnored)
-        self.sptext.setReadOnly(True)
-        self.sptext.setBackgroundVisible(True)
+        self.label_2 = QLabel(self.page_1)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(350, 350, 111, 31))
+        self.label_2.setStyleSheet(u"QLabel\n"
+"{\n"
+"background-color: rgba(0,0,0,0%);\n"
+"}")
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
         self.ip_label.raise_()
@@ -329,7 +287,8 @@ class Ui_MainWindow(object):
         self.speed_Test.raise_()
         self.off_btn.raise_()
         self.connect_Btn.raise_()
-        self.sptext.raise_()
+        self.sp_label.raise_()
+        self.label_2.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.back_img_3 = QLabel(self.page_3)
@@ -506,7 +465,7 @@ class Ui_MainWindow(object):
         font3 = QFont()
         font3.setFamily(u"AvenirNext LT Pro Regular")
         font3.setBold(False)
-        font3.setWeight(QFont.Bold)
+        font3.setWeight(50)
         self.mail.setFont(font3)
         self.mail.setStyleSheet(u"QLabel{\n"
 "\n"
@@ -553,6 +512,8 @@ class Ui_MainWindow(object):
         self.off_btn.setToolTip(QCoreApplication.translate("MainWindow", u"DISCONNECT", None))
 #endif // QT_CONFIG(tooltip)
         self.off_btn.setText("")
+        self.sp_label.setText("")
+        self.label_2.setText("")
         self.back_img_3.setText("")
         self.btn_home_2.setText("")
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

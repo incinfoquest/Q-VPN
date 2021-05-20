@@ -11,13 +11,13 @@
 import sys
 import platform
 from PyQt5.QtCore import *
-from PySide6 import QtCore, QtGui, QtWidgets
-from PySide6.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect,
+from PySide2 import QtCore, QtGui, QtWidgets
+from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect,
                             QSize, QTime, QUrl, Qt, QEvent)
 from PyQt5.QtWidgets import QApplication
-from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence,
+from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence,
                            QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
-from PySide6.QtWidgets import *
+from PySide2.QtWidgets import *
 from subprocess import *
 import threading
 import os
@@ -236,24 +236,13 @@ class MainWindow(QMainWindow):
     # GET INTERNET SPEED
     def get_speedTest(self):
         try:
-            self.ui.sptext.clear()
             speed = speedtest.Speedtest()
             print("processing..........")
-            '''try:
-                self.ui.sptext.appendPlainText("processing.....")
-
-            except:
-                print("error")'''
-
+            self.ui.sp_label.setText("processing")
             sp = "{:.2f}".format(speed.download() / 1024)
             print(sp + " kb/s")
+            self.ui.sp_label.setText(sp+"kb/s")
 
-            try:
-                #self.ui.sptext.clear()
-                self.ui.sptext.appendPlainText(sp+" kb/s")
-
-            except:
-                print("error")
         except:
             print('check your internet connection for speed test')
 
