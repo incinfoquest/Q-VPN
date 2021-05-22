@@ -1,21 +1,24 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainkrTlSn.ui'
+## Form generated from reading UI file 'mainizGsHv.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.15.2
+## Created by: Qt User Interface Compiler version 5.14.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
+from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
+    QRect, QSize, QUrl, Qt)
+from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
+    QFontDatabase, QIcon, QLinearGradient, QPalette, QPainter, QPixmap,
+    QRadialGradient)
 from PySide2.QtWidgets import *
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        if not MainWindow.objectName():
+        if MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(800, 600)
         MainWindow.setStyleSheet(u"background-color: rgb(23, 33, 59);")
@@ -78,7 +81,7 @@ class Ui_MainWindow(object):
 "}")
         self.btn_about = QPushButton(self.top_bar)
         self.btn_about.setObjectName(u"btn_about")
-        self.btn_about.setGeometry(QRect(760, -1, 41, 41))
+        self.btn_about.setGeometry(QRect(750, 0, 41, 41))
         self.btn_about.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -86,7 +89,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         icon = QIcon()
-        icon.addFile(u"resources/icons8-about-48.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"resources/information.png", QSize(), QIcon.Normal, QIcon.Off)
         self.btn_about.setIcon(icon)
         self.btn_about.setIconSize(QSize(25, 25))
         self.stackedWidget = QStackedWidget(self.centralwidget)
@@ -193,14 +196,14 @@ class Ui_MainWindow(object):
         self.iptext.setBackgroundVisible(True)
         self.tor_label = QLabel(self.page_1)
         self.tor_label.setObjectName(u"tor_label")
-        self.tor_label.setGeometry(QRect(710, 30, 31, 21))
+        self.tor_label.setGeometry(QRect(740, 40, 31, 21))
         self.tor_label.setFont(font1)
         self.tor_label.setStyleSheet(u"QLabel{\n"
 "background: transparent\n"
 "}")
         self.Tor_Btn = QPushButton(self.page_1)
         self.Tor_Btn.setObjectName(u"Tor_Btn")
-        self.Tor_Btn.setGeometry(QRect(750, 20, 41, 40))
+        self.Tor_Btn.setGeometry(QRect(690, 30, 41, 40))
         self.Tor_Btn.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -209,22 +212,23 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:hover{\n"
 "\n"
-"	background-color: rgb(255, 255, 255);\n"
+"	\n"
+"	background-color: rgb(125, 70, 152);\n"
 "}")
         icon2 = QIcon()
-        icon2.addFile(u"resources/emojipng.com-2364600.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u"resources/tor_br.png", QSize(), QIcon.Normal, QIcon.Off)
         self.Tor_Btn.setIcon(icon2)
         self.Tor_Btn.setIconSize(QSize(35, 35))
         self.speed_label = QLabel(self.page_1)
         self.speed_label.setObjectName(u"speed_label")
-        self.speed_label.setGeometry(QRect(650, 90, 91, 16))
+        self.speed_label.setGeometry(QRect(690, 510, 91, 16))
         self.speed_label.setFont(font1)
         self.speed_label.setStyleSheet(u"QLabel{\n"
 "background: transparent\n"
 "}")
         self.speed_Test = QPushButton(self.page_1)
         self.speed_Test.setObjectName(u"speed_Test")
-        self.speed_Test.setGeometry(QRect(750, 80, 40, 40))
+        self.speed_Test.setGeometry(QRect(640, 500, 40, 40))
         self.speed_Test.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -237,10 +241,11 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	\n"
-"	background-color: rgb(255, 255, 255);\n"
+"	\n"
+"	background-color: rgb(53, 79, 79);\n"
 "}")
         icon3 = QIcon()
-        icon3.addFile(u"resources/PngItem_3774350.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u"resources/speed (1).png", QSize(), QIcon.Normal, QIcon.Off)
         self.speed_Test.setIcon(icon3)
         self.speed_Test.setIconSize(QSize(35, 35))
         self.off_btn = QPushButton(self.page_1)
@@ -265,11 +270,16 @@ class Ui_MainWindow(object):
         self.off_btn.setIconSize(QSize(150, 150))
         self.sp_label = QLabel(self.page_1)
         self.sp_label.setObjectName(u"sp_label")
-        self.sp_label.setGeometry(QRect(660, 120, 111, 31))
-        self.sp_label.setStyleSheet(u"QLabel\n"
-"{\n"
-"background-color: rgba(0,0,0,0%);\n"
-"}")
+        self.sp_label.setGeometry(QRect(430, 490, 201, 61))
+        self.sp_label.setFont(font2)
+        self.sp_label.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+" background-color : transparent; \n"
+"\n"
+"\n"
+"color : white; };")
+        self.sp_label.setAlignment(Qt.AlignCenter)
         self.label_2 = QLabel(self.page_1)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setGeometry(QRect(350, 350, 111, 31))
@@ -445,7 +455,7 @@ class Ui_MainWindow(object):
 "background:transparent;\n"
 "\n"
 "}")
-        self.reddit.setPixmap(QPixmap(u"resources/Reddit Logo/On White/PNG/Reddit_Mark_OnWhite.png"))
+        self.reddit.setPixmap(QPixmap(u"resources/Reddit_Mark_OnWhite.png"))
         self.reddit.setScaledContents(True)
         self.lgpl_3 = QLabel(self.page_3)
         self.lgpl_3.setObjectName(u"lgpl_3")

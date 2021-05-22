@@ -238,8 +238,8 @@ class MainWindow(QMainWindow):
         try:
             speed = speedtest.Speedtest()
             print("processing..........")
-            self.ui.sp_label.setText("processing")
-            sp = "{:.2f}".format(speed.download() / 1024)
+            self.ui.sp_label.setText("Processing")
+            sp = "{:.2f}".format(speed.download())
             print(sp + " kb/s")
             self.ui.sp_label.setText(sp+"kb/s")
 
