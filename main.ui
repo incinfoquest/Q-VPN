@@ -645,12 +645,12 @@ QPushButton:hover{
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="time_label">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>320</x>
         <y>350</y>
-        <width>111</width>
+        <width>151</width>
         <height>31</height>
        </rect>
       </property>
@@ -782,7 +782,7 @@ background:transparent;
      <zorder>off_btn</zorder>
      <zorder>connect_Btn</zorder>
      <zorder>sp_label</zorder>
-     <zorder>label_2</zorder>
+     <zorder>time_label</zorder>
      <zorder>btn_about</zorder>
      <zorder>label</zorder>
      <zorder>except_lbl</zorder>
