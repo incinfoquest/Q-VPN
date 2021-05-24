@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainLrqYze.ui'
+## Form generated from reading UI file 'mainLOcQtM.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -271,10 +271,10 @@ class Ui_MainWindow(object):
 " };\n"
 "")
         self.sp_label.setAlignment(Qt.AlignCenter)
-        self.label_2 = QLabel(self.page_1)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(350, 350, 111, 31))
-        self.label_2.setStyleSheet(u"QLabel\n"
+        self.time_label = QLabel(self.page_1)
+        self.time_label.setObjectName(u"time_label")
+        self.time_label.setGeometry(QRect(320, 350, 151, 31))
+        self.time_label.setStyleSheet(u"QLabel\n"
 "{\n"
 "background-color: rgba(0,0,0,0%);\n"
 "}")
@@ -341,7 +341,7 @@ class Ui_MainWindow(object):
         self.off_btn.raise_()
         self.connect_Btn.raise_()
         self.sp_label.raise_()
-        self.label_2.raise_()
+        self.time_label.raise_()
         self.btn_about.raise_()
         self.label.raise_()
         self.except_lbl.raise_()
@@ -568,7 +568,7 @@ class Ui_MainWindow(object):
 #endif // QT_CONFIG(tooltip)
         self.off_btn.setText("")
         self.sp_label.setText("")
-        self.label_2.setText("")
+        self.time_label.setText("")
         self.btn_about.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">About</span></p></body></html>", None))
         self.except_lbl.setText("")
