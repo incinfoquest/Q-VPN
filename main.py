@@ -18,7 +18,7 @@ from PyQt5.QtWidgets import QApplication
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence,
                            QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
-from subprocess import *
+from subprocess import Popen, PIPE
 import threading
 import os
 import requests
@@ -191,12 +191,13 @@ class MainWindow(QMainWindow):
 
     # FETCH IP
     def run(self):
-        #time.sleep(10)
+        time.sleep(10)
         self.ui.iptext.clear()
 
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
             print(ipaddress)
+            #self.ui.except_lbl.clear()
 
             try:
                 # self.ui.iptext.
@@ -205,6 +206,7 @@ class MainWindow(QMainWindow):
                 print("Please wait")
         except:
             print("Check your internet Connection")
+            self.ui.except_lbl.setText("Check Your Network Connection")
 
     # TOR THREAD
     def on_Tor(self):
@@ -238,11 +240,12 @@ class MainWindow(QMainWindow):
         try:
 
             speed = speedtest.Speedtest()
+            self.ui.except_lbl.clear()
             print("processing..........")
             self.ui.sp_label.setText("Retrieving Speedtest")
-            sp = "{:.2f}".format(speed.download())
-            print(sp + " kb/s")
-            self.ui.sp_label.setText(sp + " Kbps ")
+            sp = "{:.2f}".format(speed.download()/ 1024/ 1024)
+            print(sp + " mb/s")
+            self.ui.sp_label.setText(sp + " mbps ")
 
 
         except:
