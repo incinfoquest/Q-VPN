@@ -19,6 +19,7 @@ from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFo
                            QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
 from subprocess import Popen, PIPE
+from playsound import playsound
 import threading
 import os
 import requests
@@ -252,16 +253,18 @@ class MainWindow(QMainWindow):
 
             speed = speedtest.Speedtest()
             self.ui.except_lbl.clear()
-            print("processing..........")
+            #print("processing..........")
             self.ui.sp_label.setText("Retrieving Speedtest")
             sp = "{:.2f}".format(speed.download()/ 1024/ 1024)
             print(sp + " mb/s")
-            self.ui.sp_label.setText(sp + " mbps ")
+            self.ui.sp_label.setText(sp + " Mbps ")
 
 
         except:
-            print('check your internet connection for speed test')
+            #print("check your internet connection for speed test")
+            playsound('beep_beep.mp3')
             self.ui.except_lbl.setText("Check Your Network Connection")
+
 
 # EXIT
 if __name__ == "__main__":
