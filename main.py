@@ -253,15 +253,15 @@ class MainWindow(QMainWindow):
 
             speed = speedtest.Speedtest()
             self.ui.except_lbl.clear()
-            #print("processing..........")
-            self.ui.sp_label.setText("Retrieving Speedtest")
+            print("processing..........")
+            self.ui.sp_label.setText("Retrieving SpeedTest")
             sp = "{:.2f}".format(speed.download()/ 1024/ 1024)
             print(sp + " mb/s")
             self.ui.sp_label.setText(sp + " Mbps ")
 
 
         except:
-            #print("check your internet connection for speed test")
+            print("check your internet connection for speed test")
             playsound('beep_beep.mp3')
             self.ui.except_lbl.setText("Check Your Network Connection")
 
