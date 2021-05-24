@@ -1,24 +1,21 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainizGsHv.ui'
+## Form generated from reading UI file 'mainLrqYze.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.14.1
+## Created by: Qt User Interface Compiler version 5.15.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
-    QRect, QSize, QUrl, Qt)
-from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
-    QFontDatabase, QIcon, QLinearGradient, QPalette, QPainter, QPixmap,
-    QRadialGradient)
+from PySide2.QtCore import *
+from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        if MainWindow.objectName():
+        if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(800, 600)
         MainWindow.setStyleSheet(u"background-color: rgb(23, 33, 59);")
@@ -79,19 +76,6 @@ class Ui_MainWindow(object):
 "	background-color: rgb(255, 255, 0);\n"
 "\n"
 "}")
-        self.btn_about = QPushButton(self.top_bar)
-        self.btn_about.setObjectName(u"btn_about")
-        self.btn_about.setGeometry(QRect(750, 0, 41, 41))
-        self.btn_about.setStyleSheet(u"QPushButton{\n"
-"\n"
-"background-color: rgba(255, 255, 255, 0);\n"
-"border-radius: 15px;\n"
-"}\n"
-"")
-        icon = QIcon()
-        icon.addFile(u"resources/information.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_about.setIcon(icon)
-        self.btn_about.setIconSize(QSize(25, 25))
         self.stackedWidget = QStackedWidget(self.centralwidget)
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.stackedWidget.setGeometry(QRect(0, 40, 801, 561))
@@ -118,9 +102,9 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "")
-        icon1 = QIcon()
-        icon1.addFile(u"resources/power.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.connect_Btn.setIcon(icon1)
+        icon = QIcon()
+        icon.addFile(u"resources/power.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.connect_Btn.setIcon(icon)
         self.connect_Btn.setIconSize(QSize(150, 150))
         self.ip_label = QLabel(self.page_1)
         self.ip_label.setObjectName(u"ip_label")
@@ -215,9 +199,9 @@ class Ui_MainWindow(object):
 "	\n"
 "	background-color: rgb(125, 70, 152);\n"
 "}")
-        icon2 = QIcon()
-        icon2.addFile(u"resources/tor_br.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.Tor_Btn.setIcon(icon2)
+        icon1 = QIcon()
+        icon1.addFile(u"resources/tor_br.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.Tor_Btn.setIcon(icon1)
         self.Tor_Btn.setIconSize(QSize(35, 35))
         self.speed_label = QLabel(self.page_1)
         self.speed_label.setObjectName(u"speed_label")
@@ -244,9 +228,9 @@ class Ui_MainWindow(object):
 "	\n"
 "	background-color: rgb(53, 79, 79);\n"
 "}")
-        icon3 = QIcon()
-        icon3.addFile(u"resources/speed (1).png", QSize(), QIcon.Normal, QIcon.Off)
-        self.speed_Test.setIcon(icon3)
+        icon2 = QIcon()
+        icon2.addFile(u"resources/speed (1).png", QSize(), QIcon.Normal, QIcon.Off)
+        self.speed_Test.setIcon(icon2)
         self.speed_Test.setIconSize(QSize(35, 35))
         self.off_btn = QPushButton(self.page_1)
         self.off_btn.setObjectName(u"off_btn")
@@ -264,21 +248,28 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "")
-        icon4 = QIcon()
-        icon4.addFile(u"resources/powerbutton.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.off_btn.setIcon(icon4)
+        icon3 = QIcon()
+        icon3.addFile(u"resources/powerbutton.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.off_btn.setIcon(icon3)
         self.off_btn.setIconSize(QSize(150, 150))
         self.sp_label = QLabel(self.page_1)
         self.sp_label.setObjectName(u"sp_label")
-        self.sp_label.setGeometry(QRect(430, 490, 201, 61))
-        self.sp_label.setFont(font2)
+        self.sp_label.setGeometry(QRect(440, 490, 191, 61))
+        font3 = QFont()
+        font3.setFamily(u"AvenirNext LT Pro Regular")
+        font3.setPointSize(12)
+        self.sp_label.setFont(font3)
         self.sp_label.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
 " background-color : transparent; \n"
 "\n"
-"\n"
-"color : white; };")
+"	\n"
+"	\n"
+"	\n"
+"	color: rgb(127, 208, 97);\n"
+" };\n"
+"")
         self.sp_label.setAlignment(Qt.AlignCenter)
         self.label_2 = QLabel(self.page_1)
         self.label_2.setObjectName(u"label_2")
@@ -287,6 +278,58 @@ class Ui_MainWindow(object):
 "{\n"
 "background-color: rgba(0,0,0,0%);\n"
 "}")
+        self.btn_about = QPushButton(self.page_1)
+        self.btn_about.setObjectName(u"btn_about")
+        self.btn_about.setEnabled(True)
+        self.btn_about.setGeometry(QRect(70, 500, 40, 40))
+        self.btn_about.setStyleSheet(u"QPushButton{\n"
+"\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+"border-radius: 20px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"\n"
+"	background-color: rgb(201, 230, 247);\n"
+"\n"
+"\n"
+"\n"
+"}\n"
+"")
+        icon4 = QIcon()
+        icon4.addFile(u"resources/information.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_about.setIcon(icon4)
+        self.btn_about.setIconSize(QSize(25, 25))
+        self.label = QLabel(self.page_1)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(10, 500, 61, 31))
+        self.label.setFont(font1)
+        self.label.setStyleSheet(u"QLabel{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"\n"
+"\n"
+"}\n"
+"")
+        self.label.setAlignment(Qt.AlignCenter)
+        self.except_lbl = QLabel(self.page_1)
+        self.except_lbl.setObjectName(u"except_lbl")
+        self.except_lbl.setGeometry(QRect(240, 10, 301, 51))
+        font4 = QFont()
+        font4.setFamily(u"AvenirNext LT Pro Bold")
+        font4.setPointSize(11)
+        font4.setBold(True)
+        font4.setWeight(75)
+        self.except_lbl.setFont(font4)
+        self.except_lbl.setStyleSheet(u"QLabel{\n"
+"\n"
+"background:transparent;\n"
+"	color: rgb(170, 0, 0);\n"
+"\n"
+"}")
+        self.except_lbl.setAlignment(Qt.AlignCenter)
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
         self.ip_label.raise_()
@@ -299,6 +342,9 @@ class Ui_MainWindow(object):
         self.connect_Btn.raise_()
         self.sp_label.raise_()
         self.label_2.raise_()
+        self.btn_about.raise_()
+        self.label.raise_()
+        self.except_lbl.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.back_img_3 = QLabel(self.page_3)
@@ -472,11 +518,11 @@ class Ui_MainWindow(object):
         self.mail = QLabel(self.page_3)
         self.mail.setObjectName(u"mail")
         self.mail.setGeometry(QRect(580, 470, 191, 41))
-        font3 = QFont()
-        font3.setFamily(u"AvenirNext LT Pro Regular")
-        font3.setBold(False)
-        font3.setWeight(50)
-        self.mail.setFont(font3)
+        font5 = QFont()
+        font5.setFamily(u"AvenirNext LT Pro Regular")
+        font5.setBold(False)
+        font5.setWeight(50)
+        self.mail.setFont(font5)
         self.mail.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -507,7 +553,6 @@ class Ui_MainWindow(object):
         self.miniNew.setToolTip(QCoreApplication.translate("MainWindow", u"minimize", None))
 #endif // QT_CONFIG(tooltip)
         self.miniNew.setText("")
-        self.btn_about.setText("")
         self.back_img_1.setText("")
 #if QT_CONFIG(tooltip)
         self.connect_Btn.setToolTip(QCoreApplication.translate("MainWindow", u"CONNECT", None))
@@ -524,6 +569,9 @@ class Ui_MainWindow(object):
         self.off_btn.setText("")
         self.sp_label.setText("")
         self.label_2.setText("")
+        self.btn_about.setText("")
+        self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">About</span></p></body></html>", None))
+        self.except_lbl.setText("")
         self.back_img_3.setText("")
         self.btn_home_2.setText("")
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

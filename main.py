@@ -236,16 +236,18 @@ class MainWindow(QMainWindow):
     # GET INTERNET SPEED
     def get_speedTest(self):
         try:
+
             speed = speedtest.Speedtest()
             print("processing..........")
-            self.ui.sp_label.setText("Processing")
+            self.ui.sp_label.setText("Retrieving Speedtest")
             sp = "{:.2f}".format(speed.download())
             print(sp + " kb/s")
-            self.ui.sp_label.setText(sp+"kb/s")
+            self.ui.sp_label.setText(sp + " Kbps ")
+
 
         except:
             print('check your internet connection for speed test')
-
+            self.ui.except_lbl.setText("Check Your Network Connection")
 
 # EXIT
 if __name__ == "__main__":
