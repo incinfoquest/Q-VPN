@@ -109,7 +109,7 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
-
+        self.timer = QtCore.QTimer()
         # STACK
 
         # PAGE 3
@@ -147,17 +147,28 @@ class MainWindow(QMainWindow):
     def mousePressEvent(self, event):
         self.dragPos = event.globalPos()
 
+    def time_convert(self, sec):
+        mins = sec // 60
+        sec = sec % 60
+        hours = mins // 60
+        mins = mins % 60
+        print("Time Lapsed = {0}:{1}:{2}".format(int(hours),int(mins),int(sec)))
+
     def on_click(self):
     # To disable the button
         self.ui.connect_Btn.setEnabled(False)
         self.ui.off_btn.show()
         self.ui.off_btn.setEnabled(True)
-
+        self.start_time = time.time()
             # THREADING
         self.connectThread = threading.Thread(target=self.wgConnect)
         self.connectThread.start()
 
     def on_Down(self):
+         self.end_time = time.time()
+         self.time_lapsed = self.end_time - self.start_time
+         self.time_convert(self.time_lapsed)
+
          self.disconnectThread = threading.Thread(target=self.wgDown)
          self.disconnectThread.start()
 
