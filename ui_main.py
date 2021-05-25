@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainHwZepP.ui'
+## Form generated from reading UI file 'maineSllGA.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -276,11 +276,25 @@ class Ui_MainWindow(object):
         self.sp_label.setAlignment(Qt.AlignCenter)
         self.time_label = QLabel(self.page_1)
         self.time_label.setObjectName(u"time_label")
-        self.time_label.setGeometry(QRect(320, 350, 151, 31))
-        self.time_label.setStyleSheet(u"QLabel\n"
-"{\n"
-"background-color: rgba(0,0,0,0%);\n"
-"}")
+        self.time_label.setGeometry(QRect(40, 240, 261, 51))
+        font5 = QFont()
+        font5.setFamily(u"AvenirNext LT Pro Bold")
+        font5.setPointSize(12)
+        font5.setBold(True)
+        font5.setWeight(75)
+        self.time_label.setFont(font5)
+        self.time_label.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+" background-color : transparent; \n"
+"\n"
+"	\n"
+"	\n"
+"	\n"
+"	color: rgb(127, 208, 97);\n"
+" };\n"
+"")
+        self.time_label.setAlignment(Qt.AlignCenter)
         self.btn_about = QPushButton(self.page_1)
         self.btn_about.setObjectName(u"btn_about")
         self.btn_about.setEnabled(True)
@@ -320,12 +334,12 @@ class Ui_MainWindow(object):
         self.except_lbl = QLabel(self.page_1)
         self.except_lbl.setObjectName(u"except_lbl")
         self.except_lbl.setGeometry(QRect(240, 10, 301, 51))
-        font5 = QFont()
-        font5.setFamily(u"AvenirNext LT Pro Bold")
-        font5.setPointSize(11)
-        font5.setBold(True)
-        font5.setWeight(75)
-        self.except_lbl.setFont(font5)
+        font6 = QFont()
+        font6.setFamily(u"AvenirNext LT Pro Bold")
+        font6.setPointSize(11)
+        font6.setBold(True)
+        font6.setWeight(75)
+        self.except_lbl.setFont(font6)
         self.except_lbl.setStyleSheet(u"QLabel{\n"
 "\n"
 "background:transparent;\n"
@@ -333,9 +347,34 @@ class Ui_MainWindow(object):
 "\n"
 "}")
         self.except_lbl.setAlignment(Qt.AlignCenter)
+        self.dwnld_label = QLabel(self.page_1)
+        self.dwnld_label.setObjectName(u"dwnld_label")
+        self.dwnld_label.setGeometry(QRect(600, 450, 31, 31))
+        self.dwnld_label.setStyleSheet(u"QLabel{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"\n"
+"}")
+        self.dwnld_label.setPixmap(QPixmap(u"resources/icons8-download-50.png"))
+        self.dwnld_label.setScaledContents(True)
+        self.upnld_label = QLabel(self.page_1)
+        self.upnld_label.setObjectName(u"upnld_label")
+        self.upnld_label.setGeometry(QRect(600, 510, 31, 31))
+        self.upnld_label.setStyleSheet(u"QLabel{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"\n"
+"}")
+        self.upnld_label.setPixmap(QPixmap(u"resources/icons8-upload-50.png"))
+        self.upnld_label.setScaledContents(True)
+        self.upnld_label.setAlignment(Qt.AlignCenter)
         self.su_label = QLabel(self.page_1)
         self.su_label.setObjectName(u"su_label")
-        self.su_label.setGeometry(QRect(380, 510, 211, 41))
+        self.su_label.setGeometry(QRect(380, 500, 211, 41))
         self.su_label.setFont(font4)
         self.su_label.setStyleSheet(u"QLabel {\n"
 "\n"
@@ -349,31 +388,6 @@ class Ui_MainWindow(object):
 " };\n"
 "")
         self.su_label.setAlignment(Qt.AlignCenter)
-        self.label_3 = QLabel(self.page_1)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(600, 450, 31, 31))
-        self.label_3.setStyleSheet(u"QLabel{\n"
-"\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"\n"
-"}")
-        self.label_3.setPixmap(QPixmap(u"resources/icons8-download-50.png"))
-        self.label_3.setScaledContents(True)
-        self.label_2 = QLabel(self.page_1)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(600, 510, 31, 31))
-        self.label_2.setStyleSheet(u"QLabel{\n"
-"\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"\n"
-"}")
-        self.label_2.setPixmap(QPixmap(u"resources/icons8-upload-50.png"))
-        self.label_2.setScaledContents(True)
-        self.label_2.setAlignment(Qt.AlignCenter)
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
         self.ip_label.raise_()
@@ -389,9 +403,9 @@ class Ui_MainWindow(object):
         self.btn_about.raise_()
         self.label.raise_()
         self.except_lbl.raise_()
+        self.dwnld_label.raise_()
+        self.upnld_label.raise_()
         self.su_label.raise_()
-        self.label_3.raise_()
-        self.label_2.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.back_img_3 = QLabel(self.page_3)
@@ -565,11 +579,11 @@ class Ui_MainWindow(object):
         self.mail = QLabel(self.page_3)
         self.mail.setObjectName(u"mail")
         self.mail.setGeometry(QRect(580, 470, 191, 41))
-        font6 = QFont()
-        font6.setFamily(u"AvenirNext LT Pro Regular")
-        font6.setBold(False)
-        font6.setWeight(50)
-        self.mail.setFont(font6)
+        font7 = QFont()
+        font7.setFamily(u"AvenirNext LT Pro Regular")
+        font7.setBold(False)
+        font7.setWeight(50)
+        self.mail.setFont(font7)
         self.mail.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -619,9 +633,9 @@ class Ui_MainWindow(object):
         self.btn_about.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">About</span></p></body></html>", None))
         self.except_lbl.setText("")
+        self.dwnld_label.setText("")
+        self.upnld_label.setText("")
         self.su_label.setText("")
-        self.label_3.setText("")
-        self.label_2.setText("")
         self.back_img_3.setText("")
         self.btn_home_2.setText("")
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

@@ -110,6 +110,8 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
+        self.ui.dwnld_label.hide()
+        self.ui.upnld_label.hide()
         self.timer = QtCore.QTimer()
         # STACK
 
@@ -136,16 +138,16 @@ class MainWindow(QMainWindow):
         # SET TITLE BAR
         self.ui.top_bar.mouseMoveEvent = self.moveWindow
 
-    def checkInternetRequests(self, url='http://www.google.com/', timeout=3):
+    #def checkInternetRequests(self, url='http://www.google.com/', timeout=3):
 
-        try:
-            self.ui.except_lbl.clear()
-            r = requests.head(url, timeout=timeout)
-            print(r)
-            return True
-        except:
-            self.ui.except_lbl.setText("Check Your Network Connection")
-            playsound('beep_beep.mp3')
+        #try:
+            #self.ui.except_lbl.clear()
+            #r = requests.head(url, timeout=timeout)
+            #print(r)
+            #return True
+        #except:
+            #self.ui.except_lbl.setText("Check Your Network Connection")
+            #playsound('beep_beep.mp3')
 
 
         # MOVE WINDOW
@@ -171,11 +173,12 @@ class MainWindow(QMainWindow):
 
     def on_click(self):
         # checking network connection
-        if self.checkInternetRequests():
+        #if self.checkInternetRequests():
     # To disable the button
             self.ui.connect_Btn.setEnabled(False)
             self.ui.off_btn.show()
             self.ui.off_btn.setEnabled(True)
+            self.ui.time_label.clear()
             self.start_time = time.time()
             # THREADING
             self.connectThread = threading.Thread(target=self.wgConnect)
@@ -196,6 +199,7 @@ class MainWindow(QMainWindow):
         process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/installtunnelservice',
                          "C:\Program Files\WireGuard\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
                         encoding='utf-8')
+
         print("CONNECTED")
 
         # TO PRINT IP AFTER WG IS CONNECTED
@@ -276,11 +280,13 @@ class MainWindow(QMainWindow):
 
             # Download Speed
             self.ui.sp_label.setText("Retrieving DownloadSpeed")
+            self.ui.dwnld_label.show()
             sp = "{:.2f}".format(speed.download()/ 1024/ 1024)
             print(sp + " mb/s")
 
             # Upload Speed
             self.ui.su_label.setText("Retrieving UploadSpeed")
+            self.ui.upnld_label.show()
             su = "{:.2f}".format(speed.upload()/ 1024/ 1024)
             print(su + "mb/s")
 

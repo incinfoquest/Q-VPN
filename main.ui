@@ -653,20 +653,38 @@ QPushButton:hover{
      <widget class="QLabel" name="time_label">
       <property name="geometry">
        <rect>
-        <x>320</x>
-        <y>350</y>
-        <width>151</width>
-        <height>31</height>
+        <x>40</x>
+        <y>240</y>
+        <width>261</width>
+        <height>51</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>AvenirNext LT Pro Bold</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="styleSheet">
-       <string notr="true">QLabel
-{
-background-color: rgba(0,0,0,0%);
-}</string>
+       <string notr="true">QLabel {
+
+
+ background-color : transparent; 
+
+	
+	
+	
+	color: rgb(127, 208, 97);
+ };
+</string>
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QPushButton" name="btn_about">
@@ -777,42 +795,7 @@ background:transparent;
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="su_label">
-      <property name="geometry">
-       <rect>
-        <x>380</x>
-        <y>510</y>
-        <width>211</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>AvenirNext LT Pro Regular</family>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel {
-
-
- background-color : transparent; 
-
-	
-	
-	
-	color: rgb(127, 208, 97);
- };
-</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="dwnld_label">
       <property name="geometry">
        <rect>
         <x>600</x>
@@ -840,7 +823,7 @@ background:transparent;
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="upnld_label">
       <property name="geometry">
        <rect>
         <x>600</x>
@@ -871,6 +854,41 @@ background:transparent;
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+     <widget class="QLabel" name="su_label">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>500</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AvenirNext LT Pro Regular</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+
+
+ background-color : transparent; 
+
+	
+	
+	
+	color: rgb(127, 208, 97);
+ };
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
      <zorder>back_img_1</zorder>
      <zorder>ip_label</zorder>
      <zorder>iptext</zorder>
@@ -885,9 +903,9 @@ background:transparent;
      <zorder>btn_about</zorder>
      <zorder>label</zorder>
      <zorder>except_lbl</zorder>
+     <zorder>dwnld_label</zorder>
+     <zorder>upnld_label</zorder>
      <zorder>su_label</zorder>
-     <zorder>label_3</zorder>
-     <zorder>label_2</zorder>
     </widget>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="back_img_3">
