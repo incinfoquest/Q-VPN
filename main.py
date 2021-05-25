@@ -166,8 +166,11 @@ class MainWindow(QMainWindow):
         hours = mins // 60
         mins = mins % 60
         print("Time Lapsed = {0}:{1}:{2}".format(int(hours),int(mins),int(sec)))
+        ti = "{0}:{1}:{2}".format(int(hours),int(mins),int(sec))
+        self.ui.time_label.setText("Connection Time " + ti)
 
     def on_click(self):
+        # checking network connection
         if self.checkInternetRequests():
     # To disable the button
             self.ui.connect_Btn.setEnabled(False)
