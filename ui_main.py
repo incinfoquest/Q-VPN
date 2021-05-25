@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'maineSllGA.ui'
+## Form generated from reading UI file 'mainQhlrnp.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -276,7 +276,7 @@ class Ui_MainWindow(object):
         self.sp_label.setAlignment(Qt.AlignCenter)
         self.time_label = QLabel(self.page_1)
         self.time_label.setObjectName(u"time_label")
-        self.time_label.setGeometry(QRect(40, 240, 261, 51))
+        self.time_label.setGeometry(QRect(240, 70, 301, 51))
         font5 = QFont()
         font5.setFamily(u"AvenirNext LT Pro Bold")
         font5.setPointSize(12)
@@ -561,9 +561,11 @@ class Ui_MainWindow(object):
 "\n"
 "background:transparent;\n"
 "\n"
+"\n"
 "}")
         self.reddit.setPixmap(QPixmap(u"resources/Reddit_Mark_OnWhite.png"))
         self.reddit.setScaledContents(True)
+        self.reddit.setOpenExternalLinks(True)
         self.lgpl_3 = QLabel(self.page_3)
         self.lgpl_3.setObjectName(u"lgpl_3")
         self.lgpl_3.setGeometry(QRect(290, 490, 131, 51))

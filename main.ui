@@ -653,9 +653,9 @@ QPushButton:hover{
      <widget class="QLabel" name="time_label">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>240</y>
-        <width>261</width>
+        <x>240</x>
+        <y>70</y>
+        <width>301</width>
         <height>51</height>
        </rect>
       </property>
@@ -1181,6 +1181,7 @@ background:transparent;
 
 background:transparent;
 
+
 }</string>
       </property>
       <property name="text">
@@ -1190,6 +1191,9 @@ background:transparent;
        <pixmap>resources/Reddit_Mark_OnWhite.png</pixmap>
       </property>
       <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="openExternalLinks">
        <bool>true</bool>
       </property>
      </widget>
