@@ -218,6 +218,7 @@ class MainWindow(QMainWindow):
                 print("Please wait")
         except:
             print("Check your internet Connection")
+            playsound('beep_beep.mp3')
             self.ui.except_lbl.setText("Check Your Network Connection")
 
     # TOR THREAD
@@ -254,11 +255,21 @@ class MainWindow(QMainWindow):
             speed = speedtest.Speedtest()
             self.ui.except_lbl.clear()
             print("processing..........")
-            self.ui.sp_label.setText("Retrieving SpeedTest")
+
+            # Download Speed
+            self.ui.sp_label.setText("Retrieving DownloadSpeed")
             sp = "{:.2f}".format(speed.download()/ 1024/ 1024)
             print(sp + " mb/s")
-            self.ui.sp_label.setText(sp + " Mbps ")
 
+            # Upload Speed
+            self.ui.su_label.setText("Retrieving UploadSpeed")
+            su = "{:.2f}".format(speed.upload()/ 1024/ 1024)
+            print(su + "mb/s")
+
+            # Print to Label
+
+            self.ui.sp_label.setText(sp + " Mbps ")
+            self.ui.su_label.setText(su + " Mbps ")
 
         except:
             print("check your internet connection for speed test")
