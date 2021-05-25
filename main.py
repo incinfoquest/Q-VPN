@@ -136,6 +136,18 @@ class MainWindow(QMainWindow):
         # SET TITLE BAR
         self.ui.top_bar.mouseMoveEvent = self.moveWindow
 
+    def checkInternetRequests(self, url='http://www.google.com/', timeout=3):
+
+        try:
+            self.ui.except_lbl.clear()
+            r = requests.head(url, timeout=timeout)
+            print(r)
+            return True
+        except:
+            self.ui.except_lbl.setText("Check Your Network Connection")
+            playsound('beep_beep.mp3')
+
+
         # MOVE WINDOW
     def moveWindow(self, event):
         # IF LEFT CLICK MOVE WINDOW
@@ -156,14 +168,16 @@ class MainWindow(QMainWindow):
         print("Time Lapsed = {0}:{1}:{2}".format(int(hours),int(mins),int(sec)))
 
     def on_click(self):
+        if self.checkInternetRequests():
     # To disable the button
-        self.ui.connect_Btn.setEnabled(False)
-        self.ui.off_btn.show()
-        self.ui.off_btn.setEnabled(True)
-        self.start_time = time.time()
+            self.ui.connect_Btn.setEnabled(False)
+            self.ui.off_btn.show()
+            self.ui.off_btn.setEnabled(True)
+            self.start_time = time.time()
             # THREADING
-        self.connectThread = threading.Thread(target=self.wgConnect)
-        self.connectThread.start()
+            self.connectThread = threading.Thread(target=self.wgConnect)
+            self.connectThread.start()
+
 
     def on_Down(self):
          self.end_time = time.time()
@@ -219,6 +233,7 @@ class MainWindow(QMainWindow):
         except:
             print("Check your internet Connection")
             self.ui.except_lbl.setText("Check Your Network Connection")
+            playsound('beep_beep.mp3')
 
     # TOR THREAD
     def on_Tor(self):
