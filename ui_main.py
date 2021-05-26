@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainaAaPzK.ui'
+## Form generated from reading UI file 'mainoPuzDi.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -438,7 +438,7 @@ class Ui_MainWindow(object):
         self.btn_home_2.setIconSize(QSize(35, 35))
         self.textBrowser = QTextBrowser(self.page_3)
         self.textBrowser.setObjectName(u"textBrowser")
-        self.textBrowser.setGeometry(QRect(40, 100, 741, 291))
+        self.textBrowser.setGeometry(QRect(40, 130, 741, 291))
         self.textBrowser.setStyleSheet(u"\n"
 "QTextBrowser{\n"
 "\n"
@@ -597,6 +597,17 @@ class Ui_MainWindow(object):
 "\n"
 "}")
         self.mail.setAlignment(Qt.AlignCenter)
+        self.label_2 = QLabel(self.page_3)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(360, 10, 81, 81))
+        self.label_2.setStyleSheet(u"QLabel{\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"\n"
+"}")
+        self.label_2.setPixmap(QPixmap(u"resources/Main_ico-INSIDE.svg"))
+        self.label_2.setScaledContents(True)
         self.stackedWidget.addWidget(self.page_3)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -661,5 +672,6 @@ class Ui_MainWindow(object):
         self.reddit.setText("")
         self.lgpl_3.setText("")
         self.mail.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">incinfoquest@gmail.com</span></p></body></html>", None))
+        self.label_2.setText("")
     # retranslateUi
 

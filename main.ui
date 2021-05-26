@@ -977,7 +977,7 @@ QPushButton:hover{
       <property name="geometry">
        <rect>
         <x>40</x>
-        <y>100</y>
+        <y>130</y>
         <width>741</width>
         <height>291</height>
        </rect>
@@ -1265,6 +1265,33 @@ background:transparent;
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>10</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+
+background:transparent;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>resources/Main_ico-INSIDE.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
     </widget>
