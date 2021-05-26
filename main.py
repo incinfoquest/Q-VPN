@@ -264,11 +264,12 @@ class MainWindow(QMainWindow):
         self.showMinimized()
         driver.get("http://duckduckgo.com")
 
-
     # SPEED_TEST THREAD
     def check_speed(self):
         self.speedThread = threading.Thread(target=self.get_speedTest)
         self.speedThread.start()
+
+
 
     # GET INTERNET SPEED
     def get_speedTest(self):
@@ -279,20 +280,17 @@ class MainWindow(QMainWindow):
             print("processing..........")
 
             # Download Speed
-            self.ui.sp_label.setText("Retrieving DownloadSpeed")
             self.ui.dwnld_label.show()
+            self.ui.sp_label.setText("Retrieving Download")
             sp = "{:.2f}".format(speed.download()/ 1024/ 1024)
             print(sp + " mb/s")
+            self.ui.sp_label.setText(sp + " Mbps ")
 
             # Upload Speed
-            self.ui.su_label.setText("Retrieving UploadSpeed")
             self.ui.upnld_label.show()
+            self.ui.su_label.setText("Retrieving Upload")
             su = "{:.2f}".format(speed.upload()/ 1024/ 1024)
             print(su + "mb/s")
-
-            # Print to Label
-
-            self.ui.sp_label.setText(sp + " Mbps ")
             self.ui.su_label.setText(su + " Mbps ")
 
         except:

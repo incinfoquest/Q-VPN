@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainQhlrnp.ui'
+## Form generated from reading UI file 'mainaAaPzK.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -257,10 +257,12 @@ class Ui_MainWindow(object):
         self.off_btn.setIconSize(QSize(150, 150))
         self.sp_label = QLabel(self.page_1)
         self.sp_label.setObjectName(u"sp_label")
-        self.sp_label.setGeometry(QRect(380, 440, 211, 41))
+        self.sp_label.setGeometry(QRect(420, 440, 171, 41))
         font4 = QFont()
-        font4.setFamily(u"AvenirNext LT Pro Regular")
+        font4.setFamily(u"AvenirNext LT Pro Bold")
         font4.setPointSize(12)
+        font4.setBold(True)
+        font4.setWeight(75)
         self.sp_label.setFont(font4)
         self.sp_label.setStyleSheet(u"QLabel {\n"
 "\n"
@@ -270,19 +272,17 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	\n"
-"	color: rgb(127, 208, 97);\n"
+"	\n"
+"	\n"
+"	\n"
+"	color: rgb(50, 215, 54);\n"
 " };\n"
 "")
         self.sp_label.setAlignment(Qt.AlignCenter)
         self.time_label = QLabel(self.page_1)
         self.time_label.setObjectName(u"time_label")
         self.time_label.setGeometry(QRect(240, 70, 301, 51))
-        font5 = QFont()
-        font5.setFamily(u"AvenirNext LT Pro Bold")
-        font5.setPointSize(12)
-        font5.setBold(True)
-        font5.setWeight(75)
-        self.time_label.setFont(font5)
+        self.time_label.setFont(font4)
         self.time_label.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -291,14 +291,15 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	\n"
-"	color: rgb(127, 208, 97);\n"
+"	\n"
+"	color: rgb(50, 215, 54);\n"
 " };\n"
 "")
         self.time_label.setAlignment(Qt.AlignCenter)
         self.btn_about = QPushButton(self.page_1)
         self.btn_about.setObjectName(u"btn_about")
         self.btn_about.setEnabled(True)
-        self.btn_about.setGeometry(QRect(70, 500, 40, 40))
+        self.btn_about.setGeometry(QRect(70, 490, 40, 40))
         self.btn_about.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -319,7 +320,7 @@ class Ui_MainWindow(object):
         self.btn_about.setIconSize(QSize(25, 25))
         self.label = QLabel(self.page_1)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(10, 500, 61, 31))
+        self.label.setGeometry(QRect(10, 490, 61, 31))
         self.label.setFont(font2)
         self.label.setStyleSheet(u"QLabel{\n"
 "\n"
@@ -334,16 +335,17 @@ class Ui_MainWindow(object):
         self.except_lbl = QLabel(self.page_1)
         self.except_lbl.setObjectName(u"except_lbl")
         self.except_lbl.setGeometry(QRect(240, 10, 301, 51))
-        font6 = QFont()
-        font6.setFamily(u"AvenirNext LT Pro Bold")
-        font6.setPointSize(11)
-        font6.setBold(True)
-        font6.setWeight(75)
-        self.except_lbl.setFont(font6)
+        font5 = QFont()
+        font5.setFamily(u"AvenirNext LT Pro Bold")
+        font5.setPointSize(11)
+        font5.setBold(True)
+        font5.setWeight(75)
+        self.except_lbl.setFont(font5)
         self.except_lbl.setStyleSheet(u"QLabel{\n"
 "\n"
 "background:transparent;\n"
-"	color: rgb(170, 0, 0);\n"
+"	\n"
+"	color: rgb(255, 0, 0);\n"
 "\n"
 "}")
         self.except_lbl.setAlignment(Qt.AlignCenter)
@@ -374,7 +376,7 @@ class Ui_MainWindow(object):
         self.upnld_label.setAlignment(Qt.AlignCenter)
         self.su_label = QLabel(self.page_1)
         self.su_label.setObjectName(u"su_label")
-        self.su_label.setGeometry(QRect(380, 500, 211, 41))
+        self.su_label.setGeometry(QRect(420, 500, 171, 41))
         self.su_label.setFont(font4)
         self.su_label.setStyleSheet(u"QLabel {\n"
 "\n"
@@ -383,8 +385,9 @@ class Ui_MainWindow(object):
 "\n"
 "	\n"
 "	\n"
+"	color: rgb(50, 215, 54);\n"
 "	\n"
-"	color: rgb(127, 208, 97);\n"
+"	\n"
 " };\n"
 "")
         self.su_label.setAlignment(Qt.AlignCenter)
@@ -581,11 +584,11 @@ class Ui_MainWindow(object):
         self.mail = QLabel(self.page_3)
         self.mail.setObjectName(u"mail")
         self.mail.setGeometry(QRect(580, 470, 191, 41))
-        font7 = QFont()
-        font7.setFamily(u"AvenirNext LT Pro Regular")
-        font7.setBold(False)
-        font7.setWeight(50)
-        self.mail.setFont(font7)
+        font6 = QFont()
+        font6.setFamily(u"AvenirNext LT Pro Regular")
+        font6.setBold(False)
+        font6.setWeight(50)
+        self.mail.setFont(font6)
         self.mail.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
