@@ -277,6 +277,7 @@ class MainWindow(QMainWindow):
 
             speed = speedtest.Speedtest()
             self.ui.except_lbl.clear()
+            self.ui.su_label.clear()
             print("processing..........")
 
             # Download Speed
@@ -288,6 +289,7 @@ class MainWindow(QMainWindow):
 
             # Upload Speed
             self.ui.upnld_label.show()
+            self.ui.su_label.clear()
             self.ui.su_label.setText("Retrieving Upload")
             su = "{:.2f}".format(speed.upload()/ 1024/ 1024)
             print(su + "mb/s")
