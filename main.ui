@@ -824,7 +824,7 @@ background:transparent;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/icons8-download-50.png</pixmap>
+       <pixmap>resources/dwnld.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -833,10 +833,10 @@ background:transparent;
      <widget class="QLabel" name="upnld_label">
       <property name="geometry">
        <rect>
-        <x>600</x>
+        <x>610</x>
         <y>510</y>
-        <width>31</width>
-        <height>31</height>
+        <width>21</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -852,7 +852,7 @@ background:transparent;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/icons8-upload-50.png</pixmap>
+       <pixmap>resources/upload-3-24.ico</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>

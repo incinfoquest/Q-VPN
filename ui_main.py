@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainoPuzDi.ui'
+## Form generated from reading UI file 'mainodNNym.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -359,11 +359,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}")
-        self.dwnld_label.setPixmap(QPixmap(u"resources/icons8-download-50.png"))
+        self.dwnld_label.setPixmap(QPixmap(u"resources/dwnld.png"))
         self.dwnld_label.setScaledContents(True)
         self.upnld_label = QLabel(self.page_1)
         self.upnld_label.setObjectName(u"upnld_label")
-        self.upnld_label.setGeometry(QRect(600, 510, 31, 31))
+        self.upnld_label.setGeometry(QRect(610, 510, 21, 21))
         self.upnld_label.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -371,7 +371,7 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}")
-        self.upnld_label.setPixmap(QPixmap(u"resources/icons8-upload-50.png"))
+        self.upnld_label.setPixmap(QPixmap(u"resources/upload-3-24.ico"))
         self.upnld_label.setScaledContents(True)
         self.upnld_label.setAlignment(Qt.AlignCenter)
         self.su_label = QLabel(self.page_1)
