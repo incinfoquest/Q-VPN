@@ -618,8 +618,8 @@ QPushButton:hover{
      <widget class="QLabel" name="sp_label">
       <property name="geometry">
        <rect>
-        <x>420</x>
-        <y>440</y>
+        <x>430</x>
+        <y>450</y>
         <width>171</width>
         <height>41</height>
        </rect>
@@ -644,7 +644,8 @@ QPushButton:hover{
 	
 	
 	
-	color: rgb(50, 215, 54);
+	
+	color: rgb(120, 205, 212);
  };
 </string>
       </property>
@@ -805,8 +806,8 @@ background:transparent;
      <widget class="QLabel" name="dwnld_label">
       <property name="geometry">
        <rect>
-        <x>600</x>
-        <y>450</y>
+        <x>610</x>
+        <y>460</y>
         <width>31</width>
         <height>31</height>
        </rect>
@@ -824,7 +825,7 @@ background:transparent;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/dwnld.png</pixmap>
+       <pixmap>resources/download.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -835,8 +836,8 @@ background:transparent;
        <rect>
         <x>610</x>
         <y>510</y>
-        <width>21</width>
-        <height>21</height>
+        <width>31</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -852,7 +853,7 @@ background:transparent;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/upload-3-24.ico</pixmap>
+       <pixmap>resources/upnld.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -864,7 +865,7 @@ background:transparent;
      <widget class="QLabel" name="su_label">
       <property name="geometry">
        <rect>
-        <x>420</x>
+        <x>430</x>
         <y>500</y>
         <width>171</width>
         <height>41</height>
@@ -886,7 +887,8 @@ background:transparent;
 
 	
 	
-	color: rgb(50, 215, 54);
+	
+	color: rgb(246, 146, 114);
 	
 	
  };

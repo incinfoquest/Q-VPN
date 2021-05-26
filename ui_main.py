@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainodNNym.ui'
+## Form generated from reading UI file 'mainvrkNEW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -257,7 +257,7 @@ class Ui_MainWindow(object):
         self.off_btn.setIconSize(QSize(150, 150))
         self.sp_label = QLabel(self.page_1)
         self.sp_label.setObjectName(u"sp_label")
-        self.sp_label.setGeometry(QRect(420, 440, 171, 41))
+        self.sp_label.setGeometry(QRect(430, 450, 171, 41))
         font4 = QFont()
         font4.setFamily(u"AvenirNext LT Pro Bold")
         font4.setPointSize(12)
@@ -275,7 +275,8 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	\n"
-"	color: rgb(50, 215, 54);\n"
+"	\n"
+"	color: rgb(120, 205, 212);\n"
 " };\n"
 "")
         self.sp_label.setAlignment(Qt.AlignCenter)
@@ -351,7 +352,7 @@ class Ui_MainWindow(object):
         self.except_lbl.setAlignment(Qt.AlignCenter)
         self.dwnld_label = QLabel(self.page_1)
         self.dwnld_label.setObjectName(u"dwnld_label")
-        self.dwnld_label.setGeometry(QRect(600, 450, 31, 31))
+        self.dwnld_label.setGeometry(QRect(610, 460, 31, 31))
         self.dwnld_label.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -359,11 +360,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}")
-        self.dwnld_label.setPixmap(QPixmap(u"resources/dwnld.png"))
+        self.dwnld_label.setPixmap(QPixmap(u"resources/download.png"))
         self.dwnld_label.setScaledContents(True)
         self.upnld_label = QLabel(self.page_1)
         self.upnld_label.setObjectName(u"upnld_label")
-        self.upnld_label.setGeometry(QRect(610, 510, 21, 21))
+        self.upnld_label.setGeometry(QRect(610, 510, 31, 31))
         self.upnld_label.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -371,12 +372,12 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}")
-        self.upnld_label.setPixmap(QPixmap(u"resources/upload-3-24.ico"))
+        self.upnld_label.setPixmap(QPixmap(u"resources/upnld.png"))
         self.upnld_label.setScaledContents(True)
         self.upnld_label.setAlignment(Qt.AlignCenter)
         self.su_label = QLabel(self.page_1)
         self.su_label.setObjectName(u"su_label")
-        self.su_label.setGeometry(QRect(420, 500, 171, 41))
+        self.su_label.setGeometry(QRect(430, 500, 171, 41))
         self.su_label.setFont(font4)
         self.su_label.setStyleSheet(u"QLabel {\n"
 "\n"
@@ -385,7 +386,8 @@ class Ui_MainWindow(object):
 "\n"
 "	\n"
 "	\n"
-"	color: rgb(50, 215, 54);\n"
+"	\n"
+"	color: rgb(246, 146, 114);\n"
 "	\n"
 "	\n"
 " };\n"
