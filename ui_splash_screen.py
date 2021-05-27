@@ -5,7 +5,7 @@
 
 # AUTHORS : ANANDAN , OMAR , SREERAG
 
-# CHANGES IN THIS FILE ARE PROHIBITED
+# CHANGES TO THIS FILE ARE PROHIBITED
 # _______________________________________________________________
 
 

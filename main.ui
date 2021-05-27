@@ -825,7 +825,7 @@ background:transparent;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/download.png</pixmap>
+       <pixmap>resources/dwnld.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1094,7 +1094,7 @@ background:transparent;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/fsf-free-software-foundation.svg</pixmap>
+       <pixmap>resources/fsf-free-software-foundation.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1122,7 +1122,7 @@ background:transparent;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/LGPLv3_Logo.svg</pixmap>
+       <pixmap>resources/LGPLv3_Logo.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1181,7 +1181,7 @@ background:transparent;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/Main_ico-INSIDE.svg</pixmap>
+       <pixmap>resources/Main_ico-INSIDE.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1261,7 +1261,7 @@ QPushButton:hover{
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>resources/twitter_round.svg</normaloff>resources/twitter_round.svg</iconset>
+        <normaloff>resources/twitter_round.png</normaloff>resources/twitter_round.png</iconset>
       </property>
       <property name="iconSize">
        <size>

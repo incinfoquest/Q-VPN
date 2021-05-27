@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainBQVqzU.ui'
+## Form generated from reading UI file 'mainNcGGBf.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -360,7 +360,7 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}")
-        self.dwnld_label.setPixmap(QPixmap(u"resources/download.png"))
+        self.dwnld_label.setPixmap(QPixmap(u"resources/dwnld.png"))
         self.dwnld_label.setScaledContents(True)
         self.upnld_label = QLabel(self.page_1)
         self.upnld_label.setObjectName(u"upnld_label")
@@ -526,7 +526,7 @@ class Ui_MainWindow(object):
         self.fsf.setStyleSheet(u"QLabel{\n"
 "background:transparent;\n"
 "}")
-        self.fsf.setPixmap(QPixmap(u"resources/fsf-free-software-foundation.svg"))
+        self.fsf.setPixmap(QPixmap(u"resources/fsf-free-software-foundation.png"))
         self.fsf.setScaledContents(True)
         self.lgpl_3 = QLabel(self.page_3)
         self.lgpl_3.setObjectName(u"lgpl_3")
@@ -538,7 +538,7 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}")
-        self.lgpl_3.setPixmap(QPixmap(u"resources/LGPLv3_Logo.svg"))
+        self.lgpl_3.setPixmap(QPixmap(u"resources/LGPLv3_Logo.png"))
         self.lgpl_3.setScaledContents(True)
         self.mail = QLabel(self.page_3)
         self.mail.setObjectName(u"mail")
@@ -565,7 +565,7 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}")
-        self.label_2.setPixmap(QPixmap(u"resources/Main_ico-INSIDE.svg"))
+        self.label_2.setPixmap(QPixmap(u"resources/Main_ico-INSIDE.png"))
         self.label_2.setScaledContents(True)
         self.reddit_Btn = QPushButton(self.page_3)
         self.reddit_Btn.setObjectName(u"reddit_Btn")
@@ -611,7 +611,7 @@ class Ui_MainWindow(object):
 "\n"
 "}")
         icon7 = QIcon()
-        icon7.addFile(u"resources/twitter_round.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon7.addFile(u"resources/twitter_round.png", QSize(), QIcon.Normal, QIcon.Off)
         self.tweet_Btn.setIcon(icon7)
         self.tweet_Btn.setIconSize(QSize(20, 20))
         self.insta_Btn = QPushButton(self.page_3)
