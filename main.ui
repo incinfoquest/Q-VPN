@@ -213,7 +213,7 @@ QPushButton:hover{
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>30</y>
+        <y>40</y>
         <width>111</width>
         <height>21</height>
        </rect>
@@ -239,7 +239,7 @@ QPushButton:hover{
       <property name="geometry">
        <rect>
         <x>120</x>
-        <y>30</y>
+        <y>40</y>
         <width>131</width>
         <height>21</height>
        </rect>
@@ -701,7 +701,7 @@ QPushButton:hover{
       <property name="geometry">
        <rect>
         <x>70</x>
-        <y>490</y>
+        <y>480</y>
         <width>40</width>
         <height>40</height>
        </rect>
@@ -740,7 +740,7 @@ QPushButton:hover{
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>490</y>
+        <y>480</y>
         <width>61</width>
         <height>31</height>
        </rect>
@@ -939,17 +939,17 @@ background:transparent;
      <widget class="QPushButton" name="btn_home_2">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>50</width>
-        <height>50</height>
+        <x>20</x>
+        <y>20</y>
+        <width>40</width>
+        <height>40</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
 
 background-color: rgba(255, 255, 255, 0);
-border-radius: 25px;
+border-radius: 20px;
 }
 
 QPushButton:hover{
@@ -966,7 +966,7 @@ QPushButton:hover{
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>resources/home.svg</normaloff>resources/home.svg</iconset>
+        <normaloff>resources/home_new.png</normaloff>resources/home_new.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -978,10 +978,10 @@ QPushButton:hover{
      <widget class="QTextBrowser" name="textBrowser">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>130</y>
-        <width>741</width>
-        <height>291</height>
+        <x>50</x>
+        <y>120</y>
+        <width>721</width>
+        <height>271</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1076,84 +1076,6 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;		The next main feature of our “ Q “, is we are providing the TOR service along with the VPN service. The user can decide whether he/she wants to connect the internet using VPN or TOR. Default we are connecting with the VPN but if the user wants to switch to TOR service, they only want to click the TOR button. TOR is useful for anyone who wants to keep their internet activities out of the hands of advertisers, ISPs, and websites.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QLabel" name="tweet">
-      <property name="geometry">
-       <rect>
-        <x>640</x>
-        <y>520</y>
-        <width>21</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-
-background:transparent;
-
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>resources/twitter_round.svg</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="git">
-      <property name="geometry">
-       <rect>
-        <x>690</x>
-        <y>520</y>
-        <width>21</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-
-background:transparent;
-
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>resources/GitHub-Mark-Light-64px.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="tele">
-      <property name="geometry">
-       <rect>
-        <x>740</x>
-        <y>520</y>
-        <width>21</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-
-background:transparent;
-
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>resources/telegram.svg</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
      <widget class="QLabel" name="fsf">
       <property name="geometry">
        <rect>
@@ -1175,37 +1097,6 @@ background:transparent;
        <pixmap>resources/fsf-free-software-foundation.svg</pixmap>
       </property>
       <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="reddit">
-      <property name="geometry">
-       <rect>
-        <x>590</x>
-        <y>520</y>
-        <width>21</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-
-
-background:transparent;
-
-
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>resources/Reddit_Mark_OnWhite.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-      <property name="openExternalLinks">
        <bool>true</bool>
       </property>
      </widget>
@@ -1273,7 +1164,7 @@ background:transparent;
       <property name="geometry">
        <rect>
         <x>360</x>
-        <y>10</y>
+        <y>20</y>
         <width>81</width>
         <height>81</height>
        </rect>
@@ -1294,6 +1185,174 @@ background:transparent;
       </property>
       <property name="scaledContents">
        <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reddit_Btn">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>510</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+
+
+background:transparent;
+border-radius:15px;
+
+
+}
+QPushButton:hover{
+
+
+	
+	background-color: rgb(255, 69, 0);
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resources/Reddit_Mark_OnWhite.png</normaloff>resources/Reddit_Mark_OnWhite.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tweet_Btn">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>510</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+
+
+background:transparent;
+border-radius:15px;
+
+
+}
+QPushButton:hover{
+
+
+	
+	
+	background-color: rgb(28, 183, 235);
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resources/twitter_round.svg</normaloff>resources/twitter_round.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="insta_Btn">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>510</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+
+
+background:transparent;
+border-radius:15px;
+
+
+}
+QPushButton:hover{
+
+
+	
+	
+	background-color: rgb(219, 125, 75);
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resources/insta_round.png</normaloff>resources/insta_round.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="git_Btn">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>510</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+
+
+background:transparent;
+border-radius:15px;
+
+
+}
+QPushButton:hover{
+
+
+	
+	
+	
+	background-color: rgb(0, 0, 0);
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resources/GitHub-Mark-Light-64px.png</normaloff>resources/GitHub-Mark-Light-64px.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
     </widget>

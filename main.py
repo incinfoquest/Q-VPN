@@ -20,6 +20,7 @@ from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFo
 from PySide2.QtWidgets import *
 from subprocess import Popen, PIPE
 from playsound import playsound
+import webbrowser
 import threading
 import os
 import requests
@@ -110,6 +111,10 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
+        self.ui.reddit_Btn.clicked.connect(lambda: webbrowser.open('https://www.reddit.com/user/InQuest_inc'))
+        self.ui.tweet_Btn.clicked.connect(lambda: webbrowser.open('https://twitter.com/Info43913522'))
+        self.ui.git_Btn.clicked.connect(lambda: webbrowser.open('https://github.com/incinfoquest'))
+        self.ui.insta_Btn.clicked.connect(lambda: webbrowser.open('https://www.instagram.com/inquest_inc/'))
         self.ui.dwnld_label.hide()
         self.ui.upnld_label.hide()
         self.timer = QtCore.QTimer()
@@ -299,9 +304,7 @@ class MainWindow(QMainWindow):
             print("check your internet connection for speed test")
             playsound('beep_beep.mp3')
             self.ui.except_lbl.setText("Check Your Network Connection")
-
-
-# EXIT
+    # EXIT
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = splashscreen()

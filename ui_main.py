@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainvrkNEW.ui'
+## Form generated from reading UI file 'mainBQVqzU.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -111,7 +111,7 @@ class Ui_MainWindow(object):
         self.connect_Btn.setIconSize(QSize(150, 150))
         self.ip_label = QLabel(self.page_1)
         self.ip_label.setObjectName(u"ip_label")
-        self.ip_label.setGeometry(QRect(10, 30, 111, 21))
+        self.ip_label.setGeometry(QRect(10, 40, 111, 21))
         font2 = QFont()
         font2.setFamily(u"AvenirNext LT Pro Bold")
         font2.setBold(True)
@@ -121,7 +121,7 @@ class Ui_MainWindow(object):
         self.ip_label.setAlignment(Qt.AlignJustify|Qt.AlignVCenter)
         self.iptext = QPlainTextEdit(self.page_1)
         self.iptext.setObjectName(u"iptext")
-        self.iptext.setGeometry(QRect(120, 30, 131, 21))
+        self.iptext.setGeometry(QRect(120, 40, 131, 21))
         palette = QPalette()
         brush = QBrush(QColor(0, 0, 0, 0))
         brush.setStyle(Qt.SolidPattern)
@@ -300,7 +300,7 @@ class Ui_MainWindow(object):
         self.btn_about = QPushButton(self.page_1)
         self.btn_about.setObjectName(u"btn_about")
         self.btn_about.setEnabled(True)
-        self.btn_about.setGeometry(QRect(70, 490, 40, 40))
+        self.btn_about.setGeometry(QRect(70, 480, 40, 40))
         self.btn_about.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -321,7 +321,7 @@ class Ui_MainWindow(object):
         self.btn_about.setIconSize(QSize(25, 25))
         self.label = QLabel(self.page_1)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(10, 490, 61, 31))
+        self.label.setGeometry(QRect(10, 480, 61, 31))
         self.label.setFont(font2)
         self.label.setStyleSheet(u"QLabel{\n"
 "\n"
@@ -419,11 +419,11 @@ class Ui_MainWindow(object):
         self.back_img_3.setPixmap(QPixmap(u"resources/2028632.jpg"))
         self.btn_home_2 = QPushButton(self.page_3)
         self.btn_home_2.setObjectName(u"btn_home_2")
-        self.btn_home_2.setGeometry(QRect(10, 30, 50, 50))
+        self.btn_home_2.setGeometry(QRect(20, 20, 40, 40))
         self.btn_home_2.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background-color: rgba(255, 255, 255, 0);\n"
-"border-radius: 25px;\n"
+"border-radius: 20px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -435,12 +435,12 @@ class Ui_MainWindow(object):
 "	background-color: rgb(255, 255, 255);\n"
 "}")
         icon5 = QIcon()
-        icon5.addFile(u"resources/home.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u"resources/home_new.png", QSize(), QIcon.Normal, QIcon.Off)
         self.btn_home_2.setIcon(icon5)
         self.btn_home_2.setIconSize(QSize(35, 35))
         self.textBrowser = QTextBrowser(self.page_3)
         self.textBrowser.setObjectName(u"textBrowser")
-        self.textBrowser.setGeometry(QRect(40, 130, 741, 291))
+        self.textBrowser.setGeometry(QRect(50, 120, 721, 271))
         self.textBrowser.setStyleSheet(u"\n"
 "QTextBrowser{\n"
 "\n"
@@ -520,36 +520,6 @@ class Ui_MainWindow(object):
 "QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
 "	background: none;\n"
 "}")
-        self.tweet = QLabel(self.page_3)
-        self.tweet.setObjectName(u"tweet")
-        self.tweet.setGeometry(QRect(640, 520, 21, 21))
-        self.tweet.setStyleSheet(u"QLabel{\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"}")
-        self.tweet.setPixmap(QPixmap(u"resources/twitter_round.svg"))
-        self.tweet.setScaledContents(True)
-        self.git = QLabel(self.page_3)
-        self.git.setObjectName(u"git")
-        self.git.setGeometry(QRect(690, 520, 21, 21))
-        self.git.setStyleSheet(u"QLabel{\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"}")
-        self.git.setPixmap(QPixmap(u"resources/GitHub-Mark-Light-64px.png"))
-        self.git.setScaledContents(True)
-        self.tele = QLabel(self.page_3)
-        self.tele.setObjectName(u"tele")
-        self.tele.setGeometry(QRect(740, 520, 21, 21))
-        self.tele.setStyleSheet(u"QLabel{\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"}")
-        self.tele.setPixmap(QPixmap(u"resources/telegram.svg"))
-        self.tele.setScaledContents(True)
         self.fsf = QLabel(self.page_3)
         self.fsf.setObjectName(u"fsf")
         self.fsf.setGeometry(QRect(50, 500, 191, 41))
@@ -558,19 +528,6 @@ class Ui_MainWindow(object):
 "}")
         self.fsf.setPixmap(QPixmap(u"resources/fsf-free-software-foundation.svg"))
         self.fsf.setScaledContents(True)
-        self.reddit = QLabel(self.page_3)
-        self.reddit.setObjectName(u"reddit")
-        self.reddit.setGeometry(QRect(590, 520, 21, 21))
-        self.reddit.setStyleSheet(u"QLabel{\n"
-"\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"\n"
-"}")
-        self.reddit.setPixmap(QPixmap(u"resources/Reddit_Mark_OnWhite.png"))
-        self.reddit.setScaledContents(True)
-        self.reddit.setOpenExternalLinks(True)
         self.lgpl_3 = QLabel(self.page_3)
         self.lgpl_3.setObjectName(u"lgpl_3")
         self.lgpl_3.setGeometry(QRect(290, 490, 131, 51))
@@ -601,7 +558,7 @@ class Ui_MainWindow(object):
         self.mail.setAlignment(Qt.AlignCenter)
         self.label_2 = QLabel(self.page_3)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(360, 10, 81, 81))
+        self.label_2.setGeometry(QRect(360, 20, 81, 81))
         self.label_2.setStyleSheet(u"QLabel{\n"
 "\n"
 "background:transparent;\n"
@@ -610,6 +567,102 @@ class Ui_MainWindow(object):
 "}")
         self.label_2.setPixmap(QPixmap(u"resources/Main_ico-INSIDE.svg"))
         self.label_2.setScaledContents(True)
+        self.reddit_Btn = QPushButton(self.page_3)
+        self.reddit_Btn.setObjectName(u"reddit_Btn")
+        self.reddit_Btn.setGeometry(QRect(590, 510, 30, 30))
+        self.reddit_Btn.setStyleSheet(u"QPushButton{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"border-radius:15px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"\n"
+"\n"
+"	\n"
+"	background-color: rgb(255, 69, 0);\n"
+"\n"
+"\n"
+"}")
+        icon6 = QIcon()
+        icon6.addFile(u"resources/Reddit_Mark_OnWhite.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.reddit_Btn.setIcon(icon6)
+        self.reddit_Btn.setIconSize(QSize(20, 20))
+        self.tweet_Btn = QPushButton(self.page_3)
+        self.tweet_Btn.setObjectName(u"tweet_Btn")
+        self.tweet_Btn.setGeometry(QRect(640, 510, 30, 30))
+        self.tweet_Btn.setStyleSheet(u"QPushButton{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"border-radius:15px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"\n"
+"\n"
+"	\n"
+"	\n"
+"	background-color: rgb(28, 183, 235);\n"
+"\n"
+"\n"
+"}")
+        icon7 = QIcon()
+        icon7.addFile(u"resources/twitter_round.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.tweet_Btn.setIcon(icon7)
+        self.tweet_Btn.setIconSize(QSize(20, 20))
+        self.insta_Btn = QPushButton(self.page_3)
+        self.insta_Btn.setObjectName(u"insta_Btn")
+        self.insta_Btn.setGeometry(QRect(740, 510, 30, 30))
+        self.insta_Btn.setStyleSheet(u"QPushButton{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"border-radius:15px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"\n"
+"\n"
+"	\n"
+"	\n"
+"	background-color: rgb(219, 125, 75);\n"
+"\n"
+"\n"
+"}")
+        icon8 = QIcon()
+        icon8.addFile(u"resources/insta_round.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.insta_Btn.setIcon(icon8)
+        self.insta_Btn.setIconSize(QSize(20, 20))
+        self.git_Btn = QPushButton(self.page_3)
+        self.git_Btn.setObjectName(u"git_Btn")
+        self.git_Btn.setGeometry(QRect(690, 510, 30, 30))
+        self.git_Btn.setStyleSheet(u"QPushButton{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"border-radius:15px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"\n"
+"\n"
+"	\n"
+"	\n"
+"	\n"
+"	background-color: rgb(0, 0, 0);\n"
+"\n"
+"\n"
+"}")
+        icon9 = QIcon()
+        icon9.addFile(u"resources/GitHub-Mark-Light-64px.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.git_Btn.setIcon(icon9)
+        self.git_Btn.setIconSize(QSize(20, 20))
         self.stackedWidget.addWidget(self.page_3)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -667,13 +720,13 @@ class Ui_MainWindow(object):
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; m"
                         "argin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; color:#ffffff;\">		</span></p>\n"
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; color:#ffffff;\">		The next main feature of our \u201c Q \u201c, is we are providing the TOR service along with the VPN service. The user can decide whether he/she wants to connect the internet using VPN or TOR. Default we are connecting with the VPN but if the user wants to switch to TOR service, they only want to click the TOR button. TOR is useful for anyone who wants to keep their internet activities out of the hands of advertisers, ISPs, and websites.</span></p></body></html>", None))
-        self.tweet.setText("")
-        self.git.setText("")
-        self.tele.setText("")
         self.fsf.setText("")
-        self.reddit.setText("")
         self.lgpl_3.setText("")
         self.mail.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">incinfoquest@gmail.com</span></p></body></html>", None))
         self.label_2.setText("")
+        self.reddit_Btn.setText("")
+        self.tweet_Btn.setText("")
+        self.insta_Btn.setText("")
+        self.git_Btn.setText("")
     # retranslateUi
 
