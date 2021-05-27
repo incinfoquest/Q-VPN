@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainNcGGBf.ui'
+## Form generated from reading UI file 'mainavmxvP.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -104,6 +104,12 @@ class Ui_MainWindow(object):
 "	background-color: rgb(48, 154, 38);\n"
 "\n"
 "}\n"
+"QPushButton:pressed{\n"
+"\n"
+"	background-color: rgb(0, 170, 0);\n"
+"\n"
+"\n"
+"}\n"
 "")
         icon = QIcon()
         icon.addFile(u"resources/power.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -201,6 +207,11 @@ class Ui_MainWindow(object):
 "\n"
 "	\n"
 "	background-color: rgb(125, 70, 152);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"\n"
+"	background-color: rgb(168, 132, 186);\n"
+"\n"
 "}")
         icon1 = QIcon()
         icon1.addFile(u"resources/tor_br.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -230,6 +241,10 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	background-color: rgb(53, 79, 79);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	background-color: rgb(85, 85, 0);\n"
+"\n"
 "}")
         icon2 = QIcon()
         icon2.addFile(u"resources/speed (1).png", QSize(), QIcon.Normal, QIcon.Off)
@@ -248,6 +263,11 @@ class Ui_MainWindow(object):
 "\n"
 "	\n"
 "	background-color: rgb(255, 0, 0);\n"
+"\n"
+"}\n"
+"QPushButton:pressed{\n"
+"\n"
+"	background-color: rgb(85, 0, 0);\n"
 "\n"
 "}\n"
 "")
@@ -312,6 +332,10 @@ class Ui_MainWindow(object):
 "	background-color: rgb(201, 230, 247);\n"
 "\n"
 "\n"
+"\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	background-color: rgb(102, 204, 255);\n"
 "\n"
 "}\n"
 "")
@@ -433,6 +457,11 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	background-color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	\n"
+"	background-color: rgb(0, 0, 0);\n"
+"\n"
 "}")
         icon5 = QIcon()
         icon5.addFile(u"resources/home_new.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -585,6 +614,10 @@ class Ui_MainWindow(object):
 "	background-color: rgb(255, 69, 0);\n"
 "\n"
 "\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	background-color: rgb(255, 150, 112);\n"
+"\n"
 "}")
         icon6 = QIcon()
         icon6.addFile(u"resources/Reddit_Mark_OnWhite.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -608,6 +641,11 @@ class Ui_MainWindow(object):
 "	\n"
 "	background-color: rgb(28, 183, 235);\n"
 "\n"
+"\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	\n"
+"	background-color: rgb(215, 242, 251);\n"
 "\n"
 "}")
         icon7 = QIcon()
@@ -633,6 +671,11 @@ class Ui_MainWindow(object):
 "	background-color: rgb(219, 125, 75);\n"
 "\n"
 "\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	\n"
+"	background-color: rgb(245, 168, 20);\n"
+"\n"
 "}")
         icon8 = QIcon()
         icon8.addFile(u"resources/insta_round.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -657,6 +700,10 @@ class Ui_MainWindow(object):
 "	\n"
 "	background-color: rgb(0, 0, 0);\n"
 "\n"
+"\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	background-color: rgb(124, 149, 180);\n"
 "\n"
 "}")
         icon9 = QIcon()
