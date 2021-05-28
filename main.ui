@@ -1157,38 +1157,6 @@ background:transparent;
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="mail">
-      <property name="geometry">
-       <rect>
-        <x>580</x>
-        <y>470</y>
-        <width>191</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>AvenirNext LT Pro Regular</family>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-
-
-background:transparent;
-
-
-}</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;incinfoquest@gmail.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
@@ -1400,6 +1368,34 @@ QPushButton:pressed{
         <width>20</width>
         <height>20</height>
        </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mail_Btn">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>470</y>
+        <width>181</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AvenirNext LT Pro Regular</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+
+background:transparent;
+	color: rgb(255, 255, 255);
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>incinfoquest@gmail.com</string>
       </property>
      </widget>
     </widget>

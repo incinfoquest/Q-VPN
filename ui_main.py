@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainavmxvP.ui'
+## Form generated from reading UI file 'mainhdDlbM.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -569,22 +569,6 @@ class Ui_MainWindow(object):
 "}")
         self.lgpl_3.setPixmap(QPixmap(u"resources/LGPLv3_Logo.png"))
         self.lgpl_3.setScaledContents(True)
-        self.mail = QLabel(self.page_3)
-        self.mail.setObjectName(u"mail")
-        self.mail.setGeometry(QRect(580, 470, 191, 41))
-        font6 = QFont()
-        font6.setFamily(u"AvenirNext LT Pro Regular")
-        font6.setBold(False)
-        font6.setWeight(50)
-        self.mail.setFont(font6)
-        self.mail.setStyleSheet(u"QLabel{\n"
-"\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"\n"
-"}")
-        self.mail.setAlignment(Qt.AlignCenter)
         self.label_2 = QLabel(self.page_3)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setGeometry(QRect(360, 20, 81, 81))
@@ -710,6 +694,20 @@ class Ui_MainWindow(object):
         icon9.addFile(u"resources/GitHub-Mark-Light-64px.png", QSize(), QIcon.Normal, QIcon.Off)
         self.git_Btn.setIcon(icon9)
         self.git_Btn.setIconSize(QSize(20, 20))
+        self.mail_Btn = QPushButton(self.page_3)
+        self.mail_Btn.setObjectName(u"mail_Btn")
+        self.mail_Btn.setGeometry(QRect(590, 470, 181, 23))
+        font6 = QFont()
+        font6.setFamily(u"AvenirNext LT Pro Regular")
+        font6.setPointSize(11)
+        self.mail_Btn.setFont(font6)
+        self.mail_Btn.setStyleSheet(u"QPushButton{\n"
+"\n"
+"background:transparent;\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"\n"
+"}")
         self.stackedWidget.addWidget(self.page_3)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -769,11 +767,11 @@ class Ui_MainWindow(object):
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; color:#ffffff;\">		The next main feature of our \u201c Q \u201c, is we are providing the TOR service along with the VPN service. The user can decide whether he/she wants to connect the internet using VPN or TOR. Default we are connecting with the VPN but if the user wants to switch to TOR service, they only want to click the TOR button. TOR is useful for anyone who wants to keep their internet activities out of the hands of advertisers, ISPs, and websites.</span></p></body></html>", None))
         self.fsf.setText("")
         self.lgpl_3.setText("")
-        self.mail.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\"> <a href=\"http://incinfoquest@gmail.com/\">incinfoquest@gmail.com</a></span></p></body></html>", None))
-        self.mail.setOpenExternalLinks(True)
         self.label_2.setText("")
         self.reddit_Btn.setText("")
         self.tweet_Btn.setText("")
         self.insta_Btn.setText("")
         self.git_Btn.setText("")
+        self.mail_Btn.setText(QCoreApplication.translate("MainWindow", u"incinfoquest@gmail.com", None))
     # retranslateUi
+
