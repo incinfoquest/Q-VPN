@@ -257,3 +257,29 @@ console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resou
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1622211819547	geckodriver	INFO	Listening on 127.0.0.1:56255
+1622211824164	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Tor Browser\\Browser\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofileTX9ck7"
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1622212019281	geckodriver	INFO	Listening on 127.0.0.1:56315
+1622212023863	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Tor Browser\\Browser\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofileTa0MdT"
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1622212476327	geckodriver	INFO	Listening on 127.0.0.1:56376
+1622212480753	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Tor Browser\\Browser\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofileWwCBTv"
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1622212949494	geckodriver	INFO	Listening on 127.0.0.1:56444
+1622212953860	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\andan\\AppData\\Local\\Temp\\rust_mozprofilemSFyCH"
+1622212955074	Marionette	INFO	Marionette enabled
+1622212957995	Marionette	INFO	Listening on port 56452
+1622212958065	Marionette	WARN	TLS certificate errors will be ignored for this session
+extension-storage: migration complete
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1622213498926	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1622214019716	Marionette	INFO	Stopped listening on port 56452
