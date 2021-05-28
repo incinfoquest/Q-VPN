@@ -769,11 +769,11 @@ class Ui_MainWindow(object):
 "<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; color:#ffffff;\">		The next main feature of our \u201c Q \u201c, is we are providing the TOR service along with the VPN service. The user can decide whether he/she wants to connect the internet using VPN or TOR. Default we are connecting with the VPN but if the user wants to switch to TOR service, they only want to click the TOR button. TOR is useful for anyone who wants to keep their internet activities out of the hands of advertisers, ISPs, and websites.</span></p></body></html>", None))
         self.fsf.setText("")
         self.lgpl_3.setText("")
-        self.mail.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">incinfoquest@gmail.com</span></p></body></html>", None))
+        self.mail.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\"> <a href=\"http://incinfoquest@gmail.com/\">incinfoquest@gmail.com</a></span></p></body></html>", None))
+        self.mail.setOpenExternalLinks(True)
         self.label_2.setText("")
         self.reddit_Btn.setText("")
         self.tweet_Btn.setText("")
         self.insta_Btn.setText("")
         self.git_Btn.setText("")
     # retranslateUi
-
