@@ -109,7 +109,7 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        # self.ui.connect_Btn.setCheckable(True)
+        #self.ui.connect_Btn.setCheckable(True)
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
@@ -117,7 +117,6 @@ class MainWindow(QMainWindow):
         self.ui.tweet_Btn.clicked.connect(lambda: webbrowser.open('https://twitter.com/Info43913522'))
         self.ui.git_Btn.clicked.connect(lambda: webbrowser.open('https://github.com/incinfoquest'))
         self.ui.insta_Btn.clicked.connect(lambda: webbrowser.open('https://www.instagram.com/inquest_inc/'))
-        self.ui.mail_Btn.clicked.connect(lambda: webbrowser.open('https://mail.google.com/mail/u/0/#inbox?compose=new'))
         self.ui.dwnld_label.hide()
         self.ui.upnld_label.hide()
         self.timer = QtCore.QTimer()
@@ -146,16 +145,15 @@ class MainWindow(QMainWindow):
         # SET TITLE BAR
         self.ui.top_bar.mouseMoveEvent = self.moveWindow
 
-    #def checkInternetRequests(self, url='http://www.google.com/', timeout=3):
-
-        #try:
-            #self.ui.except_lbl.clear()
-            #r = requests.head(url, timeout=timeout)
-            #print(r)
-            #return True
-        #except:
-            #self.ui.except_lbl.setText("Check Your Network Connection")
-            #playsound('beep_beep.mp3')
+    def checkInternetRequests(self, url='http://www.google.com/', timeout=3):
+        try:
+            self.ui.except_lbl.clear()
+            r = requests.head(url, timeout=timeout)
+            print(r)
+            return True
+        except:
+            self.ui.except_lbl.setText("Check Your Network Connection")
+            playsound('beep_beep.mp3')
 
 
         # MOVE WINDOW
@@ -181,7 +179,7 @@ class MainWindow(QMainWindow):
 
     def on_click(self):
         # checking network connection
-        #if self.checkInternetRequests():
+        if self.checkInternetRequests():
     # To disable the button
             self.ui.connect_Btn.setEnabled(False)
             self.ui.off_btn.show()
@@ -312,8 +310,3 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = splashscreen()
     sys.exit(app.exec_())
-#
- #
-  #
-   #####
-    #####
