@@ -12,11 +12,11 @@
 
 import sys
 import platform
-from PyQt5.QtCore import *
+#from PyQt5.QtCore import *
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect,
                             QSize, QTime, QUrl, Qt, QEvent)
-from PyQt5.QtWidgets import QApplication
+#from PyQt5.QtWidgets import QApplication
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence,
                            QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
@@ -195,7 +195,6 @@ class MainWindow(QMainWindow):
          self.end_time = time.time()
          self.time_lapsed = self.end_time - self.start_time
          self.time_convert(self.time_lapsed)
-
          self.disconnectThread = threading.Thread(target=self.wgDown)
          self.disconnectThread.start()
 
