@@ -256,18 +256,9 @@ class MainWindow(QMainWindow):
     # TOR CONNECTION
     def torConnect(self):
 
-        torexe = os.popen(r'C:\Program Files\Tor Browser\Browser\TorBrowser\Tor\tor.exe')
-        profile = FirefoxProfile(r'C:\Program Files\Tor Browser\Browser\TorBrowser\Data\Browser\profile.default')
-        profile.set_preference('network.proxy.type', 1)
-        profile.set_preference('network.proxy.socks', '127.0.0.1')
-        profile.set_preference('network.proxy.socks_port', 9050)
-        profile.set_preference("network.proxy.socks_remote_dns", False)
-        profile.update_preferences()
-        firefox_options = webdriver.FirefoxOptions()
-        firefox_options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
-        driver = webdriver.Firefox(firefox_profile= profile, options = firefox_options, executable_path=r'geckodriver-v0.29.1-win64\geckodriver.exe')
+        torexe = os.popen(r'C:\Program Files\Tor Browser\Browser\firefox.exe')
         self.showMinimized()
-        driver.get("http://duckduckgo.com")
+
 
     # SPEED_TEST THREAD
     def check_speed(self):
