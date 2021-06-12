@@ -679,8 +679,8 @@ QPushButton:pressed{
      <widget class="QLabel" name="time_label">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>70</y>
+        <x>250</x>
+        <y>90</y>
         <width>301</width>
         <height>51</height>
        </rect>
@@ -925,6 +925,33 @@ background:transparent;
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+     <widget class="QLabel" name="C_label">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>100</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+
+
+ background-color : transparent; 
+ };
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>resources/stopwatch.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
      <zorder>back_img_1</zorder>
      <zorder>ip_label</zorder>
      <zorder>iptext</zorder>
@@ -942,6 +969,7 @@ background:transparent;
      <zorder>dwnld_label</zorder>
      <zorder>upnld_label</zorder>
      <zorder>su_label</zorder>
+     <zorder>C_label</zorder>
     </widget>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="back_img_3">

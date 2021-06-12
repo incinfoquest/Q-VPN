@@ -118,6 +118,7 @@ class MainWindow(QMainWindow):
         self.ui.git_Btn.clicked.connect(lambda: webbrowser.open('https://github.com/incinfoquest'))
         self.ui.insta_Btn.clicked.connect(lambda: webbrowser.open('https://www.instagram.com/inquest_inc/'))
         self.ui.dwnld_label.hide()
+        self.ui.C_label.setHidden(True)
         self.ui.upnld_label.hide()
         self.timer = QtCore.QTimer()
         # STACK
@@ -175,6 +176,7 @@ class MainWindow(QMainWindow):
         mins = mins % 60
         print("Time Lapsed = {0}:{1}:{2}".format(int(hours),int(mins),int(sec)))
         ti = "{0}:{1}:{2}".format(int(hours),int(mins),int(sec))
+        self.ui.C_label.setHidden(False)
         self.ui.time_label.setText("Connection Time " + ti)
 
     def on_click(self):

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainhdDlbM.ui'
+## Form generated from reading UI file 'mainupuarS.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -302,7 +302,7 @@ class Ui_MainWindow(object):
         self.sp_label.setAlignment(Qt.AlignCenter)
         self.time_label = QLabel(self.page_1)
         self.time_label.setObjectName(u"time_label")
-        self.time_label.setGeometry(QRect(240, 70, 301, 51))
+        self.time_label.setGeometry(QRect(250, 90, 301, 51))
         self.time_label.setFont(font4)
         self.time_label.setStyleSheet(u"QLabel {\n"
 "\n"
@@ -417,6 +417,17 @@ class Ui_MainWindow(object):
 " };\n"
 "")
         self.su_label.setAlignment(Qt.AlignCenter)
+        self.C_label = QLabel(self.page_1)
+        self.C_label.setObjectName(u"C_label")
+        self.C_label.setGeometry(QRect(270, 100, 31, 31))
+        self.C_label.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+" background-color : transparent; \n"
+" };\n"
+"")
+        self.C_label.setPixmap(QPixmap(u"resources/stopwatch.png"))
+        self.C_label.setScaledContents(True)
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
         self.ip_label.raise_()
@@ -435,6 +446,7 @@ class Ui_MainWindow(object):
         self.dwnld_label.raise_()
         self.upnld_label.raise_()
         self.su_label.raise_()
+        self.C_label.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.back_img_3 = QLabel(self.page_3)
@@ -752,6 +764,7 @@ class Ui_MainWindow(object):
         self.dwnld_label.setText("")
         self.upnld_label.setText("")
         self.su_label.setText("")
+        self.C_label.setText("")
         self.back_img_3.setText("")
         self.btn_home_2.setText("")
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
