@@ -11,11 +11,11 @@ class MainWindow(QMainWindow):
         self.setWindowFlags(QtCore.Qt.WindowCloseButtonHint)
         self.resize(600, 500)
         self.browser = QWebEngineView()
-<<<<<<< HEAD
+
         self.browser.setUrl(QUrl('https://google.com/'))
-=======
+
         self.browser.setUrl(QUrl('http://google.com'))
->>>>>>> c6bb463a0eda2a3015b9f52cd093440d610e2301
+
         self.setCentralWidget(self.browser)
         self.setWindowIcon(QtGui.QIcon('ad.png'))
         self.show()
