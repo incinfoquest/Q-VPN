@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-
-## Form generated from reading UI file 'mainBjCbZf.ui'
-
-## Form generated from reading UI file 'mainDbgQpa.ui'
+## Form generated from reading UI file 'mainPYdqnA.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -417,12 +414,22 @@ class Ui_MainWindow(object):
         self.pop_label.setAlignment(Qt.AlignCenter)
         self.iptext = QLabel(self.page_1)
         self.iptext.setObjectName(u"iptext")
-        self.iptext.setGeometry(QRect(120, 40, 101, 21))
-        self.iptext.setStyleSheet(u"QLabel\n"
-"{\n"
-"background-color: rgba(0,0,0,0%);\n"
-"border-radius: 0px;\n"
-"}")
+        self.iptext.setGeometry(QRect(130, 30, 171, 41))
+        font6 = QFont()
+        font6.setFamily(u"Cambria Math")
+        font6.setPointSize(12)
+        font6.setBold(False)
+        font6.setWeight(50)
+        self.iptext.setFont(font6)
+        self.iptext.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+" background-color : transparent; \n"
+"	\n"
+"	\n"
+"	\n"
+"	color: rgb(180, 8, 53);\n"
+" };")
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
         self.crnt_ip.raise_()
@@ -706,10 +713,10 @@ class Ui_MainWindow(object):
         self.mail_Btn = QPushButton(self.page_3)
         self.mail_Btn.setObjectName(u"mail_Btn")
         self.mail_Btn.setGeometry(QRect(590, 470, 181, 23))
-        font6 = QFont()
-        font6.setFamily(u"AvenirNext LT Pro Regular")
-        font6.setPointSize(11)
-        self.mail_Btn.setFont(font6)
+        font7 = QFont()
+        font7.setFamily(u"AvenirNext LT Pro Regular")
+        font7.setPointSize(11)
+        self.mail_Btn.setFont(font7)
         self.mail_Btn.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background:transparent;\n"

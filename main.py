@@ -251,8 +251,11 @@ class MainWindow(QMainWindow):
 
     # FETCH IP
     def run(self):
+        self.ui.iptext.setText("Fetching IP")
         time.sleep(10)
         self.ui.iptext.clear()
+        self.ui.iptext.setText("Fetching IP")
+
 
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text

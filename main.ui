@@ -825,18 +825,30 @@ background:transparent;
      <widget class="QLabel" name="iptext">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>40</y>
-        <width>101</width>
-        <height>21</height>
+        <x>130</x>
+        <y>30</y>
+        <width>171</width>
+        <height>41</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Cambria Math</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="styleSheet">
-       <string notr="true">QLabel
-{
-background-color: rgba(0,0,0,0%);
-border-radius: 0px;
-}</string>
+       <string notr="true">QLabel {
+
+
+ background-color : transparent; 
+	
+	
+	
+	color: rgb(180, 8, 53);
+ };</string>
       </property>
       <property name="text">
        <string/>
