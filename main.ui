@@ -822,45 +822,13 @@ background:transparent;
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="iptext">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>40</y>
-        <width>201</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Helvetica Rounded</family>
-        <pointsize>12</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel {
-
-
- background-color : transparent; 
-	
-	
-	
-	color: rgb(180, 8, 53);
- };</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QLabel" name="ext_btn">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>20</y>
+        <x>140</x>
+        <y>30</y>
         <width>201</width>
-        <height>61</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="font">
@@ -905,7 +873,6 @@ background:transparent;
      <zorder>C_label</zorder>
      <zorder>pop_btn</zorder>
      <zorder>pop_label</zorder>
-     <zorder>iptext</zorder>
      <zorder>ext_btn</zorder>
     </widget>
     <widget class="QWidget" name="page_3">

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainXXADci.ui'
+## Form generated from reading UI file 'mainCwazXh.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -412,27 +412,14 @@ class Ui_MainWindow(object):
 "\n"
 "}")
         self.pop_label.setAlignment(Qt.AlignCenter)
-        self.iptext = QLabel(self.page_1)
-        self.iptext.setObjectName(u"iptext")
-        self.iptext.setGeometry(QRect(130, 40, 201, 41))
+        self.ext_btn = QLabel(self.page_1)
+        self.ext_btn.setObjectName(u"ext_btn")
+        self.ext_btn.setGeometry(QRect(140, 30, 201, 41))
         font6 = QFont()
         font6.setFamily(u"Helvetica Rounded")
         font6.setPointSize(12)
         font6.setBold(True)
         font6.setWeight(75)
-        self.iptext.setFont(font6)
-        self.iptext.setStyleSheet(u"QLabel {\n"
-"\n"
-"\n"
-" background-color : transparent; \n"
-"	\n"
-"	\n"
-"	\n"
-"	color: rgb(180, 8, 53);\n"
-" };")
-        self.ext_btn = QLabel(self.page_1)
-        self.ext_btn.setObjectName(u"ext_btn")
-        self.ext_btn.setGeometry(QRect(130, 20, 201, 61))
         self.ext_btn.setFont(font6)
         self.ext_btn.setStyleSheet(u"QLabel {\n"
 "\n"
@@ -441,7 +428,7 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	\n"
-"	color: rgb(180, 8, 53);\n"
+"	color: rgb(120, 205, 212);\n"
 " };")
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
@@ -463,7 +450,6 @@ class Ui_MainWindow(object):
         self.C_label.raise_()
         self.pop_btn.raise_()
         self.pop_label.raise_()
-        self.iptext.raise_()
         self.ext_btn.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
@@ -797,7 +783,6 @@ class Ui_MainWindow(object):
         self.C_label.setText("")
         self.pop_btn.setText("")
         self.pop_label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt; color:#cf0040;\">ACTIVATED</span></p></body></html>", None))
-        self.iptext.setText("")
         self.ext_btn.setText("")
         self.back_img_3.setText("")
         self.btn_home_2.setText("")
@@ -822,4 +807,3 @@ class Ui_MainWindow(object):
         self.mail_Btn.setText(QCoreApplication.translate("MainWindow", u"incinfoquest@gmail.com", None))
         self.label_3.setText("")
     # retranslateUi
-

@@ -257,7 +257,7 @@ class MainWindow(QMainWindow):
     def run(self):
         self.ui.ext_btn.setText("Fetching IP")
         time.sleep(10)
-        self.ui.iptext.clear()
+        #self.ui.iptext.clear()
 
 
 
@@ -265,14 +265,14 @@ class MainWindow(QMainWindow):
             ipaddress = requests.get("http://ipecho.net/plain?").text
             print(ipaddress)
             self.ui.ext_btn.clear()
-            self.ui.iptext.setText(ipaddress)
+            self.ui.ext_btn.setText(ipaddress)
 
         except:
             try:
                 ipaddress = requests.get("http://ipconfig.in/ip").text
                 print(ipaddress)
                 self.ui.ext_btn.clear()
-                self.ui.iptext.setText(ipaddress)
+                self.ui.ext_btn.setText(ipaddress)
             except:
                 print("Check your internet Connection")
                 playsound('beep_beep.mp3')
