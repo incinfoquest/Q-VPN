@@ -285,7 +285,7 @@ class MainWindow(QMainWindow):
 
     # TOR CONNECTION
     def torConnect(self):
-
+####
         torexe = os.popen(r'C:\Program Files\Tor Browser\Browser\firefox.exe')
         self.showMinimized()
 
