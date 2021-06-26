@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'maindytxIH.ui'
+## Form generated from reading UI file 'mainYuujXP.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -432,7 +432,7 @@ class Ui_MainWindow(object):
 " };")
         self.ext_btn = QLabel(self.page_1)
         self.ext_btn.setObjectName(u"ext_btn")
-        self.ext_btn.setGeometry(QRect(140, 30, 201, 41))
+        self.ext_btn.setGeometry(QRect(80, 170, 201, 41))
         self.ext_btn.setFont(font6)
         self.ext_btn.setStyleSheet(u"QLabel {\n"
 "\n"
