@@ -12,11 +12,9 @@ class MainWindow(QMainWindow):
         self.resize(600, 500)
         self.browser = QWebEngineView()
         self.browser.setUrl(QUrl('https://google.com/'))
-        self.browser.setUrl(QUrl('http://google.com'))
         self.setCentralWidget(self.browser)
         self.setWindowIcon(QtGui.QIcon('ad.png'))
         self.show()
-
 
 app = QApplication(sys.argv)
 QApplication.setApplicationName('AdBlock')
