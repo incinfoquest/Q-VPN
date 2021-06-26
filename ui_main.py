@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainkvgAnZ.ui'
+## Form generated from reading UI file 'mainDbgQpa.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -611,7 +611,7 @@ class Ui_MainWindow(object):
 "}")
         self.fsf = QLabel(self.page_3)
         self.fsf.setObjectName(u"fsf")
-        self.fsf.setGeometry(QRect(50, 500, 191, 41))
+        self.fsf.setGeometry(QRect(30, 500, 191, 41))
         self.fsf.setStyleSheet(u"QLabel{\n"
 "background:transparent;\n"
 "}")
@@ -619,7 +619,7 @@ class Ui_MainWindow(object):
         self.fsf.setScaledContents(True)
         self.lgpl_3 = QLabel(self.page_3)
         self.lgpl_3.setObjectName(u"lgpl_3")
-        self.lgpl_3.setGeometry(QRect(290, 490, 131, 51))
+        self.lgpl_3.setGeometry(QRect(270, 490, 131, 51))
         self.lgpl_3.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -768,6 +768,18 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}")
+        self.label_3 = QLabel(self.page_3)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(440, 460, 101, 91))
+        self.label_3.setStyleSheet(u"QLabel{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"\n"
+"}")
+        self.label_3.setPixmap(QPixmap(u"resources/pi_hole.png"))
+        self.label_3.setScaledContents(True)
         self.stackedWidget.addWidget(self.page_3)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -836,5 +848,6 @@ class Ui_MainWindow(object):
         self.insta_Btn.setText("")
         self.git_Btn.setText("")
         self.mail_Btn.setText(QCoreApplication.translate("MainWindow", u"incinfoquest@gmail.com", None))
+        self.label_3.setText("")
     # retranslateUi
 

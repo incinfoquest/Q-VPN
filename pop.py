@@ -9,9 +9,9 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setWindowFlags(QtCore.Qt.WindowCloseButtonHint)
-        self.resize(700, 500)
+        self.resize(600, 500)
         self.browser = QWebEngineView()
-        self.browser.setUrl(QUrl('https://marvel.fandom.com/wiki/Marvel_Database'))
+        self.browser.setUrl(QUrl('http://google.com'))
         self.setCentralWidget(self.browser)
         self.setWindowIcon(QtGui.QIcon('ad.png'))
         self.show()
