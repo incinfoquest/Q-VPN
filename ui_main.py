@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainupuarS.ui'
+## Form generated from reading UI file 'mainkvgAnZ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -89,6 +89,7 @@ class Ui_MainWindow(object):
         self.back_img_1.setFont(font1)
         self.back_img_1.setPixmap(QPixmap(u"resources/vpnbg.png"))
         self.back_img_1.setScaledContents(True)
+        self.back_img_1.setAlignment(Qt.AlignCenter)
         self.connect_Btn = QPushButton(self.page_1)
         self.connect_Btn.setObjectName(u"connect_Btn")
         self.connect_Btn.setGeometry(QRect(320, 190, 160, 160))
@@ -115,16 +116,17 @@ class Ui_MainWindow(object):
         icon.addFile(u"resources/power.png", QSize(), QIcon.Normal, QIcon.Off)
         self.connect_Btn.setIcon(icon)
         self.connect_Btn.setIconSize(QSize(150, 150))
-        self.ip_label = QLabel(self.page_1)
-        self.ip_label.setObjectName(u"ip_label")
-        self.ip_label.setGeometry(QRect(10, 40, 111, 21))
+        self.crnt_ip = QLabel(self.page_1)
+        self.crnt_ip.setObjectName(u"crnt_ip")
+        self.crnt_ip.setGeometry(QRect(10, 40, 111, 21))
         font2 = QFont()
         font2.setFamily(u"AvenirNext LT Pro Bold")
+        font2.setPointSize(10)
         font2.setBold(True)
         font2.setWeight(75)
-        self.ip_label.setFont(font2)
-        self.ip_label.setStyleSheet(u"background-color: rgba(0,0,0,0%)")
-        self.ip_label.setAlignment(Qt.AlignJustify|Qt.AlignVCenter)
+        self.crnt_ip.setFont(font2)
+        self.crnt_ip.setStyleSheet(u"background-color: rgba(0,0,0,0%)")
+        self.crnt_ip.setAlignment(Qt.AlignCenter)
         self.iptext = QPlainTextEdit(self.page_1)
         self.iptext.setObjectName(u"iptext")
         self.iptext.setGeometry(QRect(120, 40, 131, 21))
@@ -190,7 +192,11 @@ class Ui_MainWindow(object):
         self.tor_label = QLabel(self.page_1)
         self.tor_label.setObjectName(u"tor_label")
         self.tor_label.setGeometry(QRect(740, 40, 31, 21))
-        self.tor_label.setFont(font2)
+        font4 = QFont()
+        font4.setFamily(u"AvenirNext LT Pro Bold")
+        font4.setBold(True)
+        font4.setWeight(75)
+        self.tor_label.setFont(font4)
         self.tor_label.setStyleSheet(u"QLabel{\n"
 "background: transparent\n"
 "}")
@@ -220,7 +226,7 @@ class Ui_MainWindow(object):
         self.speed_label = QLabel(self.page_1)
         self.speed_label.setObjectName(u"speed_label")
         self.speed_label.setGeometry(QRect(700, 490, 91, 16))
-        self.speed_label.setFont(font2)
+        self.speed_label.setFont(font4)
         self.speed_label.setStyleSheet(u"QLabel{\n"
 "background: transparent\n"
 "}")
@@ -278,12 +284,12 @@ class Ui_MainWindow(object):
         self.sp_label = QLabel(self.page_1)
         self.sp_label.setObjectName(u"sp_label")
         self.sp_label.setGeometry(QRect(430, 450, 171, 41))
-        font4 = QFont()
-        font4.setFamily(u"AvenirNext LT Pro Bold")
-        font4.setPointSize(12)
-        font4.setBold(True)
-        font4.setWeight(75)
-        self.sp_label.setFont(font4)
+        font5 = QFont()
+        font5.setFamily(u"AvenirNext LT Pro Bold")
+        font5.setPointSize(12)
+        font5.setBold(True)
+        font5.setWeight(75)
+        self.sp_label.setFont(font5)
         self.sp_label.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -302,8 +308,8 @@ class Ui_MainWindow(object):
         self.sp_label.setAlignment(Qt.AlignCenter)
         self.time_label = QLabel(self.page_1)
         self.time_label.setObjectName(u"time_label")
-        self.time_label.setGeometry(QRect(250, 90, 301, 51))
-        self.time_label.setFont(font4)
+        self.time_label.setGeometry(QRect(270, 150, 251, 31))
+        self.time_label.setFont(font5)
         self.time_label.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -346,7 +352,7 @@ class Ui_MainWindow(object):
         self.label = QLabel(self.page_1)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(10, 480, 61, 31))
-        self.label.setFont(font2)
+        self.label.setFont(font4)
         self.label.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -360,12 +366,12 @@ class Ui_MainWindow(object):
         self.except_lbl = QLabel(self.page_1)
         self.except_lbl.setObjectName(u"except_lbl")
         self.except_lbl.setGeometry(QRect(240, 10, 301, 51))
-        font5 = QFont()
-        font5.setFamily(u"AvenirNext LT Pro Bold")
-        font5.setPointSize(11)
-        font5.setBold(True)
-        font5.setWeight(75)
-        self.except_lbl.setFont(font5)
+        font6 = QFont()
+        font6.setFamily(u"AvenirNext LT Pro Bold")
+        font6.setPointSize(11)
+        font6.setBold(True)
+        font6.setWeight(75)
+        self.except_lbl.setFont(font6)
         self.except_lbl.setStyleSheet(u"QLabel{\n"
 "\n"
 "background:transparent;\n"
@@ -402,7 +408,7 @@ class Ui_MainWindow(object):
         self.su_label = QLabel(self.page_1)
         self.su_label.setObjectName(u"su_label")
         self.su_label.setGeometry(QRect(430, 500, 171, 41))
-        self.su_label.setFont(font4)
+        self.su_label.setFont(font5)
         self.su_label.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -419,7 +425,7 @@ class Ui_MainWindow(object):
         self.su_label.setAlignment(Qt.AlignCenter)
         self.C_label = QLabel(self.page_1)
         self.C_label.setObjectName(u"C_label")
-        self.C_label.setGeometry(QRect(270, 100, 31, 31))
+        self.C_label.setGeometry(QRect(380, 110, 31, 31))
         self.C_label.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -428,9 +434,49 @@ class Ui_MainWindow(object):
 "")
         self.C_label.setPixmap(QPixmap(u"resources/stopwatch.png"))
         self.C_label.setScaledContents(True)
+        self.pop_btn = QPushButton(self.page_1)
+        self.pop_btn.setObjectName(u"pop_btn")
+        self.pop_btn.setGeometry(QRect(10, 90, 41, 40))
+        self.pop_btn.setStyleSheet(u"QPushButton{\n"
+"\n"
+"background-color: rgba(255, 255, 255, 0);\n"
+"border-radius: 20px;\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton:hover{\n"
+"\n"
+"	\n"
+"	background-color: rgb(169, 0, 51);\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton:pressed{\n"
+"\n"
+"	\n"
+"	background-color: rgb(252, 66, 66);\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"")
+        icon5 = QIcon()
+        icon5.addFile(u"resources/ad-blocker.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pop_btn.setIcon(icon5)
+        self.pop_btn.setIconSize(QSize(35, 35))
+        self.pop_label = QLabel(self.page_1)
+        self.pop_label.setObjectName(u"pop_label")
+        self.pop_label.setGeometry(QRect(60, 90, 101, 41))
+        self.pop_label.setFont(font2)
+        self.pop_label.setStyleSheet(u"QLabel{\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"}")
+        self.pop_label.setAlignment(Qt.AlignCenter)
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
-        self.ip_label.raise_()
+        self.crnt_ip.raise_()
         self.iptext.raise_()
         self.tor_label.raise_()
         self.Tor_Btn.raise_()
@@ -447,6 +493,8 @@ class Ui_MainWindow(object):
         self.upnld_label.raise_()
         self.su_label.raise_()
         self.C_label.raise_()
+        self.pop_btn.raise_()
+        self.pop_label.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.back_img_3 = QLabel(self.page_3)
@@ -475,9 +523,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(0, 0, 0);\n"
 "\n"
 "}")
-        icon5 = QIcon()
-        icon5.addFile(u"resources/home_new.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_home_2.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u"resources/home_new.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_home_2.setIcon(icon6)
         self.btn_home_2.setIconSize(QSize(35, 35))
         self.textBrowser = QTextBrowser(self.page_3)
         self.textBrowser.setObjectName(u"textBrowser")
@@ -615,9 +663,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(255, 150, 112);\n"
 "\n"
 "}")
-        icon6 = QIcon()
-        icon6.addFile(u"resources/Reddit_Mark_OnWhite.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.reddit_Btn.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u"resources/Reddit_Mark_OnWhite.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.reddit_Btn.setIcon(icon7)
         self.reddit_Btn.setIconSize(QSize(20, 20))
         self.tweet_Btn = QPushButton(self.page_3)
         self.tweet_Btn.setObjectName(u"tweet_Btn")
@@ -644,9 +692,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(215, 242, 251);\n"
 "\n"
 "}")
-        icon7 = QIcon()
-        icon7.addFile(u"resources/twitter_round.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.tweet_Btn.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u"resources/twitter_round.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.tweet_Btn.setIcon(icon8)
         self.tweet_Btn.setIconSize(QSize(20, 20))
         self.insta_Btn = QPushButton(self.page_3)
         self.insta_Btn.setObjectName(u"insta_Btn")
@@ -673,9 +721,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(245, 168, 20);\n"
 "\n"
 "}")
-        icon8 = QIcon()
-        icon8.addFile(u"resources/insta_round.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.insta_Btn.setIcon(icon8)
+        icon9 = QIcon()
+        icon9.addFile(u"resources/insta_round.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.insta_Btn.setIcon(icon9)
         self.insta_Btn.setIconSize(QSize(20, 20))
         self.git_Btn = QPushButton(self.page_3)
         self.git_Btn.setObjectName(u"git_Btn")
@@ -702,17 +750,17 @@ class Ui_MainWindow(object):
 "	background-color: rgb(124, 149, 180);\n"
 "\n"
 "}")
-        icon9 = QIcon()
-        icon9.addFile(u"resources/GitHub-Mark-Light-64px.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.git_Btn.setIcon(icon9)
+        icon10 = QIcon()
+        icon10.addFile(u"resources/GitHub-Mark-Light-64px.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.git_Btn.setIcon(icon10)
         self.git_Btn.setIconSize(QSize(20, 20))
         self.mail_Btn = QPushButton(self.page_3)
         self.mail_Btn.setObjectName(u"mail_Btn")
         self.mail_Btn.setGeometry(QRect(590, 470, 181, 23))
-        font6 = QFont()
-        font6.setFamily(u"AvenirNext LT Pro Regular")
-        font6.setPointSize(11)
-        self.mail_Btn.setFont(font6)
+        font7 = QFont()
+        font7.setFamily(u"AvenirNext LT Pro Regular")
+        font7.setPointSize(11)
+        self.mail_Btn.setFont(font7)
         self.mail_Btn.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background:transparent;\n"
@@ -747,7 +795,7 @@ class Ui_MainWindow(object):
         self.connect_Btn.setToolTip(QCoreApplication.translate("MainWindow", u"CONNECT", None))
 #endif // QT_CONFIG(tooltip)
         self.connect_Btn.setText("")
-        self.ip_label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">CURRENT IP :</span></p></body></html>", None))
+        self.crnt_ip.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">CURRENT IP :</span></p></body></html>", None))
         self.tor_label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">TOR</span></p></body></html>", None))
         self.Tor_Btn.setText("")
         self.speed_label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">SPEED TEST</span></p></body></html>", None))
@@ -765,6 +813,8 @@ class Ui_MainWindow(object):
         self.upnld_label.setText("")
         self.su_label.setText("")
         self.C_label.setText("")
+        self.pop_btn.setText("")
+        self.pop_label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt; color:#cf0040;\">ACTIVATED</span></p></body></html>", None))
         self.back_img_3.setText("")
         self.btn_home_2.setText("")
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

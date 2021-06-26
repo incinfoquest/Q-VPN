@@ -113,6 +113,7 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
+        self.ui.pop_btn.clicked.connect(self.pop)
         self.ui.reddit_Btn.clicked.connect(lambda: webbrowser.open('https://www.reddit.com/user/InQuest_inc'))
         self.ui.tweet_Btn.clicked.connect(lambda: webbrowser.open('https://twitter.com/Info43913522'))
         self.ui.git_Btn.clicked.connect(lambda: webbrowser.open('https://github.com/incinfoquest'))
@@ -120,6 +121,8 @@ class MainWindow(QMainWindow):
         self.ui.dwnld_label.hide()
         self.ui.C_label.setHidden(True)
         self.ui.upnld_label.hide()
+        self.ui.pop_btn.setEnabled(False)
+        self.ui.pop_label.hide()
         self.timer = QtCore.QTimer()
         # STACK
 
@@ -181,7 +184,18 @@ class MainWindow(QMainWindow):
 
     def on_click(self):
         # checking network connection
+
         if self.checkInternetRequests():
+
+            self.ui.pop_btn.setEnabled(True)
+
+            self.ui.pop_label.show()
+
+            self.ui.C_label.setHidden(True)
+
+            playsound('message_dot.mp3')
+
+
     # To disable the button
             self.ui.connect_Btn.setEnabled(False)
             self.ui.off_btn.show()
@@ -194,9 +208,13 @@ class MainWindow(QMainWindow):
 
 
     def on_Down(self):
+         self.ui.pop_btn.setEnabled(False)
+         self.ui.pop_label.hide()
+         playsound('off.mp3')
          self.end_time = time.time()
          self.time_lapsed = self.end_time - self.start_time
          self.time_convert(self.time_lapsed)
+         self.ui.pop_btn.setEnabled(False)
          self.disconnectThread = threading.Thread(target=self.wgDown)
          self.disconnectThread.start()
 
@@ -215,7 +233,7 @@ class MainWindow(QMainWindow):
 
     # WG DOWN
     def wgDown(self):
-        self.ui.off_btn.setEnabled(False)
+
         process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
                         encoding='utf-8')
         print("SESSION ENDED")
@@ -223,6 +241,8 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.setEnabled(True)
         self.ui.connect_Btn.show()
         self.on_ip()
+
+
 
     # IP THREAD
     def on_ip(self):
@@ -237,7 +257,7 @@ class MainWindow(QMainWindow):
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
             print(ipaddress)
-            #self.ui.except_lbl.clear()
+
 
             try:
                 # self.ui.iptext.
@@ -260,6 +280,10 @@ class MainWindow(QMainWindow):
 
         torexe = os.popen(r'C:\Program Files\Tor Browser\Browser\firefox.exe')
         self.showMinimized()
+
+    def pop(self):
+
+        os.system('python pop.py')
 
 
     # SPEED_TEST THREAD
@@ -297,6 +321,8 @@ class MainWindow(QMainWindow):
             print("check your internet connection for speed test")
             playsound('beep_beep.mp3')
             self.ui.except_lbl.setText("Check Your Network Connection")
+
+
     # EXIT
 if __name__ == "__main__":
     app = QApplication(sys.argv)

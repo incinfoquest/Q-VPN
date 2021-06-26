@@ -167,6 +167,9 @@ QPushButton:hover{
       <property name="scaledContents">
        <bool>true</bool>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
      </widget>
      <widget class="QPushButton" name="connect_Btn">
       <property name="geometry">
@@ -215,7 +218,7 @@ QPushButton:pressed{
        </size>
       </property>
      </widget>
-     <widget class="QLabel" name="ip_label">
+     <widget class="QLabel" name="crnt_ip">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -227,6 +230,7 @@ QPushButton:pressed{
       <property name="font">
        <font>
         <family>AvenirNext LT Pro Bold</family>
+        <pointsize>10</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -238,7 +242,7 @@ QPushButton:pressed{
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ffffff;&quot;&gt;CURRENT IP :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="alignment">
-       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QPlainTextEdit" name="iptext">
@@ -679,10 +683,10 @@ QPushButton:pressed{
      <widget class="QLabel" name="time_label">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>90</y>
-        <width>301</width>
-        <height>51</height>
+        <x>270</x>
+        <y>150</y>
+        <width>251</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
@@ -928,8 +932,8 @@ background:transparent;
      <widget class="QLabel" name="C_label">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>100</y>
+        <x>380</x>
+        <y>110</y>
         <width>31</width>
         <height>31</height>
        </rect>
@@ -952,8 +956,87 @@ background:transparent;
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QPushButton" name="pop_btn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>41</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+
+background-color: rgba(255, 255, 255, 0);
+border-radius: 20px;
+}
+
+
+QPushButton:hover{
+
+	
+	background-color: rgb(169, 0, 51);
+
+
+}
+QPushButton:pressed{
+
+	
+	background-color: rgb(252, 66, 66);
+
+
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resources/ad-blocker.png</normaloff>resources/ad-blocker.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>35</width>
+        <height>35</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="pop_label">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AvenirNext LT Pro Bold</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+
+background:transparent;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#cf0040;&quot;&gt;ACTIVATED&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
      <zorder>back_img_1</zorder>
-     <zorder>ip_label</zorder>
+     <zorder>crnt_ip</zorder>
      <zorder>iptext</zorder>
      <zorder>tor_label</zorder>
      <zorder>Tor_Btn</zorder>
@@ -970,6 +1053,8 @@ background:transparent;
      <zorder>upnld_label</zorder>
      <zorder>su_label</zorder>
      <zorder>C_label</zorder>
+     <zorder>pop_btn</zorder>
+     <zorder>pop_label</zorder>
     </widget>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="back_img_3">
