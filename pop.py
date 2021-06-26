@@ -1,15 +1,20 @@
 import sys
-from PyQt5.Qt import *
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
 from PyQt5.QtWebEngineWidgets import *
-from PyQt5.QtWidgets import QApplication
+from PyQt5 import QtGui
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super(MainWindow, self).__init__()
+        self.browser = QWebEngineView()
+        self.browser.setUrl(QUrl('http://google.com'))
+        self.setCentralWidget(self.browser)
+        self.setWindowIcon(QtGui.QIcon('ad.png'))
+        self.show()
 
 
 app = QApplication(sys.argv)
-
-web = QWebEngineView()
-
-web.load(QUrl("https://www.tutorialspoint.com/How-can-I-make-one-Python-file-run-another"))
-
-web.show()
-
-sys.exit(app.exec_())
+QApplication.setApplicationName('AdBlock')
+window = MainWindow()
+app.exec_()
