@@ -9,6 +9,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setWindowFlags(QtCore.Qt.WindowCloseButtonHint)
+        self.resize(700, 500)
         self.browser = QWebEngineView()
         self.browser.setUrl(QUrl('http://google.com'))
         self.setCentralWidget(self.browser)
