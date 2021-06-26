@@ -257,18 +257,17 @@ class MainWindow(QMainWindow):
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
             print(ipaddress)
+            self.ui.iptext.setText(ipaddress)
 
-
-            try:
-                # self.ui.iptext.
-                self.ui.iptext.appendPlainText(ipaddress)
-            except:
-                print("Please wait")
         except:
-            print("Check your internet Connection")
-            playsound('beep_beep.mp3')
-            self.ui.except_lbl.setText("Check Your Network Connection")
-            playsound('beep_beep.mp3')
+            try:
+                ipaddress = requests.get("http://ipconfig.in/ip").text
+                print(ipaddress)
+                self.ui.iptext.setText(ipaddress)
+            except:
+                print("Check your internet Connection")
+                playsound('beep_beep.mp3')
+                self.ui.except_lbl.setText("Check Your Network Connection")
 
     # TOR THREAD
     def on_Tor(self):

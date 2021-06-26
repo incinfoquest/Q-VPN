@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainkvgAnZ.ui'
+## Form generated from reading UI file 'mainBjCbZf.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -127,76 +127,14 @@ class Ui_MainWindow(object):
         self.crnt_ip.setFont(font2)
         self.crnt_ip.setStyleSheet(u"background-color: rgba(0,0,0,0%)")
         self.crnt_ip.setAlignment(Qt.AlignCenter)
-        self.iptext = QPlainTextEdit(self.page_1)
-        self.iptext.setObjectName(u"iptext")
-        self.iptext.setGeometry(QRect(120, 40, 131, 21))
-        palette = QPalette()
-        brush = QBrush(QColor(0, 0, 0, 0))
-        brush.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Active, QPalette.Button, brush)
-        brush1 = QBrush(QColor(255, 255, 255, 255))
-        brush1.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Active, QPalette.Text, brush1)
-        palette.setBrush(QPalette.Active, QPalette.ButtonText, brush1)
-        brush2 = QBrush(QColor(0, 0, 0, 255))
-        brush2.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Active, QPalette.Base, brush2)
-        palette.setBrush(QPalette.Active, QPalette.Window, brush)
-        brush3 = QBrush(QColor(255, 255, 255, 128))
-        brush3.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Active, QPalette.PlaceholderText, brush3)
-#endif
-        palette.setBrush(QPalette.Inactive, QPalette.Button, brush)
-        palette.setBrush(QPalette.Inactive, QPalette.Text, brush1)
-        palette.setBrush(QPalette.Inactive, QPalette.ButtonText, brush1)
-        brush4 = QBrush(QColor(0, 0, 0, 255))
-        brush4.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Inactive, QPalette.Base, brush4)
-        palette.setBrush(QPalette.Inactive, QPalette.Window, brush)
-        brush5 = QBrush(QColor(255, 255, 255, 128))
-        brush5.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush5)
-#endif
-        palette.setBrush(QPalette.Disabled, QPalette.Button, brush)
-        brush6 = QBrush(QColor(120, 120, 120, 255))
-        brush6.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Disabled, QPalette.Text, brush6)
-        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush6)
-        brush7 = QBrush(QColor(0, 0, 0, 255))
-        brush7.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Disabled, QPalette.Base, brush7)
-        palette.setBrush(QPalette.Disabled, QPalette.Window, brush)
-        brush8 = QBrush(QColor(255, 255, 255, 128))
-        brush8.setStyle(Qt.NoBrush)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush8)
-#endif
-        self.iptext.setPalette(palette)
-        font3 = QFont()
-        font3.setFamily(u"CrashNumberingGothic")
-        font3.setPointSize(12)
-        self.iptext.setFont(font3)
-        self.iptext.setStyleSheet(u"QPlainTextEdit\n"
-"{\n"
-"background-color: rgba(0,0,0,0%);\n"
-"border-radius: 0px;\n"
-"}")
-        self.iptext.setLineWidth(0)
-        self.iptext.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.iptext.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.iptext.setSizeAdjustPolicy(QAbstractScrollArea.AdjustIgnored)
-        self.iptext.setReadOnly(True)
-        self.iptext.setBackgroundVisible(True)
         self.tor_label = QLabel(self.page_1)
         self.tor_label.setObjectName(u"tor_label")
         self.tor_label.setGeometry(QRect(740, 40, 31, 21))
-        font4 = QFont()
-        font4.setFamily(u"AvenirNext LT Pro Bold")
-        font4.setBold(True)
-        font4.setWeight(75)
-        self.tor_label.setFont(font4)
+        font3 = QFont()
+        font3.setFamily(u"AvenirNext LT Pro Bold")
+        font3.setBold(True)
+        font3.setWeight(75)
+        self.tor_label.setFont(font3)
         self.tor_label.setStyleSheet(u"QLabel{\n"
 "background: transparent\n"
 "}")
@@ -226,7 +164,7 @@ class Ui_MainWindow(object):
         self.speed_label = QLabel(self.page_1)
         self.speed_label.setObjectName(u"speed_label")
         self.speed_label.setGeometry(QRect(700, 490, 91, 16))
-        self.speed_label.setFont(font4)
+        self.speed_label.setFont(font3)
         self.speed_label.setStyleSheet(u"QLabel{\n"
 "background: transparent\n"
 "}")
@@ -284,12 +222,12 @@ class Ui_MainWindow(object):
         self.sp_label = QLabel(self.page_1)
         self.sp_label.setObjectName(u"sp_label")
         self.sp_label.setGeometry(QRect(430, 450, 171, 41))
-        font5 = QFont()
-        font5.setFamily(u"AvenirNext LT Pro Bold")
-        font5.setPointSize(12)
-        font5.setBold(True)
-        font5.setWeight(75)
-        self.sp_label.setFont(font5)
+        font4 = QFont()
+        font4.setFamily(u"AvenirNext LT Pro Bold")
+        font4.setPointSize(12)
+        font4.setBold(True)
+        font4.setWeight(75)
+        self.sp_label.setFont(font4)
         self.sp_label.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -309,7 +247,7 @@ class Ui_MainWindow(object):
         self.time_label = QLabel(self.page_1)
         self.time_label.setObjectName(u"time_label")
         self.time_label.setGeometry(QRect(270, 150, 251, 31))
-        self.time_label.setFont(font5)
+        self.time_label.setFont(font4)
         self.time_label.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -352,7 +290,7 @@ class Ui_MainWindow(object):
         self.label = QLabel(self.page_1)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(10, 480, 61, 31))
-        self.label.setFont(font4)
+        self.label.setFont(font3)
         self.label.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -366,12 +304,12 @@ class Ui_MainWindow(object):
         self.except_lbl = QLabel(self.page_1)
         self.except_lbl.setObjectName(u"except_lbl")
         self.except_lbl.setGeometry(QRect(240, 10, 301, 51))
-        font6 = QFont()
-        font6.setFamily(u"AvenirNext LT Pro Bold")
-        font6.setPointSize(11)
-        font6.setBold(True)
-        font6.setWeight(75)
-        self.except_lbl.setFont(font6)
+        font5 = QFont()
+        font5.setFamily(u"AvenirNext LT Pro Bold")
+        font5.setPointSize(11)
+        font5.setBold(True)
+        font5.setWeight(75)
+        self.except_lbl.setFont(font5)
         self.except_lbl.setStyleSheet(u"QLabel{\n"
 "\n"
 "background:transparent;\n"
@@ -408,7 +346,7 @@ class Ui_MainWindow(object):
         self.su_label = QLabel(self.page_1)
         self.su_label.setObjectName(u"su_label")
         self.su_label.setGeometry(QRect(430, 500, 171, 41))
-        self.su_label.setFont(font5)
+        self.su_label.setFont(font4)
         self.su_label.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -474,10 +412,17 @@ class Ui_MainWindow(object):
 "\n"
 "}")
         self.pop_label.setAlignment(Qt.AlignCenter)
+        self.iptext = QLabel(self.page_1)
+        self.iptext.setObjectName(u"iptext")
+        self.iptext.setGeometry(QRect(120, 40, 101, 21))
+        self.iptext.setStyleSheet(u"QLabel\n"
+"{\n"
+"background-color: rgba(0,0,0,0%);\n"
+"border-radius: 0px;\n"
+"}")
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
         self.crnt_ip.raise_()
-        self.iptext.raise_()
         self.tor_label.raise_()
         self.Tor_Btn.raise_()
         self.speed_label.raise_()
@@ -495,6 +440,7 @@ class Ui_MainWindow(object):
         self.C_label.raise_()
         self.pop_btn.raise_()
         self.pop_label.raise_()
+        self.iptext.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.back_img_3 = QLabel(self.page_3)
@@ -757,10 +703,10 @@ class Ui_MainWindow(object):
         self.mail_Btn = QPushButton(self.page_3)
         self.mail_Btn.setObjectName(u"mail_Btn")
         self.mail_Btn.setGeometry(QRect(590, 470, 181, 23))
-        font7 = QFont()
-        font7.setFamily(u"AvenirNext LT Pro Regular")
-        font7.setPointSize(11)
-        self.mail_Btn.setFont(font7)
+        font6 = QFont()
+        font6.setFamily(u"AvenirNext LT Pro Regular")
+        font6.setPointSize(11)
+        self.mail_Btn.setFont(font6)
         self.mail_Btn.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background:transparent;\n"
@@ -815,6 +761,7 @@ class Ui_MainWindow(object):
         self.C_label.setText("")
         self.pop_btn.setText("")
         self.pop_label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt; color:#cf0040;\">ACTIVATED</span></p></body></html>", None))
+        self.iptext.setText("")
         self.back_img_3.setText("")
         self.btn_home_2.setText("")
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
