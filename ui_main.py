@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-<<<<<<< HEAD
+
 ## Form generated from reading UI file 'mainBjCbZf.ui'
-=======
+
 ## Form generated from reading UI file 'mainDbgQpa.ui'
->>>>>>> c6bb463a0eda2a3015b9f52cd093440d610e2301
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
