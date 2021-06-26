@@ -122,6 +122,7 @@ class MainWindow(QMainWindow):
         self.ui.C_label.setHidden(True)
         self.ui.upnld_label.hide()
         self.ui.pop_btn.setEnabled(False)
+        self.ui.pop_btn.setHidden(True)
         self.ui.pop_label.hide()
         self.timer = QtCore.QTimer()
         # STACK
@@ -187,6 +188,8 @@ class MainWindow(QMainWindow):
 
         if self.checkInternetRequests():
 
+            self.ui.pop_btn.setHidden(False)
+
             self.ui.pop_btn.setEnabled(True)
 
             self.ui.pop_label.show()
@@ -208,6 +211,7 @@ class MainWindow(QMainWindow):
 
 
     def on_Down(self):
+         self.ui.pop_btn.setHidden(True)
          self.ui.pop_btn.setEnabled(False)
          self.ui.pop_label.hide()
          playsound('off.mp3')
@@ -251,21 +255,23 @@ class MainWindow(QMainWindow):
 
     # FETCH IP
     def run(self):
-        self.ui.iptext.setText("Fetching IP")
+        self.ui.ext_btn.setText("Fetching IP")
         time.sleep(10)
         self.ui.iptext.clear()
-        self.ui.iptext.setText("Fetching IP")
+
 
 
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
             print(ipaddress)
+            self.ui.ext_btn.clear()
             self.ui.iptext.setText(ipaddress)
 
         except:
             try:
                 ipaddress = requests.get("http://ipconfig.in/ip").text
                 print(ipaddress)
+                self.ui.ext_btn.clear()
                 self.ui.iptext.setText(ipaddress)
             except:
                 print("Check your internet Connection")

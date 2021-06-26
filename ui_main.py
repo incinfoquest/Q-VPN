@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainPYdqnA.ui'
+## Form generated from reading UI file 'mainOvuJiO.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -118,7 +118,7 @@ class Ui_MainWindow(object):
         self.connect_Btn.setIconSize(QSize(150, 150))
         self.crnt_ip = QLabel(self.page_1)
         self.crnt_ip.setObjectName(u"crnt_ip")
-        self.crnt_ip.setGeometry(QRect(10, 40, 111, 21))
+        self.crnt_ip.setGeometry(QRect(10, 41, 111, 20))
         font2 = QFont()
         font2.setFamily(u"AvenirNext LT Pro Bold")
         font2.setPointSize(10)
@@ -414,14 +414,27 @@ class Ui_MainWindow(object):
         self.pop_label.setAlignment(Qt.AlignCenter)
         self.iptext = QLabel(self.page_1)
         self.iptext.setObjectName(u"iptext")
-        self.iptext.setGeometry(QRect(130, 30, 171, 41))
+        self.iptext.setGeometry(QRect(130, 40, 201, 41))
         font6 = QFont()
-        font6.setFamily(u"Cambria Math")
+        font6.setFamily(u"Helvetica Rounded")
         font6.setPointSize(12)
-        font6.setBold(False)
-        font6.setWeight(50)
+        font6.setBold(True)
+        font6.setWeight(75)
         self.iptext.setFont(font6)
         self.iptext.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+" background-color : transparent; \n"
+"	\n"
+"	\n"
+"	\n"
+"	color: rgb(180, 8, 53);\n"
+" };")
+        self.ext_btn = QLabel(self.page_1)
+        self.ext_btn.setObjectName(u"ext_btn")
+        self.ext_btn.setGeometry(QRect(140, 30, 201, 41))
+        self.ext_btn.setFont(font6)
+        self.ext_btn.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
 " background-color : transparent; \n"
@@ -451,6 +464,7 @@ class Ui_MainWindow(object):
         self.pop_btn.raise_()
         self.pop_label.raise_()
         self.iptext.raise_()
+        self.ext_btn.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.back_img_3 = QLabel(self.page_3)
@@ -784,6 +798,7 @@ class Ui_MainWindow(object):
         self.pop_btn.setText("")
         self.pop_label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt; color:#cf0040;\">ACTIVATED</span></p></body></html>", None))
         self.iptext.setText("")
+        self.ext_btn.setText("")
         self.back_img_3.setText("")
         self.btn_home_2.setText("")
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
