@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainCwazXh.ui'
+## Form generated from reading UI file 'mainBdPPXT.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -76,6 +76,23 @@ class Ui_MainWindow(object):
 "	background-color: rgb(255, 255, 0);\n"
 "\n"
 "}")
+        self.ref = QPushButton(self.top_bar)
+        self.ref.setObjectName(u"ref")
+        self.ref.setGeometry(QRect(750, 0, 41, 41))
+        self.ref.setStyleSheet(u"QPushButton {\n"
+"\n"
+"\n"
+" background-color : transparent; \n"
+"	\n"
+"	\n"
+"	\n"
+"\n"
+" };")
+        icon = QIcon()
+        icon.addFile(u"resources/refresh.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.ref.setIcon(icon)
+        self.ref.setIconSize(QSize(24, 16))
+        self.ref.setAutoExclusive(False)
         self.stackedWidget = QStackedWidget(self.centralwidget)
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.stackedWidget.setGeometry(QRect(0, 40, 801, 561))
@@ -112,9 +129,9 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "")
-        icon = QIcon()
-        icon.addFile(u"resources/power.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.connect_Btn.setIcon(icon)
+        icon1 = QIcon()
+        icon1.addFile(u"resources/power.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.connect_Btn.setIcon(icon1)
         self.connect_Btn.setIconSize(QSize(150, 150))
         self.crnt_ip = QLabel(self.page_1)
         self.crnt_ip.setObjectName(u"crnt_ip")
@@ -157,9 +174,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(168, 132, 186);\n"
 "\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u"resources/tor_br.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.Tor_Btn.setIcon(icon1)
+        icon2 = QIcon()
+        icon2.addFile(u"resources/tor_br.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.Tor_Btn.setIcon(icon2)
         self.Tor_Btn.setIconSize(QSize(35, 35))
         self.speed_label = QLabel(self.page_1)
         self.speed_label.setObjectName(u"speed_label")
@@ -190,9 +207,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(85, 85, 0);\n"
 "\n"
 "}")
-        icon2 = QIcon()
-        icon2.addFile(u"resources/speed (1).png", QSize(), QIcon.Normal, QIcon.Off)
-        self.speed_Test.setIcon(icon2)
+        icon3 = QIcon()
+        icon3.addFile(u"resources/speed (1).png", QSize(), QIcon.Normal, QIcon.Off)
+        self.speed_Test.setIcon(icon3)
         self.speed_Test.setIconSize(QSize(35, 35))
         self.off_btn = QPushButton(self.page_1)
         self.off_btn.setObjectName(u"off_btn")
@@ -215,9 +232,9 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "")
-        icon3 = QIcon()
-        icon3.addFile(u"resources/powerbutton.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.off_btn.setIcon(icon3)
+        icon4 = QIcon()
+        icon4.addFile(u"resources/powerbutton.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.off_btn.setIcon(icon4)
         self.off_btn.setIconSize(QSize(150, 150))
         self.sp_label = QLabel(self.page_1)
         self.sp_label.setObjectName(u"sp_label")
@@ -283,9 +300,9 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "")
-        icon4 = QIcon()
-        icon4.addFile(u"resources/information.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_about.setIcon(icon4)
+        icon5 = QIcon()
+        icon5.addFile(u"resources/information.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_about.setIcon(icon5)
         self.btn_about.setIconSize(QSize(25, 25))
         self.label = QLabel(self.page_1)
         self.label.setObjectName(u"label")
@@ -374,7 +391,7 @@ class Ui_MainWindow(object):
         self.C_label.setScaledContents(True)
         self.pop_btn = QPushButton(self.page_1)
         self.pop_btn.setObjectName(u"pop_btn")
-        self.pop_btn.setGeometry(QRect(10, 90, 41, 40))
+        self.pop_btn.setGeometry(QRect(330, 350, 41, 40))
         self.pop_btn.setStyleSheet(u"QPushButton{\n"
 "\n"
 "background-color: rgba(255, 255, 255, 0);\n"
@@ -398,13 +415,13 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "")
-        icon5 = QIcon()
-        icon5.addFile(u"resources/ad-blocker.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pop_btn.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u"resources/ad-blocker.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pop_btn.setIcon(icon6)
         self.pop_btn.setIconSize(QSize(35, 35))
         self.pop_label = QLabel(self.page_1)
         self.pop_label.setObjectName(u"pop_label")
-        self.pop_label.setGeometry(QRect(60, 90, 101, 41))
+        self.pop_label.setGeometry(QRect(380, 350, 101, 41))
         self.pop_label.setFont(font2)
         self.pop_label.setStyleSheet(u"QLabel{\n"
 "\n"
@@ -428,7 +445,7 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	\n"
-"	color: rgb(120, 205, 212);\n"
+"	color: rgb(180, 8, 53);\n"
 " };")
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
@@ -479,9 +496,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(0, 0, 0);\n"
 "\n"
 "}")
-        icon6 = QIcon()
-        icon6.addFile(u"resources/home_new.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_home_2.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u"resources/home_new.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_home_2.setIcon(icon7)
         self.btn_home_2.setIconSize(QSize(35, 35))
         self.textBrowser = QTextBrowser(self.page_3)
         self.textBrowser.setObjectName(u"textBrowser")
@@ -619,9 +636,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(255, 150, 112);\n"
 "\n"
 "}")
-        icon7 = QIcon()
-        icon7.addFile(u"resources/Reddit_Mark_OnWhite.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.reddit_Btn.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u"resources/Reddit_Mark_OnWhite.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.reddit_Btn.setIcon(icon8)
         self.reddit_Btn.setIconSize(QSize(20, 20))
         self.tweet_Btn = QPushButton(self.page_3)
         self.tweet_Btn.setObjectName(u"tweet_Btn")
@@ -648,9 +665,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(215, 242, 251);\n"
 "\n"
 "}")
-        icon8 = QIcon()
-        icon8.addFile(u"resources/twitter_round.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.tweet_Btn.setIcon(icon8)
+        icon9 = QIcon()
+        icon9.addFile(u"resources/twitter_round.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.tweet_Btn.setIcon(icon9)
         self.tweet_Btn.setIconSize(QSize(20, 20))
         self.insta_Btn = QPushButton(self.page_3)
         self.insta_Btn.setObjectName(u"insta_Btn")
@@ -677,9 +694,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(245, 168, 20);\n"
 "\n"
 "}")
-        icon9 = QIcon()
-        icon9.addFile(u"resources/insta_round.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.insta_Btn.setIcon(icon9)
+        icon10 = QIcon()
+        icon10.addFile(u"resources/insta_round.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.insta_Btn.setIcon(icon10)
         self.insta_Btn.setIconSize(QSize(20, 20))
         self.git_Btn = QPushButton(self.page_3)
         self.git_Btn.setObjectName(u"git_Btn")
@@ -706,9 +723,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(124, 149, 180);\n"
 "\n"
 "}")
-        icon10 = QIcon()
-        icon10.addFile(u"resources/GitHub-Mark-Light-64px.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.git_Btn.setIcon(icon10)
+        icon11 = QIcon()
+        icon11.addFile(u"resources/GitHub-Mark-Light-64px.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.git_Btn.setIcon(icon11)
         self.git_Btn.setIconSize(QSize(20, 20))
         self.mail_Btn = QPushButton(self.page_3)
         self.mail_Btn.setObjectName(u"mail_Btn")
@@ -758,6 +775,7 @@ class Ui_MainWindow(object):
         self.miniNew.setToolTip(QCoreApplication.translate("MainWindow", u"minimize", None))
 #endif // QT_CONFIG(tooltip)
         self.miniNew.setText("")
+        self.ref.setText("")
         self.back_img_1.setText("")
 #if QT_CONFIG(tooltip)
         self.connect_Btn.setToolTip(QCoreApplication.translate("MainWindow", u"CONNECT", None))
@@ -807,3 +825,4 @@ class Ui_MainWindow(object):
         self.mail_Btn.setText(QCoreApplication.translate("MainWindow", u"incinfoquest@gmail.com", None))
         self.label_3.setText("")
     # retranslateUi
+

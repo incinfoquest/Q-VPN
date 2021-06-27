@@ -118,6 +118,7 @@ class MainWindow(QMainWindow):
         self.ui.tweet_Btn.clicked.connect(lambda: webbrowser.open('https://twitter.com/Info43913522'))
         self.ui.git_Btn.clicked.connect(lambda: webbrowser.open('https://github.com/incinfoquest'))
         self.ui.insta_Btn.clicked.connect(lambda: webbrowser.open('https://www.instagram.com/inquest_inc/'))
+        self.ui.ref.clicked.connect(self.refresh)
         self.ui.dwnld_label.hide()
         self.ui.C_label.setHidden(True)
         self.ui.upnld_label.hide()
@@ -159,6 +160,14 @@ class MainWindow(QMainWindow):
         except:
             self.ui.except_lbl.setText("Check Your Network Connection")
             playsound('beep_beep.mp3')
+
+# Refreshing the labels
+    def refresh(self):
+        self.ui.ext_btn.clear()
+        self.on_ip()
+        self.ui.except_lbl.clear()
+        self.ui.su_label.clear()
+        self.ui.sp_label.clear()
 
 
         # MOVE WINDOW
@@ -258,8 +267,6 @@ class MainWindow(QMainWindow):
         self.ui.ext_btn.setText("Fetching IP")
         time.sleep(10)
         #self.ui.iptext.clear()
-
-
 
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
