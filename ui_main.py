@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainBdPPXT.ui'
+## Form generated from reading UI file 'mainocDJUm.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -83,11 +83,15 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 " background-color : transparent; \n"
-"	\n"
-"	\n"
-"	\n"
+"border-radius: 20px;\n"
 "\n"
-" };")
+" }\n"
+"\n"
+"QPushButton:hover{\n"
+"\n"
+"	\n"
+"	background-color: rgb(255, 255, 255);\n"
+"};")
         icon = QIcon()
         icon.addFile(u"resources/refresh.png", QSize(), QIcon.Normal, QIcon.Off)
         self.ref.setIcon(icon)

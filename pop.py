@@ -5,9 +5,9 @@ from PyQt5.QtWebEngineWidgets import *
 from PyQt5 import QtGui
 from PyQt5 import QtCore
 
-class MainWindow(QMainWindow):
+class PopWindow(QMainWindow):
     def __init__(self):
-        super(MainWindow, self).__init__()
+        super(PopWindow, self).__init__()
         self.setWindowFlags(QtCore.Qt.WindowCloseButtonHint)
         self.resize(600, 500)
         self.browser = QWebEngineView()
@@ -18,5 +18,5 @@ class MainWindow(QMainWindow):
 
 app = QApplication(sys.argv)
 QApplication.setApplicationName('AdBlock')
-window = MainWindow()
+p_window = PopWindow()
 app.exec_()

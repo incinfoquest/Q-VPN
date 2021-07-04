@@ -107,13 +107,14 @@ class splashscreen(QMainWindow):
 class MainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
+
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         #self.ui.connect_Btn.setCheckable(True)
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
-        self.ui.pop_btn.clicked.connect(self.pop)
+        self.ui.pop_btn.clicked.connect(self.popup)
         self.ui.reddit_Btn.clicked.connect(lambda: webbrowser.open('https://www.reddit.com/user/InQuest_inc'))
         self.ui.tweet_Btn.clicked.connect(lambda: webbrowser.open('https://twitter.com/Info43913522'))
         self.ui.git_Btn.clicked.connect(lambda: webbrowser.open('https://github.com/incinfoquest'))
@@ -287,14 +288,19 @@ class MainWindow(QMainWindow):
 
     # TOR THREAD
     def on_Tor(self):
-            self.tor_Thread = threading.Thread(target=self.torConnect)
-            self.tor_Thread.start()
+        self.tor_Thread = threading.Thread(target=self.torConnect)
+        self.tor_Thread.start()
 
     # TOR CONNECTION
     def torConnect(self):
 ####
         torexe = os.popen(r'C:\Program Files\Tor Browser\Browser\firefox.exe')
         self.showMinimized()
+
+    def popup(self):
+        self.pop_Thread = threading.Thread(target=self.pop)
+        self.pop_Thread.start()
+
 
     def pop(self):
 
