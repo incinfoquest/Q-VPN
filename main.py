@@ -169,6 +169,10 @@ class MainWindow(QMainWindow):
         self.ui.except_lbl.clear()
         self.ui.su_label.clear()
         self.ui.sp_label.clear()
+        self.ui.dwnld_label.hide()
+        self.ui.upnld_label.hide()
+        self.ui.time_label.hide()
+        self.ui.C_label.hide()
 
 
         # MOVE WINDOW
@@ -191,6 +195,7 @@ class MainWindow(QMainWindow):
         print("Time Lapsed = {0}:{1}:{2}".format(int(hours),int(mins),int(sec)))
         ti = "{0}:{1}:{2}".format(int(hours),int(mins),int(sec))
         self.ui.C_label.setHidden(False)
+        self.ui.time_label.show()
         self.ui.time_label.setText("Connection Time " + ti)
 
     def on_click(self):
