@@ -12,11 +12,9 @@
 
 import sys
 import platform
-# from PyQt5.QtCore import *
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect,
                             QSize, QTime, QUrl, Qt, QEvent)
-# from PyQt5.QtWidgets import QApplication
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence,
                            QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
@@ -30,6 +28,8 @@ import speedtest
 import time
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
+from win10toast import ToastNotifier
+
 
 ## SPLASH SCREEN
 from ui_splash_screen import Ui_splashscreen
@@ -119,6 +119,7 @@ class MainWindow(QMainWindow):
         self.ui.tweet_Btn.clicked.connect(lambda: webbrowser.open('https://twitter.com/Info43913522'))
         self.ui.git_Btn.clicked.connect(lambda: webbrowser.open('https://github.com/incinfoquest'))
         self.ui.insta_Btn.clicked.connect(lambda: webbrowser.open('https://www.instagram.com/inquest_inc/'))
+        self.ui.mail_Btn.clicked.connect(lambda: webbrowser.open('https://mail.google.com/mail/u/0/#inbox?compose=new'))
         self.ui.ref.clicked.connect(self.refresh)
         self.ui.dwnld_label.hide()
         self.ui.C_label.setHidden(True)
@@ -127,6 +128,7 @@ class MainWindow(QMainWindow):
         self.ui.pop_btn.setHidden(True)
         self.ui.pop_label.hide()
         self.timer = QtCore.QTimer()
+        self.t = ToastNotifier()
         # STACK
 
         # PAGE 3
@@ -134,7 +136,7 @@ class MainWindow(QMainWindow):
 
         # FROM PAGE_3 to PAGE_1
         self.ui.btn_home_2.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_1))
-
+        #self.ui.speed_label.mousePressEvent = self.openweb
         # DISPLAY IP ADDRESS WHEN MAIN WINDOW IS LOADED
         self.on_ip()
 
@@ -151,6 +153,10 @@ class MainWindow(QMainWindow):
 
         # SET TITLE BAR
         self.ui.top_bar.mouseMoveEvent = self.moveWindow
+
+    #def openweb(self,arg):
+    #    webbrowser.open('https://google.com')
+
 
     def checkInternetRequests(self, url='http://www.google.com/', timeout=3):
         try:
@@ -249,7 +255,7 @@ class MainWindow(QMainWindow):
         # TO PRINT IP AFTER WG IS CONNECTED
         self.on_ip()
         self.ui.connect_Btn.hide()
-
+        self.t.show_toast("VPN Connected Successfully", "You are Safe now...")
     # WG DOWN
     def wgDown(self):
 
@@ -260,6 +266,7 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.setEnabled(True)
         self.ui.connect_Btn.show()
         self.on_ip()
+        self.t.show_toast("VPN DisConnected Successfully", " ")
 
 
 
