@@ -171,6 +171,7 @@ class MainWindow(QMainWindow):
 # Refreshing the labels
     def refresh(self):
         self.ui.ext_btn.clear()
+        self.ui.crnt_ip.clear()
         self.on_ip()
         self.ui.except_lbl.clear()
         self.ui.su_label.clear()
@@ -179,6 +180,7 @@ class MainWindow(QMainWindow):
         self.ui.upnld_label.hide()
         self.ui.time_label.hide()
         self.ui.C_label.hide()
+
 
 
         # MOVE WINDOW
@@ -246,8 +248,8 @@ class MainWindow(QMainWindow):
 
         # Wg UP
     def wgConnect(self):
-        process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/installtunnelservice',
-                         "C:\Program Files\WireGuard\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
+        process = Popen(["C:\Program Files\Q VPN\wireguard.exe", '/installtunnelservice',
+                         "C:\Program Files\Q VPN\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
                         encoding='utf-8')
 
         print("CONNECTED")
@@ -255,11 +257,11 @@ class MainWindow(QMainWindow):
         # TO PRINT IP AFTER WG IS CONNECTED
         self.on_ip()
         self.ui.connect_Btn.hide()
-        self.t.show_toast("VPN Connected Successfully", "You are Safe now...")
+        self.t.show_toast("VPN Connected Successfully")
     # WG DOWN
     def wgDown(self):
 
-        process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
+        process = Popen(["C:\Program Files\Q VPN\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
                         encoding='utf-8')
         print("SESSION ENDED")
         self.ui.off_btn.hide()
@@ -277,21 +279,23 @@ class MainWindow(QMainWindow):
 
     # FETCH IP
     def run(self):
-        self.ui.ext_btn.setText("Fetching IP")
+        self.ui.crnt_ip.setText("FETCHING IP")
         time.sleep(10)
         #self.ui.iptext.clear()
 
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
             print(ipaddress)
-            self.ui.ext_btn.clear()
+            self.ui.crnt_ip.clear()
+            self.ui.crnt_ip.setText("CURRENT IP :")
             self.ui.ext_btn.setText(ipaddress)
 
         except:
             try:
                 ipaddress = requests.get("http://ipconfig.in/ip").text
                 print(ipaddress)
-                self.ui.ext_btn.clear()
+                self.ui.crnt_ip.clear()
+                self.ui.crnt_ip.setText("CURRENT IP :")
                 self.ui.ext_btn.setText(ipaddress)
             except:
                 print("Check your internet Connection")
@@ -306,7 +310,7 @@ class MainWindow(QMainWindow):
     # TOR CONNECTION
     def torConnect(self):
 ####
-        torexe = os.popen(r'C:\Program Files\Tor Browser\Browser\firefox.exe')
+        torexe = os.popen(r'C:\Program Files\Q VPN\Browser\firefox.exe')
         self.showMinimized()
 
     def popup(self):

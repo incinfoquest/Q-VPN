@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainocDJUm.ui'
+## Form generated from reading UI file 'mainUIWRHq.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -78,19 +78,20 @@ class Ui_MainWindow(object):
 "}")
         self.ref = QPushButton(self.top_bar)
         self.ref.setObjectName(u"ref")
-        self.ref.setGeometry(QRect(750, 0, 41, 41))
+        self.ref.setGeometry(QRect(760, 10, 20, 20))
         self.ref.setStyleSheet(u"QPushButton {\n"
 "\n"
 "\n"
 " background-color : transparent; \n"
-"border-radius: 20px;\n"
+"border-radius: 10px;\n"
 "\n"
 " }\n"
 "\n"
 "QPushButton:hover{\n"
 "\n"
 "	\n"
-"	background-color: rgb(255, 255, 255);\n"
+"	\n"
+"	background-color: rgb(28, 110, 137);\n"
 "};")
         icon = QIcon()
         icon.addFile(u"resources/refresh.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -139,14 +140,24 @@ class Ui_MainWindow(object):
         self.connect_Btn.setIconSize(QSize(150, 150))
         self.crnt_ip = QLabel(self.page_1)
         self.crnt_ip.setObjectName(u"crnt_ip")
-        self.crnt_ip.setGeometry(QRect(10, 41, 111, 20))
+        self.crnt_ip.setGeometry(QRect(10, 30, 111, 31))
         font2 = QFont()
         font2.setFamily(u"AvenirNext LT Pro Bold")
-        font2.setPointSize(10)
+        font2.setPointSize(11)
         font2.setBold(True)
         font2.setWeight(75)
         self.crnt_ip.setFont(font2)
-        self.crnt_ip.setStyleSheet(u"background-color: rgba(0,0,0,0%)")
+        self.crnt_ip.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+" background-color : transparent; \n"
+"	\n"
+"	\n"
+"	\n"
+"	\n"
+"	\n"
+"	color: rgb(255, 255, 255);\n"
+" };")
         self.crnt_ip.setAlignment(Qt.AlignCenter)
         self.tor_label = QLabel(self.page_1)
         self.tor_label.setObjectName(u"tor_label")
@@ -325,12 +336,7 @@ class Ui_MainWindow(object):
         self.except_lbl = QLabel(self.page_1)
         self.except_lbl.setObjectName(u"except_lbl")
         self.except_lbl.setGeometry(QRect(240, 10, 301, 51))
-        font5 = QFont()
-        font5.setFamily(u"AvenirNext LT Pro Bold")
-        font5.setPointSize(11)
-        font5.setBold(True)
-        font5.setWeight(75)
-        self.except_lbl.setFont(font5)
+        self.except_lbl.setFont(font2)
         self.except_lbl.setStyleSheet(u"QLabel{\n"
 "\n"
 "background:transparent;\n"
@@ -426,7 +432,12 @@ class Ui_MainWindow(object):
         self.pop_label = QLabel(self.page_1)
         self.pop_label.setObjectName(u"pop_label")
         self.pop_label.setGeometry(QRect(380, 350, 101, 41))
-        self.pop_label.setFont(font2)
+        font5 = QFont()
+        font5.setFamily(u"AvenirNext LT Pro Bold")
+        font5.setPointSize(10)
+        font5.setBold(True)
+        font5.setWeight(75)
+        self.pop_label.setFont(font5)
         self.pop_label.setStyleSheet(u"QLabel{\n"
 "\n"
 "background:transparent;\n"
@@ -435,9 +446,9 @@ class Ui_MainWindow(object):
         self.pop_label.setAlignment(Qt.AlignCenter)
         self.ext_btn = QLabel(self.page_1)
         self.ext_btn.setObjectName(u"ext_btn")
-        self.ext_btn.setGeometry(QRect(140, 30, 201, 41))
+        self.ext_btn.setGeometry(QRect(130, 30, 141, 31))
         font6 = QFont()
-        font6.setFamily(u"Helvetica Rounded")
+        font6.setFamily(u"Avenir Next LT Pro")
         font6.setPointSize(12)
         font6.setBold(True)
         font6.setWeight(75)
@@ -449,8 +460,12 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	\n"
-"	color: rgb(180, 8, 53);\n"
+"	\n"
+"	color: rgb(50, 215, 54);\n"
 " };")
+        self.ext_btn.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.ext_btn.setWordWrap(False)
+        self.ext_btn.setOpenExternalLinks(True)
         self.stackedWidget.addWidget(self.page_1)
         self.back_img_1.raise_()
         self.crnt_ip.raise_()
@@ -785,7 +800,7 @@ class Ui_MainWindow(object):
         self.connect_Btn.setToolTip(QCoreApplication.translate("MainWindow", u"CONNECT", None))
 #endif // QT_CONFIG(tooltip)
         self.connect_Btn.setText("")
-        self.crnt_ip.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">CURRENT IP :</span></p></body></html>", None))
+        self.crnt_ip.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><br/></p></body></html>", None))
         self.tor_label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">TOR</span></p></body></html>", None))
         self.Tor_Btn.setText("")
         self.speed_label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; color:#ffffff;\">SPEED TEST</span></p></body></html>", None))
