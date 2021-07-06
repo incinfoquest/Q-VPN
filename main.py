@@ -211,6 +211,8 @@ class MainWindow(QMainWindow):
 
         if self.checkInternetRequests():
 
+            self.ui.ext_btn.clear()
+
             self.ui.pop_btn.setHidden(False)
 
             self.ui.pop_btn.setEnabled(True)
@@ -234,6 +236,7 @@ class MainWindow(QMainWindow):
 
 
     def on_Down(self):
+         self.ui.ext_btn.clear()
          self.ui.pop_btn.setHidden(True)
          self.ui.pop_btn.setEnabled(False)
          self.ui.pop_label.hide()
@@ -257,7 +260,7 @@ class MainWindow(QMainWindow):
         # TO PRINT IP AFTER WG IS CONNECTED
         self.on_ip()
         self.ui.connect_Btn.hide()
-        self.t.show_toast("VPN Connected Successfully")
+        self.t.show_toast("Q VPN","VPN Connected Successfully", icon_path="icon-console.ico",duration=5)
     # WG DOWN
     def wgDown(self):
 
@@ -268,7 +271,7 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.setEnabled(True)
         self.ui.connect_Btn.show()
         self.on_ip()
-        self.t.show_toast("VPN DisConnected Successfully", " ")
+        self.t.show_toast("Q VPN","VPN DisConnected Successfully", icon_path="icon-console.ico",duration=5)
 
 
 
@@ -288,6 +291,7 @@ class MainWindow(QMainWindow):
             print(ipaddress)
             self.ui.crnt_ip.clear()
             self.ui.crnt_ip.setText("CURRENT IP :")
+            self.ui.ext_btn.clear()
             self.ui.ext_btn.setText(ipaddress)
 
         except:
@@ -296,6 +300,7 @@ class MainWindow(QMainWindow):
                 print(ipaddress)
                 self.ui.crnt_ip.clear()
                 self.ui.crnt_ip.setText("CURRENT IP :")
+                self.ui.ext_btn.clear()
                 self.ui.ext_btn.setText(ipaddress)
             except:
                 print("Check your internet Connection")
