@@ -111,6 +111,8 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         #self.ui.connect_Btn.setCheckable(True)
+
+
         self.ui.connect_Btn.clicked.connect(self.on_click)
         self.ui.Tor_Btn.clicked.connect(self.on_Tor)
         self.ui.speed_Test.clicked.connect(self.check_speed)
@@ -129,6 +131,12 @@ class MainWindow(QMainWindow):
         self.ui.pop_label.hide()
         self.timer = QtCore.QTimer()
         self.t = ToastNotifier()
+        # Checking the file is not empty
+
+        self.fi = "test.txt"
+        if os.stat(self.fi).st_size != 0:
+            self.status()
+
         # STACK
 
         # PAGE 3
@@ -156,6 +164,21 @@ class MainWindow(QMainWindow):
 
     #def openweb(self,arg):
     #    webbrowser.open('https://google.com')
+    # Changing the status of the Wg is up
+    def status(self):
+        self.ui.connect_Btn.setEnabled(False)
+        self.ui.off_btn.show()
+        self.ui.off_btn.setEnabled(True)
+        self.ui.ext_btn.clear()
+        self.ui.connect_Btn.hide()
+        self.ui.pop_btn.setHidden(False)
+
+        self.ui.pop_btn.setEnabled(True)
+        self.ui.pop_label.show()
+
+        self.ui.C_label.setHidden(True)
+
+
 
 
     def checkInternetRequests(self, url='http://www.google.com/', timeout=3):
@@ -211,23 +234,24 @@ class MainWindow(QMainWindow):
 
         if self.checkInternetRequests():
 
-            self.ui.ext_btn.clear()
+            #self.ui.ext_btn.clear()
 
-            self.ui.pop_btn.setHidden(False)
+            #self.ui.pop_btn.setHidden(False)
 
-            self.ui.pop_btn.setEnabled(True)
+            #self.ui.pop_btn.setEnabled(True)
 
-            self.ui.pop_label.show()
+            #self.ui.pop_label.show()
 
-            self.ui.C_label.setHidden(True)
+            #self.ui.C_label.setHidden(True)
 
             playsound('message_dot.mp3')
+            self.status()
 
 
     # To disable the button
-            self.ui.connect_Btn.setEnabled(False)
-            self.ui.off_btn.show()
-            self.ui.off_btn.setEnabled(True)
+            #self.ui.connect_Btn.setEnabled(False)
+            #self.ui.off_btn.show()
+            #self.ui.off_btn.setEnabled(True)
             self.ui.time_label.clear()
             self.start_time = time.time()
             # THREADING
@@ -241,12 +265,14 @@ class MainWindow(QMainWindow):
          self.ui.pop_btn.setEnabled(False)
          self.ui.pop_label.hide()
          playsound('off.mp3')
-         self.end_time = time.time()
-         self.time_lapsed = self.end_time - self.start_time
-         self.time_convert(self.time_lapsed)
+         #self.end_time = time.time()
+         #self.time_lapsed = self.end_time - self.start_time
+         #self.time_convert(self.time_lapsed)
          self.ui.pop_btn.setEnabled(False)
          self.disconnectThread = threading.Thread(target=self.wgDown)
          self.disconnectThread.start()
+
+
 
 
         # Wg UP
@@ -256,10 +282,15 @@ class MainWindow(QMainWindow):
                         encoding='utf-8')
 
         print("CONNECTED")
+        try:
+            f = open ("test.txt", 'w', encoding = 'utf-8')
+            f.write("Connected")
+        except:
+            f.close()
 
         # TO PRINT IP AFTER WG IS CONNECTED
         self.on_ip()
-        self.ui.connect_Btn.hide()
+        #self.ui.connect_Btn.hide()
         self.t.show_toast("Q VPN","VPN Connected Successfully", icon_path="icon-console.ico",duration=5)
     # WG DOWN
     def wgDown(self):
@@ -272,7 +303,8 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.show()
         self.on_ip()
         self.t.show_toast("Q VPN","VPN DisConnected Successfully", icon_path="icon-console.ico",duration=5)
-
+        with open("test.txt", 'r+') as f:
+            f.truncate(0)
 
 
     # IP THREAD
