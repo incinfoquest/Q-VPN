@@ -1,9 +1,9 @@
 import sys
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtWebEngineWidgets import *
-from PyQt5 import QtGui
-from PyQt5 import QtCore
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
+from PySide2.QtWebEngineWidgets import *
+from PySide2 import QtGui
+from PySide2 import QtCore
 
 class PopWindow(QMainWindow):
     def __init__(self):

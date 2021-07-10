@@ -25,10 +25,11 @@ import threading
 import os
 import requests
 import speedtest
-import time
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from win10toast import ToastNotifier
+import time
 
 
 ## SPLASH SCREEN
@@ -131,11 +132,11 @@ class MainWindow(QMainWindow):
         self.ui.pop_label.hide()
         self.timer = QtCore.QTimer()
         self.t = ToastNotifier()
-        # Checking the file is not empty
+        # Checking the test.txt file is empty or not for status finding
 
         self.fi = "test.txt"
         if os.stat(self.fi).st_size != 0:
-            self.status()
+            self.st_thread()
 
         # STACK
 
@@ -162,8 +163,13 @@ class MainWindow(QMainWindow):
         # SET TITLE BAR
         self.ui.top_bar.mouseMoveEvent = self.moveWindow
 
-    #def openweb(self,arg):
-    #    webbrowser.open('https://google.com')
+
+# Status Checking Thread
+    def st_thread(self):
+
+        self.disconnectThread = threading.Thread(target=self.status)
+        self.disconnectThread.start()
+
     # Changing the status of the Wg is up
     def status(self):
         self.ui.connect_Btn.setEnabled(False)
@@ -180,7 +186,7 @@ class MainWindow(QMainWindow):
 
 
 
-
+# To check the Network is on
     def checkInternetRequests(self, url='http://www.google.com/', timeout=3):
         try:
             self.ui.except_lbl.clear()
@@ -232,42 +238,27 @@ class MainWindow(QMainWindow):
     def on_click(self):
         # checking network connection
 
-        if self.checkInternetRequests():
+         if self.checkInternetRequests():
 
-            #self.ui.ext_btn.clear()
-
-            #self.ui.pop_btn.setHidden(False)
-
-            #self.ui.pop_btn.setEnabled(True)
-
-            #self.ui.pop_label.show()
-
-            #self.ui.C_label.setHidden(True)
-
-            playsound('message_dot.mp3')
-            self.status()
-
-
-    # To disable the button
-            #self.ui.connect_Btn.setEnabled(False)
-            #self.ui.off_btn.show()
-            #self.ui.off_btn.setEnabled(True)
             self.ui.time_label.clear()
-            self.start_time = time.time()
+            playsound('message_dot.mp3')
+
             # THREADING
             self.connectThread = threading.Thread(target=self.wgConnect)
             self.connectThread.start()
 
-
     def on_Down(self):
-         self.ui.ext_btn.clear()
          self.ui.pop_btn.setHidden(True)
          self.ui.pop_btn.setEnabled(False)
          self.ui.pop_label.hide()
          playsound('off.mp3')
-         #self.end_time = time.time()
-         #self.time_lapsed = self.end_time - self.start_time
-         #self.time_convert(self.time_lapsed)
+         # open the test.txt file in read mode
+         with open ("test.txt", 'r', encoding = 'utf-8') as f:
+             self.start_time  = f.read()
+             print(self.start_time)
+         self.end_time = time.time()
+         self.time_lapsed = self.end_time - float(self.start_time)
+         self.time_convert(self.time_lapsed)
          self.ui.pop_btn.setEnabled(False)
          self.disconnectThread = threading.Thread(target=self.wgDown)
          self.disconnectThread.start()
@@ -275,23 +266,29 @@ class MainWindow(QMainWindow):
 
 
 
+
+
         # Wg UP
     def wgConnect(self):
+        self.st_thread()
         process = Popen(["C:\Program Files\Q VPN\wireguard.exe", '/installtunnelservice',
                          "C:\Program Files\Q VPN\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
                         encoding='utf-8')
 
         print("CONNECTED")
-        try:
-            f = open ("test.txt", 'w', encoding = 'utf-8')
-            f.write("Connected")
-        except:
-            f.close()
 
         # TO PRINT IP AFTER WG IS CONNECTED
         self.on_ip()
-        #self.ui.connect_Btn.hide()
+        # windows notifying
         self.t.show_toast("Q VPN","VPN Connected Successfully", icon_path="icon-console.ico",duration=5)
+        # Writing the starting ip to the test.txt
+        f = open ("test.txt", 'w', encoding = 'utf-8')
+        self.start_time = time.time()
+        # to store the value as in Floating point
+        f.write('%f'%self.start_time)
+
+
+
     # WG DOWN
     def wgDown(self):
 
@@ -303,6 +300,7 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.show()
         self.on_ip()
         self.t.show_toast("Q VPN","VPN DisConnected Successfully", icon_path="icon-console.ico",duration=5)
+        # To clear the test.txt contents
         with open("test.txt", 'r+') as f:
             f.truncate(0)
 
@@ -316,7 +314,7 @@ class MainWindow(QMainWindow):
     def run(self):
         self.ui.crnt_ip.setText("FETCHING IP")
         time.sleep(10)
-        #self.ui.iptext.clear()
+
 
         try:
             ipaddress = requests.get("http://ipecho.net/plain?").text
