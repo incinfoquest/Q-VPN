@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'maineSELFn.ui'
+## Form generated from reading UI file 'mainpmFOPb.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -812,9 +812,9 @@ class Ui_MainWindow(object):
 "\n"
 "}")
         icon12 = QIcon()
-        icon12.addFile(u"resources/website.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon12.addFile(u"resources/www.png", QSize(), QIcon.Normal, QIcon.Off)
         self.site.setIcon(icon12)
-        self.site.setIconSize(QSize(20, 20))
+        self.site.setIconSize(QSize(25, 25))
         self.stackedWidget.addWidget(self.page_3)
         MainWindow.setCentralWidget(self.centralwidget)
 

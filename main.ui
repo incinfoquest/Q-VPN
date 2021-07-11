@@ -1488,12 +1488,12 @@ QPushButton:pressed{
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>resources/website.png</normaloff>resources/website.png</iconset>
+        <normaloff>resources/www.png</normaloff>resources/www.png</iconset>
       </property>
       <property name="iconSize">
        <size>
-        <width>20</width>
-        <height>20</height>
+        <width>25</width>
+        <height>25</height>
        </size>
       </property>
      </widget>
