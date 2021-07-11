@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainpmFOPb.ui'
+## Form generated from reading UI file 'mainbTUMhS.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -605,7 +605,7 @@ class Ui_MainWindow(object):
 "}")
         self.fsf = QLabel(self.page_3)
         self.fsf.setObjectName(u"fsf")
-        self.fsf.setGeometry(QRect(30, 510, 191, 41))
+        self.fsf.setGeometry(QRect(20, 510, 161, 31))
         self.fsf.setStyleSheet(u"QLabel{\n"
 "background:transparent;\n"
 "}")
@@ -613,7 +613,7 @@ class Ui_MainWindow(object):
         self.fsf.setScaledContents(True)
         self.lgpl_3 = QLabel(self.page_3)
         self.lgpl_3.setObjectName(u"lgpl_3")
-        self.lgpl_3.setGeometry(QRect(260, 500, 131, 51))
+        self.lgpl_3.setGeometry(QRect(210, 500, 101, 41))
         self.lgpl_3.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -750,7 +750,7 @@ class Ui_MainWindow(object):
         self.git_Btn.setIconSize(QSize(20, 20))
         self.mail_Btn = QPushButton(self.page_3)
         self.mail_Btn.setObjectName(u"mail_Btn")
-        self.mail_Btn.setGeometry(QRect(560, 470, 181, 23))
+        self.mail_Btn.setGeometry(QRect(550, 470, 201, 23))
         font7 = QFont()
         font7.setFamily(u"AvenirNext LT Pro Regular")
         font7.setPointSize(11)
@@ -764,7 +764,7 @@ class Ui_MainWindow(object):
 "}")
         self.label_3 = QLabel(self.page_3)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(290, 410, 71, 61))
+        self.label_3.setGeometry(QRect(70, 440, 61, 51))
         self.label_3.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -776,7 +776,7 @@ class Ui_MainWindow(object):
         self.label_3.setScaledContents(True)
         self.label_4 = QLabel(self.page_3)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(30, 430, 191, 31))
+        self.label_4.setGeometry(QRect(330, 510, 161, 31))
         self.label_4.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
