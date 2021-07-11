@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainUdjCrg.ui'
+## Form generated from reading UI file 'maineSELFn.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -92,7 +92,9 @@ class Ui_MainWindow(object):
 "	\n"
 "	\n"
 "	background-color: rgb(201, 230, 247);\n"
-"};")
+"};\n"
+"\n"
+"")
         icon = QIcon()
         icon.addFile(u"resources/refresh.png", QSize(), QIcon.Normal, QIcon.Off)
         self.ref.setIcon(icon)
@@ -521,7 +523,7 @@ class Ui_MainWindow(object):
         self.btn_home_2.setIconSize(QSize(35, 35))
         self.textBrowser = QTextBrowser(self.page_3)
         self.textBrowser.setObjectName(u"textBrowser")
-        self.textBrowser.setGeometry(QRect(50, 120, 721, 271))
+        self.textBrowser.setGeometry(QRect(50, 120, 721, 251))
         self.textBrowser.setStyleSheet(u"\n"
 "QTextBrowser{\n"
 "\n"
@@ -603,7 +605,7 @@ class Ui_MainWindow(object):
 "}")
         self.fsf = QLabel(self.page_3)
         self.fsf.setObjectName(u"fsf")
-        self.fsf.setGeometry(QRect(30, 500, 191, 41))
+        self.fsf.setGeometry(QRect(30, 510, 191, 41))
         self.fsf.setStyleSheet(u"QLabel{\n"
 "background:transparent;\n"
 "}")
@@ -611,7 +613,7 @@ class Ui_MainWindow(object):
         self.fsf.setScaledContents(True)
         self.lgpl_3 = QLabel(self.page_3)
         self.lgpl_3.setObjectName(u"lgpl_3")
-        self.lgpl_3.setGeometry(QRect(270, 490, 131, 51))
+        self.lgpl_3.setGeometry(QRect(260, 500, 131, 51))
         self.lgpl_3.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -748,7 +750,7 @@ class Ui_MainWindow(object):
         self.git_Btn.setIconSize(QSize(20, 20))
         self.mail_Btn = QPushButton(self.page_3)
         self.mail_Btn.setObjectName(u"mail_Btn")
-        self.mail_Btn.setGeometry(QRect(590, 470, 181, 23))
+        self.mail_Btn.setGeometry(QRect(560, 470, 181, 23))
         font7 = QFont()
         font7.setFamily(u"AvenirNext LT Pro Regular")
         font7.setPointSize(11)
@@ -762,7 +764,7 @@ class Ui_MainWindow(object):
 "}")
         self.label_3 = QLabel(self.page_3)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(440, 460, 101, 91))
+        self.label_3.setGeometry(QRect(290, 410, 71, 61))
         self.label_3.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -772,6 +774,47 @@ class Ui_MainWindow(object):
 "}")
         self.label_3.setPixmap(QPixmap(u"resources/pi_hole.png"))
         self.label_3.setScaledContents(True)
+        self.label_4 = QLabel(self.page_3)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(30, 430, 191, 31))
+        self.label_4.setStyleSheet(u"QLabel{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"\n"
+"}")
+        self.label_4.setPixmap(QPixmap(u"resources/Logo_of_WireGuard.svg.png"))
+        self.label_4.setScaledContents(True)
+        self.site = QPushButton(self.page_3)
+        self.site.setObjectName(u"site")
+        self.site.setGeometry(QRect(540, 510, 30, 30))
+        self.site.setStyleSheet(u"QPushButton{\n"
+"\n"
+"\n"
+"background:transparent;\n"
+"border-radius:15px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"\n"
+"\n"
+"	\n"
+"	\n"
+"	background-color: rgb(255, 170, 32);\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	\n"
+"	background-color: rgb(255, 255, 127);\n"
+"\n"
+"}")
+        icon12 = QIcon()
+        icon12.addFile(u"resources/website.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.site.setIcon(icon12)
+        self.site.setIconSize(QSize(20, 20))
         self.stackedWidget.addWidget(self.page_3)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -843,5 +886,7 @@ class Ui_MainWindow(object):
         self.git_Btn.setText("")
         self.mail_Btn.setText(QCoreApplication.translate("MainWindow", u"incinfoquest@gmail.com", None))
         self.label_3.setText("")
+        self.label_4.setText("")
+        self.site.setText("")
     # retranslateUi
 

@@ -153,7 +153,9 @@ QPushButton:hover{
 	
 	
 	background-color: rgb(201, 230, 247);
-};</string>
+};
+
+</string>
      </property>
      <property name="text">
       <string/>
@@ -1004,7 +1006,7 @@ QPushButton:pressed{
         <x>50</x>
         <y>120</y>
         <width>721</width>
-        <height>271</height>
+        <height>251</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1103,7 +1105,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>500</y>
+        <y>510</y>
         <width>191</width>
         <height>41</height>
        </rect>
@@ -1126,8 +1128,8 @@ background:transparent;
      <widget class="QLabel" name="lgpl_3">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>490</y>
+        <x>260</x>
+        <y>500</y>
         <width>131</width>
         <height>51</height>
        </rect>
@@ -1367,7 +1369,7 @@ QPushButton:pressed{
      <widget class="QPushButton" name="mail_Btn">
       <property name="geometry">
        <rect>
-        <x>590</x>
+        <x>560</x>
         <y>470</y>
         <width>181</width>
         <height>23</height>
@@ -1395,10 +1397,10 @@ background:transparent;
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>440</x>
-        <y>460</y>
-        <width>101</width>
-        <height>91</height>
+        <x>290</x>
+        <y>410</y>
+        <width>71</width>
+        <height>61</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1418,6 +1420,81 @@ background:transparent;
       </property>
       <property name="scaledContents">
        <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>430</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+
+
+background:transparent;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>resources/Logo_of_WireGuard.svg.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="site">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>510</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+
+
+background:transparent;
+border-radius:15px;
+
+
+}
+QPushButton:hover{
+
+
+	
+	
+	background-color: rgb(255, 170, 32);
+
+
+}
+QPushButton:pressed{
+	
+	background-color: rgb(255, 255, 127);
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>resources/website.png</normaloff>resources/website.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
     </widget>

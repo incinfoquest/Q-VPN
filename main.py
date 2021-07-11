@@ -1,6 +1,6 @@
 # ______________________________________________________________|
 #                                                               |
-# [MAIN FILE]                                                   |                                               |
+# [MAIN FILE]                                                   |
 # ______________________________________________________________|
 # PRODUCT : Q VPN                                               |
 #                                                               |
@@ -13,10 +13,8 @@
 import sys
 import platform
 from PySide2 import QtCore, QtGui, QtWidgets
-from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect,
-                            QSize, QTime, QUrl, Qt, QEvent)
-from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence,
-                           QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
+from PySide2.QtCore import *
+from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 from subprocess import Popen, PIPE
 from playsound import playsound
@@ -123,6 +121,7 @@ class MainWindow(QMainWindow):
         self.ui.git_Btn.clicked.connect(lambda: webbrowser.open('https://github.com/incinfoquest'))
         self.ui.insta_Btn.clicked.connect(lambda: webbrowser.open('https://www.instagram.com/inquest_inc/'))
         self.ui.mail_Btn.clicked.connect(lambda: webbrowser.open('https://mail.google.com/mail/u/0/#inbox?compose=new'))
+        self.ui.site.clicked.connect(lambda: webbrowser.open('https://incinfoquest.godaddysites.com'))
         self.ui.ref.clicked.connect(self.refresh)
         self.ui.dwnld_label.hide()
         self.ui.C_label.setHidden(True)
@@ -265,14 +264,11 @@ class MainWindow(QMainWindow):
 
 
 
-
-
-
         # Wg UP
     def wgConnect(self):
         self.st_thread()
-        process = Popen(["C:\Program Files\Q VPN\wireguard.exe", '/installtunnelservice',
-                         "C:\Program Files\Q VPN\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
+        process = Popen(["C:\Program Files\wireguard\wireguard.exe", '/installtunnelservice',
+                         "C:\Program Files\wireguard\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
                         encoding='utf-8')
 
         print("CONNECTED")
@@ -292,7 +288,7 @@ class MainWindow(QMainWindow):
     # WG DOWN
     def wgDown(self):
 
-        process = Popen(["C:\Program Files\Q VPN\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
+        process = Popen(["C:\Program Files\wireguard\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
                         encoding='utf-8')
         print("SESSION ENDED")
         self.ui.off_btn.hide()
