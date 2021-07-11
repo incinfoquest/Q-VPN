@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainUIWRHq.ui'
+## Form generated from reading UI file 'mainUdjCrg.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -91,7 +91,7 @@ class Ui_MainWindow(object):
 "\n"
 "	\n"
 "	\n"
-"	background-color: rgb(28, 110, 137);\n"
+"	background-color: rgb(201, 230, 247);\n"
 "};")
         icon = QIcon()
         icon.addFile(u"resources/refresh.png", QSize(), QIcon.Normal, QIcon.Off)
