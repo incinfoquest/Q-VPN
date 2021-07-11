@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainbTUMhS.ui'
+## Form generated from reading UI file 'mainxJgopm.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -523,7 +523,7 @@ class Ui_MainWindow(object):
         self.btn_home_2.setIconSize(QSize(35, 35))
         self.textBrowser = QTextBrowser(self.page_3)
         self.textBrowser.setObjectName(u"textBrowser")
-        self.textBrowser.setGeometry(QRect(50, 120, 721, 251))
+        self.textBrowser.setGeometry(QRect(50, 120, 721, 271))
         self.textBrowser.setStyleSheet(u"\n"
 "QTextBrowser{\n"
 "\n"
@@ -764,7 +764,7 @@ class Ui_MainWindow(object):
 "}")
         self.label_3 = QLabel(self.page_3)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(70, 440, 61, 51))
+        self.label_3.setGeometry(QRect(60, 420, 71, 61))
         self.label_3.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -815,6 +815,20 @@ class Ui_MainWindow(object):
         icon12.addFile(u"resources/www.png", QSize(), QIcon.Normal, QIcon.Off)
         self.site.setIcon(icon12)
         self.site.setIconSize(QSize(25, 25))
+        self.label_5 = QLabel(self.page_3)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(270, 410, 291, 31))
+        font8 = QFont()
+        font8.setFamily(u"Helvetica")
+        font8.setBold(True)
+        font8.setWeight(75)
+        self.label_5.setFont(font8)
+        self.label_5.setStyleSheet(u"QLabel{\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"}")
+        self.label_5.setAlignment(Qt.AlignCenter)
         self.stackedWidget.addWidget(self.page_3)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -888,5 +902,6 @@ class Ui_MainWindow(object):
         self.label_3.setText("")
         self.label_4.setText("")
         self.site.setText("")
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Copyright \u00a9 2021 incinfoquest - All Rights Reserved.", None))
     # retranslateUi
 
