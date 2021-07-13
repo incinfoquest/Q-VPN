@@ -144,7 +144,6 @@ class MainWindow(QMainWindow):
 
         # FROM PAGE_3 to PAGE_1
         self.ui.btn_home_2.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_1))
-        #self.ui.speed_label.mousePressEvent = self.openweb
         # DISPLAY IP ADDRESS WHEN MAIN WINDOW IS LOADED
         self.on_ip()
 
@@ -210,19 +209,6 @@ class MainWindow(QMainWindow):
         self.ui.C_label.hide()
 
 
-
-        # MOVE WINDOW
-    def moveWindow(self, event):
-        # IF LEFT CLICK MOVE WINDOW
-        if event.buttons() == Qt.LeftButton:
-            self.move(self.pos() + event.globalPos() - self.dragPos)
-            self.dragPos = event.globalPos()
-            event.accept()
-
-    # APP EVENTS [DRAG MAIN WINDOW]
-    def mousePressEvent(self, event):
-        self.dragPos = event.globalPos()
-
     def time_convert(self, sec):
         mins = sec // 60
         sec = sec % 60
@@ -246,6 +232,27 @@ class MainWindow(QMainWindow):
             self.connectThread = threading.Thread(target=self.wgConnect)
             self.connectThread.start()
 
+
+        # Wg UP
+    def wgConnect(self):
+        self.st_thread()
+        process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/installtunnelservice',
+                         "C:\Program Files\WireGuard\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
+                        encoding='utf-8')
+
+        print("CONNECTED")
+
+        # TO PRINT IP AFTER WG IS CONNECTED
+        self.on_ip()
+        # windows notifying
+        self.t.show_toast("Q VPN","VPN Connected Successfully", icon_path="icon-console.ico",duration=5)
+        # Writing the starting ip to the test.txt
+        f = open ("test.txt", 'w', encoding = 'utf-8')
+        self.start_time = time.time()
+        # to store the value as in Floating point
+        f.write('%f'%self.start_time)
+
+
     def on_Down(self):
          self.ui.pop_btn.setHidden(True)
          self.ui.pop_btn.setEnabled(False)
@@ -263,32 +270,10 @@ class MainWindow(QMainWindow):
          self.disconnectThread.start()
 
 
-
-        # Wg UP
-    def wgConnect(self):
-        self.st_thread()
-        process = Popen(["C:\Program Files\wireguard\wireguard.exe", '/installtunnelservice',
-                         "C:\Program Files\wireguard\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
-                        encoding='utf-8')
-
-        print("CONNECTED")
-
-        # TO PRINT IP AFTER WG IS CONNECTED
-        self.on_ip()
-        # windows notifying
-        self.t.show_toast("Q VPN","VPN Connected Successfully", icon_path="icon-console.ico",duration=5)
-        # Writing the starting ip to the test.txt
-        f = open ("test.txt", 'w', encoding = 'utf-8')
-        self.start_time = time.time()
-        # to store the value as in Floating point
-        f.write('%f'%self.start_time)
-
-
-
     # WG DOWN
     def wgDown(self):
 
-        process = Popen(["C:\Program Files\wireguard\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
+        process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
                         encoding='utf-8')
         print("SESSION ENDED")
         self.ui.off_btn.hide()
@@ -344,13 +329,13 @@ class MainWindow(QMainWindow):
         torexe = os.popen(r'C:\Program Files\Q VPN\Browser\firefox.exe')
         self.showMinimized()
 
+# pi hole Adblocking window
     def popup(self):
         self.pop_Thread = threading.Thread(target=self.pop)
         self.pop_Thread.start()
 
 
     def pop(self):
-
         os.system('python pop.py')
 
 
@@ -358,7 +343,6 @@ class MainWindow(QMainWindow):
     def check_speed(self):
         self.speedThread = threading.Thread(target=self.get_speedTest)
         self.speedThread.start()
-
 
 
     # GET INTERNET SPEED
@@ -389,6 +373,20 @@ class MainWindow(QMainWindow):
             print("check your internet connection for speed test")
             playsound('beep_beep.mp3')
             self.ui.except_lbl.setText("Check Your Network Connection")
+
+
+        # MOVE WINDOW
+    def moveWindow(self, event):
+        # IF LEFT CLICK MOVE WINDOW
+        if event.buttons() == Qt.LeftButton:
+            self.move(self.pos() + event.globalPos() - self.dragPos)
+            self.dragPos = event.globalPos()
+            event.accept()
+
+    # APP EVENTS [DRAG MAIN WINDOW]
+    def mousePressEvent(self, event):
+        self.dragPos = event.globalPos()
+
 
 
     # EXIT
