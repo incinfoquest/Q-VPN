@@ -245,7 +245,7 @@ class MainWindow(QMainWindow):
         # TO PRINT IP AFTER WG IS CONNECTED
         self.on_ip()
         # windows notifying
-        self.t.show_toast("Q VPN","VPN Connected Successfully", icon_path="icon-console.ico",duration=5)
+        self.t.show_toast("Q VPN","VPN Connected Successfully", icon_path="icon-console.ico",duration=3)
         # Writing the starting ip to the test.txt
         f = open ("test.txt", 'w', encoding = 'utf-8')
         self.start_time = time.time()
@@ -280,7 +280,7 @@ class MainWindow(QMainWindow):
         self.ui.connect_Btn.setEnabled(True)
         self.ui.connect_Btn.show()
         self.on_ip()
-        self.t.show_toast("Q VPN","VPN DisConnected Successfully", icon_path="icon-console.ico",duration=5)
+        self.t.show_toast("Q VPN","VPN DisConnected Successfully", icon_path="icon-console.ico",duration=3)
         # To clear the test.txt contents
         with open("test.txt", 'r+') as f:
             f.truncate(0)
