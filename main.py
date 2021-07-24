@@ -236,8 +236,8 @@ class MainWindow(QMainWindow):
         # Wg UP
     def wgConnect(self):
         self.st_thread()
-        process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/installtunnelservice',
-                         "C:\Program Files\WireGuard\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
+        process = Popen(["C:\Program Files\Q VPN\WireGuard\wireguard.exe", '/installtunnelservice',
+                         "C:\Program Files\Q VPN\WireGuard\Data\Configurations\wg1.conf.dpapi"], stdout=PIPE,
                         encoding='utf-8')
 
         print("CONNECTED")
@@ -273,7 +273,7 @@ class MainWindow(QMainWindow):
     # WG DOWN
     def wgDown(self):
 
-        process = Popen(["C:\Program Files\WireGuard\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
+        process = Popen(["C:\Program Files\Q VPN\WireGuard\wireguard.exe", '/uninstalltunnelservice', "wg1"], stdout=PIPE,
                         encoding='utf-8')
         print("SESSION ENDED")
         self.ui.off_btn.hide()
@@ -326,7 +326,7 @@ class MainWindow(QMainWindow):
     # TOR CONNECTION
     def torConnect(self):
 ####
-        torexe = os.popen(r'C:\Program Files\Q VPN\Browser\firefox.exe')
+        torexe = os.popen(r'C:\Program Files\Q VPN\Tor Browser\Browser\firefox.exe')
         self.showMinimized()
 
 # pi hole Adblocking window

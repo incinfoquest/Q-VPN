@@ -1,13 +1,12 @@
-# -*- coding: utf-8 -*-
+# ______________________________________________________________
+# PRODUCT : Q VPN
 
-################################################################################
-## Form generated from reading UI file 'mainxJgopm.ui'
-##
-## Created by: Qt User Interface Compiler version 5.15.2
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
+# NAME    : ui_main.py [MAIN UI]
 
+# AUTHORS : ANANDAN , OMAR , SREERAG
+
+# CHANGES TO THIS FILE ARE PROHIBITED
+# _______________________________________________________________
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
@@ -24,7 +23,7 @@ class Ui_MainWindow(object):
         self.top_bar = QFrame(self.centralwidget)
         self.top_bar.setObjectName(u"top_bar")
         self.top_bar.setGeometry(QRect(0, 0, 801, 41))
-        self.top_bar.setStyleSheet(u"background-color: rgb(34, 31, 14);")
+        self.top_bar.setStyleSheet(u"background-color: rgb(43, 5, 83);")
         self.top_bar.setFrameShape(QFrame.NoFrame)
         self.top_bar.setFrameShadow(QFrame.Raised)
         self.Logo = QLabel(self.top_bar)
@@ -111,7 +110,7 @@ class Ui_MainWindow(object):
         font1 = QFont()
         font1.setFamily(u"AvenirNext LT Pro Regular")
         self.back_img_1.setFont(font1)
-        self.back_img_1.setPixmap(QPixmap(u"resources/vpnbg.png"))
+        self.back_img_1.setPixmap(QPixmap(u"resources/mainui1.png"))
         self.back_img_1.setScaledContents(True)
         self.back_img_1.setAlignment(Qt.AlignCenter)
         self.connect_Btn = QPushButton(self.page_1)
@@ -494,7 +493,7 @@ class Ui_MainWindow(object):
         self.back_img_3 = QLabel(self.page_3)
         self.back_img_3.setObjectName(u"back_img_3")
         self.back_img_3.setGeometry(QRect(0, 0, 801, 561))
-        self.back_img_3.setPixmap(QPixmap(u"resources/2028632.jpg"))
+        self.back_img_3.setPixmap(QPixmap(u"resources/Aboutui1.png"))
         self.btn_home_2 = QPushButton(self.page_3)
         self.btn_home_2.setObjectName(u"btn_home_2")
         self.btn_home_2.setGeometry(QRect(20, 20, 40, 40))
@@ -523,7 +522,8 @@ class Ui_MainWindow(object):
         self.btn_home_2.setIconSize(QSize(35, 35))
         self.textBrowser = QTextBrowser(self.page_3)
         self.textBrowser.setObjectName(u"textBrowser")
-        self.textBrowser.setGeometry(QRect(50, 120, 721, 271))
+        self.textBrowser.setGeometry(QRect(50, 250, 711, 171))
+        self.textBrowser.setFont(font3)
         self.textBrowser.setStyleSheet(u"\n"
 "QTextBrowser{\n"
 "\n"
@@ -605,7 +605,7 @@ class Ui_MainWindow(object):
 "}")
         self.fsf = QLabel(self.page_3)
         self.fsf.setObjectName(u"fsf")
-        self.fsf.setGeometry(QRect(20, 510, 161, 31))
+        self.fsf.setGeometry(QRect(50, 430, 221, 51))
         self.fsf.setStyleSheet(u"QLabel{\n"
 "background:transparent;\n"
 "}")
@@ -613,7 +613,7 @@ class Ui_MainWindow(object):
         self.fsf.setScaledContents(True)
         self.lgpl_3 = QLabel(self.page_3)
         self.lgpl_3.setObjectName(u"lgpl_3")
-        self.lgpl_3.setGeometry(QRect(210, 500, 101, 41))
+        self.lgpl_3.setGeometry(QRect(320, 420, 161, 61))
         self.lgpl_3.setStyleSheet(u"QLabel{\n"
 "\n"
 "\n"
@@ -623,17 +623,6 @@ class Ui_MainWindow(object):
 "}")
         self.lgpl_3.setPixmap(QPixmap(u"resources/LGPLv3_Logo.png"))
         self.lgpl_3.setScaledContents(True)
-        self.label_2 = QLabel(self.page_3)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(360, 20, 81, 81))
-        self.label_2.setStyleSheet(u"QLabel{\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"\n"
-"}")
-        self.label_2.setPixmap(QPixmap(u"resources/Main_ico-INSIDE.png"))
-        self.label_2.setScaledContents(True)
         self.reddit_Btn = QPushButton(self.page_3)
         self.reddit_Btn.setObjectName(u"reddit_Btn")
         self.reddit_Btn.setGeometry(QRect(590, 510, 30, 30))
@@ -750,7 +739,7 @@ class Ui_MainWindow(object):
         self.git_Btn.setIconSize(QSize(20, 20))
         self.mail_Btn = QPushButton(self.page_3)
         self.mail_Btn.setObjectName(u"mail_Btn")
-        self.mail_Btn.setGeometry(QRect(550, 470, 201, 23))
+        self.mail_Btn.setGeometry(QRect(550, 460, 201, 23))
         font7 = QFont()
         font7.setFamily(u"AvenirNext LT Pro Regular")
         font7.setPointSize(11)
@@ -762,30 +751,6 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}")
-        self.label_3 = QLabel(self.page_3)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(60, 420, 71, 61))
-        self.label_3.setStyleSheet(u"QLabel{\n"
-"\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"\n"
-"}")
-        self.label_3.setPixmap(QPixmap(u"resources/pi_hole.png"))
-        self.label_3.setScaledContents(True)
-        self.label_4 = QLabel(self.page_3)
-        self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(330, 510, 161, 31))
-        self.label_4.setStyleSheet(u"QLabel{\n"
-"\n"
-"\n"
-"background:transparent;\n"
-"\n"
-"\n"
-"}")
-        self.label_4.setPixmap(QPixmap(u"resources/Logo_of_WireGuard.svg.png"))
-        self.label_4.setScaledContents(True)
         self.site = QPushButton(self.page_3)
         self.site.setObjectName(u"site")
         self.site.setGeometry(QRect(540, 510, 30, 30))
@@ -815,20 +780,47 @@ class Ui_MainWindow(object):
         icon12.addFile(u"resources/www.png", QSize(), QIcon.Normal, QIcon.Off)
         self.site.setIcon(icon12)
         self.site.setIconSize(QSize(25, 25))
-        self.label_5 = QLabel(self.page_3)
-        self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(270, 410, 291, 31))
-        font8 = QFont()
-        font8.setFamily(u"Helvetica")
-        font8.setBold(True)
-        font8.setWeight(75)
-        self.label_5.setFont(font8)
-        self.label_5.setStyleSheet(u"QLabel{\n"
+        self.label_2 = QLabel(self.page_3)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(40, 100, 131, 31))
+        self.label_2.setFont(font3)
+        self.label_2.setStyleSheet(u"QLabel{\n"
 "\n"
 "background:transparent;\n"
 "\n"
 "}")
-        self.label_5.setAlignment(Qt.AlignCenter)
+        self.label_2.setAlignment(Qt.AlignCenter)
+        self.label_3 = QLabel(self.page_3)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(50, 150, 301, 31))
+        self.label_3.setFont(font3)
+        self.label_3.setStyleSheet(u"QLabel{\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"}")
+        self.label_3.setAlignment(Qt.AlignCenter)
+        self.mail_Btn_2 = QPushButton(self.page_3)
+        self.mail_Btn_2.setObjectName(u"mail_Btn_2")
+        self.mail_Btn_2.setGeometry(QRect(70, 510, 381, 23))
+        self.mail_Btn_2.setFont(font7)
+        self.mail_Btn_2.setStyleSheet(u"QPushButton{\n"
+"\n"
+"background:transparent;\n"
+"	color: rgb(255, 255, 255);\n"
+"\n"
+"\n"
+"}")
+        self.label_4 = QLabel(self.page_3)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(50, 180, 351, 91))
+        self.label_4.setFont(font3)
+        self.label_4.setStyleSheet(u"QLabel{\n"
+"\n"
+"background:transparent;\n"
+"\n"
+"}")
+        self.label_4.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.stackedWidget.addWidget(self.page_3)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -883,25 +875,24 @@ class Ui_MainWindow(object):
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; color:#ffffff;\">Here in this we are providing network level protection for all users that connect with our  Q VPN. it  is intended to generate user friendly VPN without interrupting their browsing with no compromise in the protection of data and privacy.</span></p>\n"
-"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#ffffff;\"><br /></p>\n"
-"<p align=\"justify\" style=\" "
-                        "margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; color:#ffffff;\">		In this application we are using the Wireguard protocol to connect with the server. The WireGuard is an extremely fast VPN protocol with very little overhead. It has the potential to offer a simpler, more secure, more efficient, and easier to use VPN over existing technologies. The WireGuard protocol is 58% faster than the OpenVPN protocol and also the Wireguard is extremely stable and robust. It can easily switch the server while maintaining the connection. Clients can also change the networks without dropping the connection. Rather than other VPN protocols the WireGuard protocol has fewer codes to establish the connection. And also the WireGuard\u2019s performance improvement over OpenVPN is greater with low latency servers in comparison to high latency server locations. </span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; m"
-                        "argin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; color:#ffffff;\">		</span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; color:#ffffff;\">		The next main feature of our \u201c Q \u201c, is we are providing the TOR service along with the VPN service. The user can decide whether he/she wants to connect the internet using VPN or TOR. Default we are connecting with the VPN but if the user wants to switch to TOR service, they only want to click the TOR button. TOR is useful for anyone who wants to keep their internet activities out of the hands of advertisers, ISPs, and websites.</span></p></body></html>", None))
+"</style></head><body style=\" font-family:'AvenirNext LT Pro Bold'; font-size:8.25pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-weight:400;\"><br /></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; color:#ffffff;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-s"
+                        "ize:12pt; font-weight:400; color:#ffffff;\">Q VPN is a vpn that uses WireGuard protocol. It is intended to generate user friendly VPN without interrupting your browsing with no compromise in the protection of your data and privacy.</span></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; color:#ffffff;\"><br /></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; color:#ffffff;\">Developed using PySide2 and Python3.</span></p></body></html>", None))
         self.fsf.setText("")
         self.lgpl_3.setText("")
-        self.label_2.setText("")
         self.reddit_Btn.setText("")
         self.tweet_Btn.setText("")
         self.insta_Btn.setText("")
         self.git_Btn.setText("")
         self.mail_Btn.setText(QCoreApplication.translate("MainWindow", u"incinfoquest@gmail.com", None))
-        self.label_3.setText("")
-        self.label_4.setText("")
         self.site.setText("")
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Copyright \u00a9 2021 incinfoquest - All Rights Reserved.", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt; color:#ffffff;\">Q VPN Project</span></p></body></html>", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ffffff;\">A VPN that uses WireGuard protocol</span></p></body></html>", None))
+        self.mail_Btn_2.setText(QCoreApplication.translate("MainWindow", u"Copyright \u00a9 2021 incinfoquest - All Rights Reserved.", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ffffff;\">Developed by:</span></p><p align=\"justify\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ffffff;\">Anandan S, Omar Fayadh D, Sreerag S.</span></p></body></html>", None))
     # retranslateUi
 

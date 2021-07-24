@@ -1,3 +1,13 @@
+# ______________________________________________________________
+# PRODUCT : Q VPN
+
+# NAME    : pop.py [PyHole DASH BOARD]
+
+# AUTHORS : ANANDAN , OMAR , SREERAG
+
+# CHANGES TO THIS FILE ARE PROHIBITED
+# _______________________________________________________________
+
 import sys
 from PySide2.QtCore import *
 from PySide2.QtWidgets import *

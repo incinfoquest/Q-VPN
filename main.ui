@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(34, 31, 14);</string>
+     <string notr="true">background-color: rgb(43, 5, 83);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -206,7 +206,7 @@ QPushButton:hover{
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/vpnbg.png</pixmap>
+       <pixmap>resources/mainui1.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -953,7 +953,7 @@ background:transparent;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>resources/2028632.jpg</pixmap>
+       <pixmap>resources/Aboutui1.png</pixmap>
       </property>
      </widget>
      <widget class="QPushButton" name="btn_home_2">
@@ -1004,10 +1004,17 @@ QPushButton:pressed{
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>120</y>
-        <width>721</width>
-        <height>271</height>
+        <y>250</y>
+        <width>711</width>
+        <height>171</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AvenirNext LT Pro Bold</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="styleSheet">
        <string notr="true">
@@ -1093,21 +1100,21 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Here in this we are providing network level protection for all users that connect with our  Q VPN. it  is intended to generate user friendly VPN without interrupting their browsing with no compromise in the protection of data and privacy.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;		In this application we are using the Wireguard protocol to connect with the server. The WireGuard is an extremely fast VPN protocol with very little overhead. It has the potential to offer a simpler, more secure, more efficient, and easier to use VPN over existing technologies. The WireGuard protocol is 58% faster than the OpenVPN protocol and also the Wireguard is extremely stable and robust. It can easily switch the server while maintaining the connection. Clients can also change the networks without dropping the connection. Rather than other VPN protocols the WireGuard protocol has fewer codes to establish the connection. And also the WireGuard’s performance improvement over OpenVPN is greater with low latency servers in comparison to high latency server locations. &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;		&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;		The next main feature of our “ Q “, is we are providing the TOR service along with the VPN service. The user can decide whether he/she wants to connect the internet using VPN or TOR. Default we are connecting with the VPN but if the user wants to switch to TOR service, they only want to click the TOR button. TOR is useful for anyone who wants to keep their internet activities out of the hands of advertisers, ISPs, and websites.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'AvenirNext LT Pro Bold'; font-size:8.25pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; color:#ffffff;&quot;&gt;Q VPN is a vpn that uses WireGuard protocol. It is intended to generate user friendly VPN without interrupting your browsing with no compromise in the protection of your data and privacy.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; color:#ffffff;&quot;&gt;Developed using PySide2 and Python3.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="fsf">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>510</y>
-        <width>161</width>
-        <height>31</height>
+        <x>50</x>
+        <y>430</y>
+        <width>221</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1128,10 +1135,10 @@ background:transparent;
      <widget class="QLabel" name="lgpl_3">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>500</y>
-        <width>101</width>
-        <height>41</height>
+        <x>320</x>
+        <y>420</y>
+        <width>161</width>
+        <height>61</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1148,33 +1155,6 @@ background:transparent;
       </property>
       <property name="pixmap">
        <pixmap>resources/LGPLv3_Logo.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>20</y>
-        <width>81</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-
-background:transparent;
-
-
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>resources/Main_ico-INSIDE.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1370,7 +1350,7 @@ QPushButton:pressed{
       <property name="geometry">
        <rect>
         <x>550</x>
-        <y>470</y>
+        <y>460</y>
         <width>201</width>
         <height>23</height>
        </rect>
@@ -1392,62 +1372,6 @@ background:transparent;
       </property>
       <property name="text">
        <string>incinfoquest@gmail.com</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>420</y>
-        <width>71</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-
-
-background:transparent;
-
-
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>resources/pi_hole.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_4">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>510</y>
-        <width>161</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-
-
-background:transparent;
-
-
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>resources/Logo_of_WireGuard.svg.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="site">
@@ -1497,18 +1421,18 @@ QPushButton:pressed{
        </size>
       </property>
      </widget>
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>410</y>
-        <width>291</width>
+        <x>40</x>
+        <y>100</y>
+        <width>131</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>Helvetica</family>
+        <family>AvenirNext LT Pro Bold</family>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -1521,10 +1445,98 @@ background:transparent;
 }</string>
       </property>
       <property name="text">
-       <string>Copyright © 2021 incinfoquest - All Rights Reserved.</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Q VPN Project&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>150</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AvenirNext LT Pro Bold</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+
+background:transparent;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ffffff;&quot;&gt;A VPN that uses WireGuard protocol&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mail_Btn_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>510</y>
+        <width>381</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AvenirNext LT Pro Regular</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+
+background:transparent;
+	color: rgb(255, 255, 255);
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Copyright © 2021 incinfoquest - All Rights Reserved.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>351</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AvenirNext LT Pro Bold</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+
+background:transparent;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ffffff;&quot;&gt;Developed by:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ffffff;&quot;&gt;Anandan S, Omar Fayadh D, Sreerag S.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
      </widget>
     </widget>
