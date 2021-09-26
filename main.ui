@@ -80,11 +80,11 @@ background-color: rgba(0,0,0,0%)
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
-    
-    
+
+
 	background-color: rgb(255, 96, 88);
     border-radius: 8px;
-    
+
    }
 
 
@@ -113,11 +113,11 @@ QPushButton:hover{
      <property name="styleSheet">
       <string notr="true">
 QPushButton {
-    
-    
+
+
 	background-color: rgb(255, 190, 47);
     border-radius: 8px;
-    
+
    }
 
 QPushButton:hover{
@@ -143,15 +143,15 @@ QPushButton:hover{
       <string notr="true">QPushButton {
 
 
- background-color : transparent; 
+ background-color : transparent;
 border-radius: 10px;
 
  }
 
 QPushButton:hover{
 
-	
-	
+
+
 	background-color: rgb(201, 230, 247);
 };
 
@@ -236,7 +236,7 @@ border-radius: 80px;
 
 QPushButton:hover{
 
-	
+
 	background-color: rgb(48, 154, 38);
 
 }
@@ -283,12 +283,12 @@ QPushButton:pressed{
        <string notr="true">QLabel {
 
 
- background-color : transparent; 
-	
-	
-	
-	
-	
+ background-color : transparent;
+
+
+
+
+
 	color: rgb(255, 255, 255);
  };</string>
       </property>
@@ -342,7 +342,7 @@ border-radius: 20px;
 
 QPushButton:hover{
 
-	
+
 	background-color: rgb(125, 70, 152);
 }
 QPushButton:pressed{
@@ -408,11 +408,11 @@ border-radius: 20px;
 
 QPushButton:hover{
 
-	
-	
-	
-	
-	
+
+
+
+
+
 	background-color: rgb(53, 79, 79);
 }
 QPushButton:pressed{
@@ -455,7 +455,7 @@ border-radius: 80px;
 
 QPushButton:hover{
 
-	
+
 	background-color: rgb(255, 0, 0);
 
 }
@@ -501,15 +501,15 @@ QPushButton:pressed{
        <string notr="true">QLabel {
 
 
- background-color : transparent; 
+ background-color : transparent;
 
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	color: rgb(120, 205, 212);
  };
 </string>
@@ -542,12 +542,12 @@ QPushButton:pressed{
        <string notr="true">QLabel {
 
 
- background-color : transparent; 
+ background-color : transparent;
 
-	
-	
-	
-	
+
+
+
+
 	color: rgb(50, 215, 54);
  };
 </string>
@@ -660,7 +660,7 @@ background:transparent;
        <string notr="true">QLabel{
 
 background:transparent;
-	
+
 	color: rgb(255, 0, 0);
 
 }</string>
@@ -752,14 +752,14 @@ background:transparent;
        <string notr="true">QLabel {
 
 
- background-color : transparent; 
+ background-color : transparent;
 
-	
-	
-	
+
+
+
 	color: rgb(246, 146, 114);
-	
-	
+
+
  };
 </string>
       </property>
@@ -783,7 +783,7 @@ background:transparent;
        <string notr="true">QLabel {
 
 
- background-color : transparent; 
+ background-color : transparent;
  };
 </string>
       </property>
@@ -816,14 +816,14 @@ border-radius: 20px;
 
 QPushButton:hover{
 
-	
+
 	background-color: rgb(169, 0, 51);
 
 
 }
 QPushButton:pressed{
 
-	
+
 	background-color: rgb(252, 66, 66);
 
 
@@ -897,11 +897,11 @@ background:transparent;
        <string notr="true">QLabel {
 
 
- background-color : transparent; 
-	
-	
-	
-	
+ background-color : transparent;
+
+
+
+
 	color: rgb(50, 215, 54);
  };</string>
       </property>
@@ -974,14 +974,14 @@ border-radius: 20px;
 
 QPushButton:hover{
 
-	
-	
-	
-	
+
+
+
+
 	background-color: rgb(255, 255, 255);
 }
 QPushButton:pressed{
-	
+
 	background-color: rgb(0, 0, 0);
 
 }</string>
@@ -1030,7 +1030,7 @@ border:0px
 /* VERTICAL SCROLLBAR */
  QScrollBar:vertical {
 	border: none;
-    
+
 	background-color: rgb(3, 52, 110);
     width: 14px;
     margin: 15px 0 15px 0;
@@ -1038,22 +1038,22 @@ border:0px
  }
 
 /*  HANDLE BAR VERTICAL */
-QScrollBar::handle:vertical {	
+QScrollBar::handle:vertical {
 	background-color: rgb(80, 80, 122);
 	min-height: 30px;
 	border-radius: 7px;
 }
-QScrollBar::handle:vertical:hover{	
+QScrollBar::handle:vertical:hover{
 	background-color: rgb(255, 0, 127);
 }
-QScrollBar::handle:vertical:pressed {	
+QScrollBar::handle:vertical:pressed {
 	background-color: rgb(185, 0, 92);
 }
 
 /* BTN TOP - SCROLLBAR */
 QScrollBar::sub-line:vertical {
 	border: none;
-	
+
 	background-color: rgb(2, 58, 119);
 	height: 15px;
 	border-top-left-radius: 0px;
@@ -1061,18 +1061,18 @@ QScrollBar::sub-line:vertical {
 	subcontrol-position: top;
 	subcontrol-origin: margin;
 }
-QScrollBar::sub-line:vertical:hover {	
-	
+QScrollBar::sub-line:vertical:hover {
+
 	background-color: rgb(80, 80, 122);
 }
-QScrollBar::sub-line:vertical:pressed {	
+QScrollBar::sub-line:vertical:pressed {
 	background-color: rgb(185, 0, 92);
 }
 
 /* BTN BOTTOM - SCROLLBAR */
 QScrollBar::add-line:vertical {
 	border: none;
-	
+
 	background-color: rgb(2, 58, 119);
 	height: 15px;
 	border-bottom-left-radius: 0px;
@@ -1080,11 +1080,11 @@ QScrollBar::add-line:vertical {
 	subcontrol-position: bottom;
 	subcontrol-origin: margin;
 }
-QScrollBar::add-line:vertical:hover {	
-	
+QScrollBar::add-line:vertical:hover {
+
 	background-color: rgb(78, 78, 119);
 }
-QScrollBar::add-line:vertical:pressed {	
+QScrollBar::add-line:vertical:pressed {
 	background-color: rgb(185, 0, 92);
 }
 
@@ -1181,7 +1181,7 @@ border-radius:15px;
 QPushButton:hover{
 
 
-	
+
 	background-color: rgb(255, 69, 0);
 
 
@@ -1226,14 +1226,14 @@ border-radius:15px;
 QPushButton:hover{
 
 
-	
-	
+
+
 	background-color: rgb(28, 183, 235);
 
 
 }
 QPushButton:pressed{
-	
+
 	background-color: rgb(215, 242, 251);
 
 }</string>
@@ -1273,14 +1273,14 @@ border-radius:15px;
 QPushButton:hover{
 
 
-	
-	
+
+
 	background-color: rgb(219, 125, 75);
 
 
 }
 QPushButton:pressed{
-	
+
 	background-color: rgb(245, 168, 20);
 
 }</string>
@@ -1320,9 +1320,9 @@ border-radius:15px;
 QPushButton:hover{
 
 
-	
-	
-	
+
+
+
 	background-color: rgb(0, 0, 0);
 
 
@@ -1395,14 +1395,14 @@ border-radius:15px;
 QPushButton:hover{
 
 
-	
-	
+
+
 	background-color: rgb(255, 170, 32);
 
 
 }
 QPushButton:pressed{
-	
+
 	background-color: rgb(255, 255, 127);
 
 }</string>

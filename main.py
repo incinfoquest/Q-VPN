@@ -9,7 +9,6 @@
 # AUTHORS : ANANDAN , OMAR , SREERAG                            |
 # ______________________________________________________________|
 
-
 import sys
 import platform
 from PySide2 import QtCore, QtGui, QtWidgets
