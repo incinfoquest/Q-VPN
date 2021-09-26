@@ -895,4 +895,3 @@ class Ui_MainWindow(object):
         self.mail_Btn_2.setText(QCoreApplication.translate("MainWindow", u"Copyright \u00a9 2021 incinfoquest - All Rights Reserved.", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ffffff;\">Developed by:</span></p><p align=\"justify\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ffffff;\">Anandan S, Omar Fayadh D, Sreerag S.</span></p></body></html>", None))
     # retranslateUi
-
