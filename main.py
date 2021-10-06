@@ -27,6 +27,10 @@ from selenium import webdriver
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from win10toast import ToastNotifier
 import time
+import win32event
+import win32api
+from winerror import *
+
 
 
 ## SPLASH SCREEN
@@ -38,6 +42,12 @@ from ui_main import Ui_MainWindow
 
 counter = 0  # GLOBALS
 
+mutex = win32event.CreateMutex(None, False, 'clamguard')
+last_error = win32api.GetLastError()
+if last_error == ERROR_ALREADY_EXISTS:
+   print("An instance of ClamGuard is already running! Exiting this instance.")
+   ctypes.windll.user32.MessageBoxW(0, u"An instance of ClamGuard is already running!", u"Error", 0)
+   sys.exit(1)
 
 # SPLASH SCREEN
 class splashscreen(QMainWindow):
